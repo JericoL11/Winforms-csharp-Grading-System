@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Grading_System" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=BLAKE\SQLEXPRESS;Initial Catalog=Grading_System;Integrated Security=True" SettingsObjectName="Int_GradeSystem.Properties.Settings" SettingsPropertyName="Grading_SystemConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_Admin" Member="tbl_Admins">
+    <Type Name="tbl_Admin">
+      <Column Name="adminId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="admin_User" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="admin_Pass" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_TeacherAcc" Member="tbl_TeacherAccs">
+    <Type Name="tbl_TeacherAcc">
+      <Column Name="teacherId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="firstname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="lastname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="teacher_password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="tbl_TeacherAcc_tbl_TeacherInfo" Member="tbl_TeacherInfos" ThisKey="teacherId" OtherKey="FK_teacherId" Type="tbl_TeacherInfo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_TeacherInfo" Member="tbl_TeacherInfos">
+    <Type Name="tbl_TeacherInfo">
+      <Column Name="middleName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="birthDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="phoneNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FK_teacherId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tbl_TeacherAcc_tbl_TeacherInfo" Member="tbl_TeacherAcc" ThisKey="FK_teacherId" OtherKey="teacherId" Type="tbl_TeacherAcc" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Grade_1_Stud" Member="tbl_Grade_1_Studs">
+    <Type Name="tbl_Grade_1_Stud">
+      <Column Name="studentId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="middleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="birthDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(75) NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Grade_1_Stud_tbl_Student_MidtermSubject" Member="tbl_Student_MidtermSubjects" ThisKey="studentId" OtherKey="FK_grade_1_Id" Type="tbl_Student_MidtermSubject" />
+      <Association Name="tbl_Grade_1_Stud_tbl_Student_PrelimSubject1" Member="tbl_Student_PrelimSubject1s" ThisKey="studentId" OtherKey="FK_grade_1_Id" Type="tbl_Student_PrelimSubject1" />
+      <Association Name="tbl_Grade_1_Stud_tbl_Student_FinaklSubject" Member="tbl_Student_FinaklSubjects" ThisKey="studentId" OtherKey="FK_grade_1_Id" Type="tbl_Student_FinaklSubject" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Grade_2_Stud" Member="tbl_Grade_2_Studs">
+    <Type Name="tbl_Grade_2_Stud">
+      <Column Name="studentId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="middleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="birthDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(75) NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Grade_2_Stud_tbl_Student_MidtermSubject" Member="tbl_Student_MidtermSubjects" ThisKey="studentId" OtherKey="FK_grade_2_Id" Type="tbl_Student_MidtermSubject" />
+      <Association Name="tbl_Grade_2_Stud_tbl_Student_PrelimSubject1" Member="tbl_Student_PrelimSubject1s" ThisKey="studentId" OtherKey="FK_grade_2_Id" Type="tbl_Student_PrelimSubject1" />
+      <Association Name="tbl_Grade_2_Stud_tbl_Student_FinaklSubject" Member="tbl_Student_FinaklSubjects" ThisKey="studentId" OtherKey="FK_grade_2_Id" Type="tbl_Student_FinaklSubject" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Grade_4_Stud" Member="tbl_Grade_4_Studs">
+    <Type Name="tbl_Grade_4_Stud">
+      <Column Name="studentId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="middleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="birthDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(75) NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Grade_4_Stud_tbl_Student_MidtermSubject" Member="tbl_Student_MidtermSubjects" ThisKey="studentId" OtherKey="FK_grade_4_Id" Type="tbl_Student_MidtermSubject" />
+      <Association Name="tbl_Grade_4_Stud_tbl_Student_PrelimSubject1" Member="tbl_Student_PrelimSubject1s" ThisKey="studentId" OtherKey="FK_grade_4_Id" Type="tbl_Student_PrelimSubject1" />
+      <Association Name="tbl_Grade_4_Stud_tbl_Student_FinaklSubject" Member="tbl_Student_FinaklSubjects" ThisKey="studentId" OtherKey="FK_grade_4_Id" Type="tbl_Student_FinaklSubject" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Grade_3_Stud" Member="tbl_Grade_3_Studs">
+    <Type Name="tbl_Grade_3_Stud">
+      <Column Name="studentId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="middleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="birthDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(75) NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Grade_3_Stud_tbl_Student_MidtermSubject" Member="tbl_Student_MidtermSubjects" ThisKey="studentId" OtherKey="FK_grade_3_Id" Type="tbl_Student_MidtermSubject" />
+      <Association Name="tbl_Grade_3_Stud_tbl_Student_PrelimSubject1" Member="tbl_Student_PrelimSubject1s" ThisKey="studentId" OtherKey="FK_grade_3_Id" Type="tbl_Student_PrelimSubject1" />
+      <Association Name="tbl_Grade_3_Stud_tbl_Student_FinaklSubject" Member="tbl_Student_FinaklSubjects" ThisKey="studentId" OtherKey="FK_grade_3_Id" Type="tbl_Student_FinaklSubject" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Grade_5_Stud" Member="tbl_Grade_5_Studs">
+    <Type Name="tbl_Grade_5_Stud">
+      <Column Name="studentId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="middleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="birthDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(75) NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Grade_5_Stud_tbl_Student_MidtermSubject" Member="tbl_Student_MidtermSubjects" ThisKey="studentId" OtherKey="FK_grade_5_Id" Type="tbl_Student_MidtermSubject" />
+      <Association Name="tbl_Grade_5_Stud_tbl_Student_PrelimSubject1" Member="tbl_Student_PrelimSubject1s" ThisKey="studentId" OtherKey="FK_grade_5_Id" Type="tbl_Student_PrelimSubject1" />
+      <Association Name="tbl_Grade_5_Stud_tbl_Student_FinaklSubject" Member="tbl_Student_FinaklSubjects" ThisKey="studentId" OtherKey="FK_grade_5_Id" Type="tbl_Student_FinaklSubject" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Grade_6_Stud" Member="tbl_Grade_6_Studs">
+    <Type Name="tbl_Grade_6_Stud">
+      <Column Name="studentId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="middleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="birthDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(75) NOT NULL" CanBeNull="false" />
+      <Association Name="tbl_Grade_6_Stud_tbl_Student_MidtermSubject" Member="tbl_Student_MidtermSubjects" ThisKey="studentId" OtherKey="FK_grade_6_Id" Type="tbl_Student_MidtermSubject" />
+      <Association Name="tbl_Grade_6_Stud_tbl_Student_PrelimSubject1" Member="tbl_Student_PrelimSubject1s" ThisKey="studentId" OtherKey="FK_grade_6_Id" Type="tbl_Student_PrelimSubject1" />
+      <Association Name="tbl_Grade_6_Stud_tbl_Student_FinaklSubject" Member="tbl_Student_FinaklSubjects" ThisKey="studentId" OtherKey="FK_grade_6_Id" Type="tbl_Student_FinaklSubject" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Student_MidtermSubject" Member="tbl_Student_MidtermSubjects">
+    <Type Name="tbl_Student_MidtermSubject">
+      <Column Name="Mapeh" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="English" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Math" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Filipino" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Science" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Period_Status" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Period_Avg" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="FK_grade_1_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_grade_2_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_grade_3_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_grade_4_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_grade_5_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_grade_6_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tbl_Grade_1_Stud_tbl_Student_MidtermSubject" Member="tbl_Grade_1_Stud" ThisKey="FK_grade_1_Id" OtherKey="studentId" Type="tbl_Grade_1_Stud" IsForeignKey="true" />
+      <Association Name="tbl_Grade_2_Stud_tbl_Student_MidtermSubject" Member="tbl_Grade_2_Stud" ThisKey="FK_grade_2_Id" OtherKey="studentId" Type="tbl_Grade_2_Stud" IsForeignKey="true" />
+      <Association Name="tbl_Grade_3_Stud_tbl_Student_MidtermSubject" Member="tbl_Grade_3_Stud" ThisKey="FK_grade_3_Id" OtherKey="studentId" Type="tbl_Grade_3_Stud" IsForeignKey="true" />
+      <Association Name="tbl_Grade_4_Stud_tbl_Student_MidtermSubject" Member="tbl_Grade_4_Stud" ThisKey="FK_grade_4_Id" OtherKey="studentId" Type="tbl_Grade_4_Stud" IsForeignKey="true" />
+      <Association Name="tbl_Grade_5_Stud_tbl_Student_MidtermSubject" Member="tbl_Grade_5_Stud" ThisKey="FK_grade_5_Id" OtherKey="studentId" Type="tbl_Grade_5_Stud" IsForeignKey="true" />
+      <Association Name="tbl_Grade_6_Stud_tbl_Student_MidtermSubject" Member="tbl_Grade_6_Stud" ThisKey="FK_grade_6_Id" OtherKey="studentId" Type="tbl_Grade_6_Stud" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Student_PrelimSubject" Member="tbl_Student_PrelimSubject1s">
+    <Type Name="tbl_Student_PrelimSubject1">
+      <Column Name="Mapeh" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="English" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Math" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Filipino" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Science" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Period_Status" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Period_Avg" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="FK_grade_1_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_grade_2_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_grade_3_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_grade_4_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_grade_5_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_grade_6_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tbl_Grade_1_Stud_tbl_Student_PrelimSubject1" Member="tbl_Grade_1_Stud" ThisKey="FK_grade_1_Id" OtherKey="studentId" Type="tbl_Grade_1_Stud" IsForeignKey="true" />
+      <Association Name="tbl_Grade_2_Stud_tbl_Student_PrelimSubject1" Member="tbl_Grade_2_Stud" ThisKey="FK_grade_2_Id" OtherKey="studentId" Type="tbl_Grade_2_Stud" IsForeignKey="true" />
+      <Association Name="tbl_Grade_3_Stud_tbl_Student_PrelimSubject1" Member="tbl_Grade_3_Stud" ThisKey="FK_grade_3_Id" OtherKey="studentId" Type="tbl_Grade_3_Stud" IsForeignKey="true" />
+      <Association Name="tbl_Grade_4_Stud_tbl_Student_PrelimSubject1" Member="tbl_Grade_4_Stud" ThisKey="FK_grade_4_Id" OtherKey="studentId" Type="tbl_Grade_4_Stud" IsForeignKey="true" />
+      <Association Name="tbl_Grade_5_Stud_tbl_Student_PrelimSubject1" Member="tbl_Grade_5_Stud" ThisKey="FK_grade_5_Id" OtherKey="studentId" Type="tbl_Grade_5_Stud" IsForeignKey="true" />
+      <Association Name="tbl_Grade_6_Stud_tbl_Student_PrelimSubject1" Member="tbl_Grade_6_Stud" ThisKey="FK_grade_6_Id" OtherKey="studentId" Type="tbl_Grade_6_Stud" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Student_FinaklSubject" Member="tbl_Student_FinaklSubjects">
+    <Type Name="tbl_Student_FinaklSubject">
+      <Column Name="Mapeh" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="English" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Math" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Filipino" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Science" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Period_Status" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Period_Avg" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="FK_grade_1_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_grade_2_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_grade_3_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_grade_4_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_grade_5_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_grade_6_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tbl_Grade_1_Stud_tbl_Student_FinaklSubject" Member="tbl_Grade_1_Stud" ThisKey="FK_grade_1_Id" OtherKey="studentId" Type="tbl_Grade_1_Stud" IsForeignKey="true" />
+      <Association Name="tbl_Grade_2_Stud_tbl_Student_FinaklSubject" Member="tbl_Grade_2_Stud" ThisKey="FK_grade_2_Id" OtherKey="studentId" Type="tbl_Grade_2_Stud" IsForeignKey="true" />
+      <Association Name="tbl_Grade_3_Stud_tbl_Student_FinaklSubject" Member="tbl_Grade_3_Stud" ThisKey="FK_grade_3_Id" OtherKey="studentId" Type="tbl_Grade_3_Stud" IsForeignKey="true" />
+      <Association Name="tbl_Grade_4_Stud_tbl_Student_FinaklSubject" Member="tbl_Grade_4_Stud" ThisKey="FK_grade_4_Id" OtherKey="studentId" Type="tbl_Grade_4_Stud" IsForeignKey="true" />
+      <Association Name="tbl_Grade_5_Stud_tbl_Student_FinaklSubject" Member="tbl_Grade_5_Stud" ThisKey="FK_grade_5_Id" OtherKey="studentId" Type="tbl_Grade_5_Stud" IsForeignKey="true" />
+      <Association Name="tbl_Grade_6_Stud_tbl_Student_FinaklSubject" Member="tbl_Grade_6_Stud" ThisKey="FK_grade_6_Id" OtherKey="studentId" Type="tbl_Grade_6_Stud" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.SP_View_TeacherAcc" Method="SP_View_TeacherAcc">
+    <ElementType Name="SP_View_TeacherAccResult">
+      <Column Name="[Teacher ID]" Member="Teacher_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[First Name]" Member="First_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[Last Name]" Member="Last_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Passowrd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_adm_TeacherUpdatePass" Method="SP_adm_TeacherUpdatePass">
+    <Parameter Name="teacherId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="teacher_password" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_adm_DeleteAccount" Method="SP_adm_DeleteAccount">
+    <Parameter Name="teacherID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_adm_Create_TeacherAcc" Method="SP_adm_Create_TeacherAcc">
+    <Parameter Name="firstname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="lastname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="email" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Password" Parameter="password" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_tch_UpateInfo" Method="SP_tch_UpateInfo">
+    <Parameter Name="middleName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="gender" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="birthDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="age" Type="System.Int32" DbType="Int" />
+    <Parameter Name="phoneNumber" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="FK_ID" Parameter="fK_ID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_adm_DeleteAccountBothTables" Method="SP_adm_DeleteAccountBothTables">
+    <Parameter Name="teacherID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_tch_TeacherUpdatePass" Method="SP_tch_TeacherUpdatePass">
+    <Parameter Name="teacherId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="teacher_password" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_tch_addGrade_1_stud" Method="SP_tch_addGrade_1_stud">
+    <Parameter Name="fname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="lname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Mname" Parameter="mname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="gender" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Bdate" Parameter="bdate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="age" Type="System.Int32" DbType="Int" />
+    <Parameter Name="createdBy" Type="System.String" DbType="NVarChar(75)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_tch_addGrade_2_stud" Method="SP_tch_addGrade_2_stud">
+    <Parameter Name="fname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="lname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Mname" Parameter="mname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="gender" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Bdate" Parameter="bdate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="age" Type="System.Int32" DbType="Int" />
+    <Parameter Name="createdBy" Type="System.String" DbType="NVarChar(75)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_tch_addGrade_6_stud" Method="SP_tch_addGrade_6_stud">
+    <Parameter Name="fname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="lname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Mname" Parameter="mname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="gender" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Bdate" Parameter="bdate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="age" Type="System.Int32" DbType="Int" />
+    <Parameter Name="createdBy" Type="System.String" DbType="NVarChar(75)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_tch_addGrade_3_stud" Method="SP_tch_addGrade_3_stud">
+    <Parameter Name="fname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="lname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Mname" Parameter="mname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="gender" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Bdate" Parameter="bdate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="age" Type="System.Int32" DbType="Int" />
+    <Parameter Name="createdBy" Type="System.String" DbType="NVarChar(75)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_tch_addGrade_4_stud" Method="SP_tch_addGrade_4_stud">
+    <Parameter Name="fname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="lname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Mname" Parameter="mname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="gender" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Bdate" Parameter="bdate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="age" Type="System.Int32" DbType="Int" />
+    <Parameter Name="createdBy" Type="System.String" DbType="NVarChar(75)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_tch_addGrade_5_stud" Method="SP_tch_addGrade_5_stud">
+    <Parameter Name="fname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="lname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Mname" Parameter="mname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="gender" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Bdate" Parameter="bdate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="age" Type="System.Int32" DbType="Int" />
+    <Parameter Name="createdBy" Type="System.String" DbType="NVarChar(75)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_tch_DeleteStudent" Method="SP_tch_DeleteStudent">
+    <Parameter Name="studentID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="tbl_name" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_tch_View_G1_Stud" Method="SP_tch_View_G1_Stud">
+    <ElementType Name="SP_tch_View_G1_StudResult">
+      <Column Name="studentId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="middleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="birthDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(75) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_tch_View_G6_Stud" Method="SP_tch_View_G6_Stud">
+    <ElementType Name="SP_tch_View_G6_StudResult">
+      <Column Name="studentId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="middleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="birthDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(75) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_tch_View_G2_Stud" Method="SP_tch_View_G2_Stud">
+    <ElementType Name="SP_tch_View_G2_StudResult">
+      <Column Name="studentId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="middleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="birthDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(75) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_tch_View_G3_Stud" Method="SP_tch_View_G3_Stud">
+    <ElementType Name="SP_tch_View_G3_StudResult">
+      <Column Name="studentId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="middleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="birthDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(75) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_tch_View_G4_Stud" Method="SP_tch_View_G4_Stud">
+    <ElementType Name="SP_tch_View_G4_StudResult">
+      <Column Name="studentId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="middleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="birthDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(75) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_tch_View_G5_Stud" Method="SP_tch_View_G5_Stud">
+    <ElementType Name="SP_tch_View_G5_StudResult">
+      <Column Name="studentId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="middleName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="birthDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(75) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_tch_G1_FinalInputGrade" Method="SP_tch_G1_FinalInputGrade">
+    <Parameter Name="studentID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="mapeh" Type="System.Double" DbType="Float" />
+    <Parameter Name="english" Type="System.Double" DbType="Float" />
+    <Parameter Name="math" Type="System.Double" DbType="Float" />
+    <Parameter Name="filipino" Type="System.Double" DbType="Float" />
+    <Parameter Name="science" Type="System.Double" DbType="Float" />
+    <Parameter Name="periodStatus" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="periodAvg" Type="System.Double" DbType="Float" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_tch_G1_PrelimInputGrade" Method="SP_tch_G1_PrelimInputGrade">
+    <Parameter Name="studentID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="mapeh" Type="System.Double" DbType="Float" />
+    <Parameter Name="english" Type="System.Double" DbType="Float" />
+    <Parameter Name="math" Type="System.Double" DbType="Float" />
+    <Parameter Name="filipino" Type="System.Double" DbType="Float" />
+    <Parameter Name="science" Type="System.Double" DbType="Float" />
+    <Parameter Name="periodStatus" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="periodAvg" Type="System.Double" DbType="Float" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_tch_G1_MidtermInputGrade" Method="SP_tch_G1_MidtermInputGrade">
+    <Parameter Name="studentID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="mapeh" Type="System.Double" DbType="Float" />
+    <Parameter Name="english" Type="System.Double" DbType="Float" />
+    <Parameter Name="math" Type="System.Double" DbType="Float" />
+    <Parameter Name="filipino" Type="System.Double" DbType="Float" />
+    <Parameter Name="science" Type="System.Double" DbType="Float" />
+    <Parameter Name="periodStatus" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="periodAvg" Type="System.Double" DbType="Float" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
