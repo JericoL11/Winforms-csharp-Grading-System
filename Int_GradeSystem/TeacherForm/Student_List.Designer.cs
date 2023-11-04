@@ -44,7 +44,7 @@
             this.dgv_studentList.ReadOnly = true;
             this.dgv_studentList.RowHeadersWidth = 51;
             this.dgv_studentList.RowTemplate.Height = 24;
-            this.dgv_studentList.Size = new System.Drawing.Size(884, 467);
+            this.dgv_studentList.Size = new System.Drawing.Size(958, 467);
             this.dgv_studentList.TabIndex = 0;
             // 
             // label1

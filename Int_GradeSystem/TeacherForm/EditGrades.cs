@@ -52,7 +52,7 @@ namespace Int_GradeSystem.TeacherForm
                         Passcode = "one";
 
                         //table display
-                        dgv_studentList.DataSource = data.SP_tch_View_G1_Stud();
+                        dgv_studentList.DataSource = data.SP_stud_View_Students(gradelevel);
                     }
                     break;
                 case "2 - Rosal":
@@ -60,7 +60,7 @@ namespace Int_GradeSystem.TeacherForm
                         gradelevel = 2;
                         section = "Rosal";
                         Passcode = "two";
-                        dgv_studentList.DataSource = data.SP_tch_View_G2_Stud();
+                        dgv_studentList.DataSource = data.SP_stud_View_Students(gradelevel);
                     }
                     break;
                 case "3 - Earth":
@@ -68,7 +68,7 @@ namespace Int_GradeSystem.TeacherForm
                         gradelevel = 3;
                         section = "Earth";
                         Passcode = "three";
-                        dgv_studentList.DataSource = data.SP_tch_View_G3_Stud();
+                        dgv_studentList.DataSource = data.SP_stud_View_Students(gradelevel);
                     }
                     break;
                 case "4 - Hope":
@@ -76,7 +76,7 @@ namespace Int_GradeSystem.TeacherForm
                         gradelevel = 4;
                         section = "Hope";
                         Passcode = "four";
-                        dgv_studentList.DataSource = data.SP_tch_View_G4_Stud();
+                        dgv_studentList.DataSource = data.SP_stud_View_Students(gradelevel);
                     }
                     break;
                 case "5 - Fourier":
@@ -84,7 +84,7 @@ namespace Int_GradeSystem.TeacherForm
                         gradelevel = 5;
                         section = "Fourier";
                         Passcode = "five";
-                        dgv_studentList.DataSource = data.SP_tch_View_G5_Stud();
+                        dgv_studentList.DataSource = data.SP_stud_View_Students(gradelevel);
                     }
                     break;
                 case "6 - Hawking":
@@ -92,7 +92,7 @@ namespace Int_GradeSystem.TeacherForm
                         gradelevel = 6;
                         section = "Hawking";
                         Passcode = "six";
-                        dgv_studentList.DataSource = data.SP_tch_View_G6_Stud();
+                        dgv_studentList.DataSource = data.SP_stud_View_Students(gradelevel);
                     }
                     break;
                 default:
@@ -218,6 +218,7 @@ namespace Int_GradeSystem.TeacherForm
                         else
                         {
                             InputGrades ig = new InputGrades();
+
                             //PASSING OF TEACHER'S ID
                             ig.ID = ID;
 

@@ -113,18 +113,27 @@ namespace Int_GradeSystem.AdminForm
         private void btn_save_Click(object sender, EventArgs e)
         {
 
-             if(txt_phoneNumber.Text =="" || gender == null || txt_phoneNumber.Text == "" ||txt_email.Text =="")
+             if(txt_phoneNumber.Text =="" || gender == null || txt_phoneNumber.Text == "" ||txt_email.Text =="" || age == null || string.IsNullOrEmpty(lbl_Age.Text))
             {
                 alert.Fillout_Form();
             }
             else
             {
+                if(age <= 17)
+                {
+                    alert.Teacher_Age_Invalid((int)age);
+                }
+                else
+                {
+
+                
                 //database injection %% matching of ID
                 var database = data.tbl_TeacherAccs
                               .FirstOrDefault(t => t.teacherId == int.Parse(ID));
 
                 data.SP_tch_UpateInfo(txt_middleName.Text, gender, dtp_bdate.Value, age, txt_phoneNumber.Text,int.Parse(ID));
                 alert.Upate_Save();
+                }
             }
               
         }

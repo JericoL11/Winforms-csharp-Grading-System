@@ -38,10 +38,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lbl_StudID = new System.Windows.Forms.Label();
             this.pnl_verification = new System.Windows.Forms.Panel();
+            this.btn_enter = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_passCode = new System.Windows.Forms.TextBox();
             this.btn_cancel = new System.Windows.Forms.Button();
-            this.btn_enter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_studentList)).BeginInit();
             this.pnl_verification.SuspendLayout();
             this.SuspendLayout();
@@ -100,12 +100,12 @@
             this.dgv_studentList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_studentList.BackgroundColor = System.Drawing.Color.White;
             this.dgv_studentList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_studentList.Location = new System.Drawing.Point(96, 146);
+            this.dgv_studentList.Location = new System.Drawing.Point(73, 143);
             this.dgv_studentList.Name = "dgv_studentList";
             this.dgv_studentList.ReadOnly = true;
             this.dgv_studentList.RowHeadersWidth = 51;
             this.dgv_studentList.RowTemplate.Height = 24;
-            this.dgv_studentList.Size = new System.Drawing.Size(862, 362);
+            this.dgv_studentList.Size = new System.Drawing.Size(1000, 362);
             this.dgv_studentList.TabIndex = 10;
             this.dgv_studentList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_studentList_CellClick);
             // 
@@ -172,10 +172,22 @@
             this.pnl_verification.Controls.Add(this.label3);
             this.pnl_verification.Controls.Add(this.txt_passCode);
             this.pnl_verification.Controls.Add(this.btn_cancel);
-            this.pnl_verification.Location = new System.Drawing.Point(344, 251);
+            this.pnl_verification.Location = new System.Drawing.Point(395, 246);
             this.pnl_verification.Name = "pnl_verification";
             this.pnl_verification.Size = new System.Drawing.Size(361, 148);
             this.pnl_verification.TabIndex = 77;
+            // 
+            // btn_enter
+            // 
+            this.btn_enter.BackColor = System.Drawing.Color.White;
+            this.btn_enter.ForeColor = System.Drawing.Color.Black;
+            this.btn_enter.Location = new System.Drawing.Point(151, 86);
+            this.btn_enter.Name = "btn_enter";
+            this.btn_enter.Size = new System.Drawing.Size(92, 33);
+            this.btn_enter.TabIndex = 82;
+            this.btn_enter.Text = "Enter";
+            this.btn_enter.UseVisualStyleBackColor = false;
+            this.btn_enter.Click += new System.EventHandler(this.btn_enter_Click);
             // 
             // label3
             // 
@@ -206,18 +218,6 @@
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = false;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
-            // 
-            // btn_enter
-            // 
-            this.btn_enter.BackColor = System.Drawing.Color.White;
-            this.btn_enter.ForeColor = System.Drawing.Color.Black;
-            this.btn_enter.Location = new System.Drawing.Point(151, 86);
-            this.btn_enter.Name = "btn_enter";
-            this.btn_enter.Size = new System.Drawing.Size(92, 33);
-            this.btn_enter.TabIndex = 82;
-            this.btn_enter.Text = "Enter";
-            this.btn_enter.UseVisualStyleBackColor = false;
-            this.btn_enter.Click += new System.EventHandler(this.btn_enter_Click);
             // 
             // EditGrades
             // 

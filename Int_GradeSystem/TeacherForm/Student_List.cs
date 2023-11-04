@@ -50,32 +50,33 @@ namespace Int_GradeSystem.TeacherForm
             {
                 case "1 - Diamond":
                     {
-                        dgv_studentList.DataSource = data.SP_tch_View_G1_Stud();
+                        //assigning of grade level
+                        dgv_studentList.DataSource = data.SP_stud_View_Students(1);
                     }
                     break;
                 case "2 - Rosal":
                     {
-                        dgv_studentList.DataSource = data.SP_tch_View_G2_Stud();
+                        dgv_studentList.DataSource = data.SP_stud_View_Students(2);
                     }
                     break;
                 case "3 - Earth":
                     {
-                        dgv_studentList.DataSource = data.SP_tch_View_G3_Stud();
+                        dgv_studentList.DataSource = data.SP_stud_View_Students(3);
                     }
                     break;
                 case "4 - Hope":
                     {
-                        dgv_studentList.DataSource = data.SP_tch_View_G4_Stud();
+                        dgv_studentList.DataSource = data.SP_stud_View_Students(4);
                     }
                     break;
                 case "5 - Fourier":
                     {
-                        dgv_studentList.DataSource = data.SP_tch_View_G5_Stud();
+                        dgv_studentList.DataSource = data.SP_stud_View_Students(5);
                     }
                     break;
                 case "6 - Hawking":
                     {
-                        dgv_studentList.DataSource = data.SP_tch_View_G6_Stud();
+                        dgv_studentList.DataSource = data.SP_stud_View_Students(6);
                     }
                     break;
                 default:

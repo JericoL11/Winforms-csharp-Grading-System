@@ -63,6 +63,7 @@ namespace Int_GradeSystem.TeacherForm
 
                        //for grade level property
                         adStud.gradeLevel = 1;
+                        adStud.section = "Diamond";
                         adStud.Show();
 
                     }
@@ -80,6 +81,7 @@ namespace Int_GradeSystem.TeacherForm
                         adStud.Grade = Grade[1];
                         adStud.ID = ID;
                         adStud.gradeLevel = 2;
+                        adStud.section = "Rosal";
                         adStud.Show();
 
                     }
@@ -97,6 +99,7 @@ namespace Int_GradeSystem.TeacherForm
                         adStud.Grade = Grade[2];
                         adStud.ID = ID;
                         adStud.gradeLevel = 3;
+                        adStud.section = "Earth";
                         adStud.Show();
 
                     }
@@ -114,6 +117,7 @@ namespace Int_GradeSystem.TeacherForm
                         adStud.Grade = Grade[3];
                         adStud.ID = ID;
                         adStud.gradeLevel = 4;
+                        adStud.section = "Hope";
                         adStud.Show();
 
                     }
@@ -131,6 +135,7 @@ namespace Int_GradeSystem.TeacherForm
                         adStud.Grade = Grade[4];
                         adStud.ID = ID;
                         adStud.gradeLevel = 5;
+                        adStud.section = "Fourier";
                         adStud.Show();
    
                     }
@@ -149,6 +154,7 @@ namespace Int_GradeSystem.TeacherForm
                         this.Close();
                         adStud.Grade = Grade[5];
                         adStud.gradeLevel = 6;
+                        adStud.section = "Fourier";
                         adStud.ID = ID;
                         adStud.Show();
                     }

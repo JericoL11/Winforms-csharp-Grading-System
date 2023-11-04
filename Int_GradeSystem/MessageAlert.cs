@@ -142,6 +142,53 @@ namespace Int_GradeSystem
             string message = $"Incorrect Passcode";
             MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+        public void Fill_outGrades()
+        {
+            string title = "Notification";
+            string message = $"Please Fill-out the grades commpletely";
+            MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+        public void Prelim_avg()
+        {
+            string title = "Notification";
+            string message = $"Prelim Grades is requred before to input grades in Midterm";
+            MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
+        public void Midterm_avg()
+        {
+            string title = "Notification";
+            string message = $"Midterm Grades is requred before to input grades in Final";
+            MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
+        public void Teacher_Age_Invalid(int age)
+        {
+            string title = "Notification";
+            string message = $"Teacher's Age below or equal to {age} is invalid. Only \"18\" and above is valid";
+            MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+        }
+        #endregion
+
+        #region == Student == 
+        public void Invalid_Grade()
+        {
+            string title = "Notification";
+            string message = " Above 100 is invalid";
+            MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
+
+        public void Updated()
+        {
+            string title = "Notification";
+            string message = "Greade has been Updated";
+            MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        public void ReadytoView()
+        {
+            string title = "Notification";
+            string message = "Student is now ready to View in the ranking";
+            MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
         #endregion
 
     }

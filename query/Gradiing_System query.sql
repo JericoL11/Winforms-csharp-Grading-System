@@ -30,7 +30,7 @@ Create Table tbl_TeacherInfo(
 --STUDENT TABLE
 
 --GRADE 1
-Create Table tbl_Grade_1_Stud(
+Create Table tbl_Students(
 	studentId int identity(604500,1) Primary Key,
 	firstName nvarchar(50) Not Null,
 	middleName nvarchar(50) Not Null,
@@ -38,180 +38,86 @@ Create Table tbl_Grade_1_Stud(
 	age int,
 	gender nvarchar(30),
 	birthDate date Not Null,
+	grade int,
+	section nvarchar(30),
 	CreatedBy nvarchar(75) not null 
 );
-
-
---GRADE 2
-Create Table tbl_Grade_2_Stud(
-	studentId int identity(2604500,1) Primary Key,
-	firstName nvarchar(50) Not Null,
-	middleName nvarchar(50) Not Null,
-	lastName nvarchar(50) Not Null,
-	age int,
-	gender nvarchar(30),
-	birthDate date Not Null,
-	CreatedBy nvarchar(75) not null 
-);
-
-
-
---GRADE 3
-Create Table tbl_Grade_3_Stud(
-	studentId int identity(3604500,1) Primary Key,
-	firstName nvarchar(50) Not Null,
-	middleName nvarchar(50) Not Null,
-	lastName nvarchar(50) Not Null,
-	age int,
-	gender nvarchar(30),
-	birthDate date Not Null,
-	CreatedBy nvarchar(75) not null 
-);
-
-
-
---GRADE 4
-Create Table tbl_Grade_4_Stud(
-	studentId int identity(4604500,1) Primary Key,
-	firstName nvarchar(50) Not Null,
-	middleName nvarchar(50) Not Null,
-	lastName nvarchar(50) Not Null,
-	age int,
-	gender nvarchar(30),
-	birthDate date Not Null,
-	CreatedBy nvarchar(75) not null 
-);
-
-
-
---GRADE 5
-Create Table tbl_Grade_5_Stud(
-	studentId int identity(5604500,1) Primary Key,
-	firstName nvarchar(50) Not Null,
-	middleName nvarchar(50) Not Null,
-	lastName nvarchar(50) Not Null,
-	age int,
-	gender nvarchar(30),
-	birthDate date Not Null,
-	CreatedBy nvarchar(75) not null 
-);
-
-
-
---GRADE 6
-Create Table tbl_Grade_6_Stud(
-	studentId int identity(6604500,1) Primary Key,
-	firstName nvarchar(50) Not Null,
-	middleName nvarchar(50) Not Null,
-	lastName nvarchar(50) Not Null,
-	age int,
-	gender nvarchar(30),
-	birthDate date Not Null,
-	CreatedBy nvarchar(75) not null 
-);
-
 
 
 --buhatig subject term table
 
 Create table tbl_Student_PrelimSubject(
+	FK_studentID int FOREIGN KEY REFERENCES tbl_Students(studentId),
+	Mapeh_Prelim float,
+	English_Prelim float,
+	Math_Prelim float,
+	Filipino_Prelim float,
+	Science_Prelim float,
+	Period_Avg_Prelim float(3),
+	Period_Status_Prelim nvarchar(30),
+	updatedBy nvarchar(50),
 	
-	Mapeh float,
-	English float,
-	Math float,
-	Filipino float,
-	Science float,
-	Period_Status nvarchar(30),
-	Period_Avg nvarchar(30),
-
-	FK_grade_1_Id int FOREIGN KEY REFERENCES tbl_Grade_1_Stud(studentId),
-	FK_grade_2_Id int FOREIGN KEY REFERENCES tbl_Grade_2_Stud(studentId),
-	FK_grade_3_Id int FOREIGN KEY REFERENCES tbl_Grade_3_Stud(studentId),
-	FK_grade_4_Id int FOREIGN KEY REFERENCES tbl_Grade_4_Stud(studentId),
-	FK_grade_5_Id int FOREIGN KEY REFERENCES tbl_Grade_5_Stud(studentId),
-	FK_grade_6_Id int FOREIGN KEY REFERENCES tbl_Grade_6_Stud(studentId),
-
 )
-
 
 Create table tbl_Student_MidtermSubject(
+	FK_studentID int FOREIGN KEY REFERENCES tbl_Students(studentId),
+	Mapeh_Midterm float,
+	English_Midterm float,
+	Math_Midterm float,
+	Filipino_Midterm float,
+	Science_Midterm float,
+	Period_Avg_Midterm float (3),
+	Period_Status_MIdterm nvarchar(30),
+	updatedBy nvarchar(50)
 	
-	Mapeh float,
-	English float,
-	Math float,
-	Filipino float,
-	Science float,
-	Period_Status nvarchar(30),
-	Period_Avg nvarchar(30),
-
-
-	FK_grade_1_Id int FOREIGN KEY REFERENCES tbl_Grade_1_Stud(studentId),
-	FK_grade_2_Id int FOREIGN KEY REFERENCES tbl_Grade_2_Stud(studentId),
-	FK_grade_3_Id int FOREIGN KEY REFERENCES tbl_Grade_3_Stud(studentId),
-	FK_grade_4_Id int FOREIGN KEY REFERENCES tbl_Grade_4_Stud(studentId),
-	FK_grade_5_Id int FOREIGN KEY REFERENCES tbl_Grade_5_Stud(studentId),
-	FK_grade_6_Id int FOREIGN KEY REFERENCES tbl_Grade_6_Stud(studentId),
-
 )
 
-
-Create table tbl_Student_FinaklSubject(
+Create table tbl_Student_FinalSubject(
+	FK_studentID int FOREIGN KEY REFERENCES tbl_Students(studentId),
+	Mapeh_Final float,
+	English_Final float,
+	Math_Final float,
+	Filipino_Final float,
+	Science_Final float,
+	Period_Avg_Final float(3),
+	Period_Status_Final nvarchar(30),
+	updatedBy nvarchar(50)
 	
-	Mapeh float,
-	English float,
-	Math float,
-	Filipino float,
-	Science float,
-	Period_Status nvarchar(30),
-	Period_Avg nvarchar(30),
-
-	
-	FK_grade_1_Id int FOREIGN KEY REFERENCES tbl_Grade_1_Stud(studentId),
-	FK_grade_2_Id int FOREIGN KEY REFERENCES tbl_Grade_2_Stud(studentId),
-	FK_grade_3_Id int FOREIGN KEY REFERENCES tbl_Grade_3_Stud(studentId),
-	FK_grade_4_Id int FOREIGN KEY REFERENCES tbl_Grade_4_Stud(studentId),
-	FK_grade_5_Id int FOREIGN KEY REFERENCES tbl_Grade_5_Stud(studentId),
-	FK_grade_6_Id int FOREIGN KEY REFERENCES tbl_Grade_6_Stud(studentId),
-
 )
------------------------wala pa ni ma exec
+
 --STUDENT TERMS TABLE
 
-Create Table tbl_Grade_Period(
-	prelim float,
-	midterm float,
-	final float,
-	overall float,
+Create Table tbl_Grading_Period(
+	FK_studentID int FOREIGN KEY REFERENCES tbl_Students(studentId),
+	prelim_avg float(3),
+	midterm_avg float(3),
+	final_avg float(3),
+	overall float(3),
 	
 	--status
-	prelim_Status nvarchar(30),
-	midterm_Status nvarchar(30),
-	Final_Status nvarchar(30),
-	Overall_Status nvarchar(30),
-
-	FK_grade_1_Id int FOREIGN KEY REFERENCES tbl_Grade_1_Stud(studentId),
-	FK_grade_2_Id int FOREIGN KEY REFERENCES tbl_Grade_2_Stud(studentId),
-	FK_grade_3_Id int FOREIGN KEY REFERENCES tbl_Grade_3_Stud(studentId),
-	FK_grade_4_Id int FOREIGN KEY REFERENCES tbl_Grade_4_Stud(studentId),
-	FK_grade_5_Id int FOREIGN KEY REFERENCES tbl_Grade_5_Stud(studentId),
-	FK_grade_6_Id int FOREIGN KEY REFERENCES tbl_Grade_6_Stud(studentId),
-	
+--	prelim_Status nvarchar(30),
+--	midterm_Status nvarchar(30),
+--	Final_Status nvarchar(30),
+--	Overall_Status nvarchar(30),
 );
 
-Select * from tbl_Grade_1_Stud
+Select * from tbl_Student_PrelimSubject
 
-Select * from tbl_TeacherInfo
+Select * from tbl_Grading_Period
+where grade = 1;
 
+	
 
-
-Drop table tbl_Grade_1_Stud
+Drop table tbl_Grading_Period
 
 
 Select *
-from tbl_TeacherAcc acc
-inner Join tbl_TeacherInfo inf on acc.teacherId = inf.FK_teacherId
+from tbl_Students s
+inner Join tbl_Grading_Period P on s.studentId = P.Fk_studentID
+--inner Join tbl_Student_MidtermSubject M on s.studentId = M.Fk_studentID
+--inner Join tbl_Student_FinalSubject F on s.studentId = F.Fk_studentID
 
-
+where grade = 4;
 /*============ Static Data ==================*/
 
 
@@ -221,9 +127,6 @@ values('admin',123);
 
 insert into tbl_Admin (admin_User,admin_Pass)
 values('jerico',213);
-
-insert into tbl_Admin (admin_User,admin_Pass)
-values('jane','belaniso');
 
 
 /* teacher Data */
