@@ -51,6 +51,7 @@
             this.btn_Ranking.TabIndex = 5;
             this.btn_Ranking.Text = "View Ranking";
             this.btn_Ranking.UseVisualStyleBackColor = false;
+            this.btn_Ranking.Click += new System.EventHandler(this.btn_Ranking_Click);
             // 
             // btn_editProfile
             // 

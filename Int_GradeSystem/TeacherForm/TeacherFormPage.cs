@@ -83,5 +83,13 @@ namespace Int_GradeSystem.TeacherForm
             eg.Show();
             this.Close();
         }
+
+        private void btn_Ranking_Click(object sender, EventArgs e)
+        {
+            Ranking rk = new Ranking();
+            rk.ID = this.ID;
+            rk.Show();
+            this.Close();
+        }
     }
 }

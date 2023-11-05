@@ -28,31 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.cmb_gradelevel = new System.Windows.Forms.ComboBox();
             this.btn_rakingBack = new System.Windows.Forms.Button();
+            this.dgv_ranking = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmb_Terms = new System.Windows.Forms.ComboBox();
+            this.btn_View = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_ranking)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(686, 207);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "TOP STUDENTS";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(213, 112);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
@@ -60,55 +51,36 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Select Level";
             // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(630, 112);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(132, 26);
-            this.comboBox2.TabIndex = 4;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(547, 117);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(480, 116);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 22);
             this.label3.TabIndex = 3;
             this.label3.Text = "Terms";
             // 
-            // comboBox1
+            // cmb_gradelevel
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(343, 112);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(132, 26);
-            this.comboBox1.TabIndex = 5;
-            // 
-            // button1
-            // 
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(845, 110);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 38);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "View";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(251, 262);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(1007, 404);
-            this.listBox1.TabIndex = 7;
+            this.cmb_gradelevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_gradelevel.FormattingEnabled = true;
+            this.cmb_gradelevel.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.cmb_gradelevel.Location = new System.Drawing.Point(343, 112);
+            this.cmb_gradelevel.Margin = new System.Windows.Forms.Padding(2);
+            this.cmb_gradelevel.Name = "cmb_gradelevel";
+            this.cmb_gradelevel.Size = new System.Drawing.Size(98, 26);
+            this.cmb_gradelevel.TabIndex = 5;
+            this.cmb_gradelevel.Text = "Select ---";
+            this.cmb_gradelevel.SelectedIndexChanged += new System.EventHandler(this.cmb_gradelevel_SelectedIndexChanged);
             // 
             // btn_rakingBack
             // 
@@ -119,6 +91,67 @@
             this.btn_rakingBack.TabIndex = 8;
             this.btn_rakingBack.Text = "Back";
             this.btn_rakingBack.UseVisualStyleBackColor = true;
+            this.btn_rakingBack.Click += new System.EventHandler(this.btn_rakingBack_Click);
+            // 
+            // dgv_ranking
+            // 
+            this.dgv_ranking.AllowUserToAddRows = false;
+            this.dgv_ranking.AllowUserToDeleteRows = false;
+            this.dgv_ranking.AllowUserToOrderColumns = true;
+            this.dgv_ranking.AllowUserToResizeColumns = false;
+            this.dgv_ranking.AllowUserToResizeRows = false;
+            this.dgv_ranking.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_ranking.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_ranking.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_ranking.Location = new System.Drawing.Point(190, 230);
+            this.dgv_ranking.Name = "dgv_ranking";
+            this.dgv_ranking.ReadOnly = true;
+            this.dgv_ranking.RowHeadersWidth = 51;
+            this.dgv_ranking.RowTemplate.Height = 24;
+            this.dgv_ranking.Size = new System.Drawing.Size(1041, 398);
+            this.dgv_ranking.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(185, 192);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(168, 25);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "TOP STUDENTS";
+            // 
+            // cmb_Terms
+            // 
+            this.cmb_Terms.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_Terms.FormattingEnabled = true;
+            this.cmb_Terms.Items.AddRange(new object[] {
+            "Prelim",
+            "Midterm",
+            "Final"});
+            this.cmb_Terms.Location = new System.Drawing.Point(563, 116);
+            this.cmb_Terms.Margin = new System.Windows.Forms.Padding(2);
+            this.cmb_Terms.Name = "cmb_Terms";
+            this.cmb_Terms.Size = new System.Drawing.Size(99, 26);
+            this.cmb_Terms.TabIndex = 12;
+            this.cmb_Terms.Text = "Select ---";
+            this.cmb_Terms.SelectedIndexChanged += new System.EventHandler(this.cmb_Terms_SelectedIndexChanged);
+            // 
+            // btn_View
+            // 
+            this.btn_View.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_View.ForeColor = System.Drawing.Color.Black;
+            this.btn_View.Location = new System.Drawing.Point(713, 113);
+            this.btn_View.Name = "btn_View";
+            this.btn_View.Size = new System.Drawing.Size(99, 29);
+            this.btn_View.TabIndex = 14;
+            this.btn_View.Text = "View";
+            this.btn_View.UseVisualStyleBackColor = true;
+            this.btn_View.Click += new System.EventHandler(this.btn_View_Click);
             // 
             // Ranking
             // 
@@ -126,34 +159,35 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SaddleBrown;
             this.ClientSize = new System.Drawing.Size(1374, 728);
+            this.Controls.Add(this.btn_View);
+            this.Controls.Add(this.cmb_Terms);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dgv_ranking);
             this.Controls.Add(this.btn_rakingBack);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cmb_gradelevel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.White;
+            this.ForeColor = System.Drawing.Color.Black;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Ranking";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ranking";
+            this.Load += new System.EventHandler(this.Ranking_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_ranking)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ComboBox cmb_gradelevel;
         private System.Windows.Forms.Button btn_rakingBack;
+        private System.Windows.Forms.DataGridView dgv_ranking;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmb_Terms;
+        private System.Windows.Forms.Button btn_View;
     }
 }

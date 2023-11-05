@@ -61,8 +61,6 @@
             this.label22 = new System.Windows.Forms.Label();
             this.lbl_avgMidterm = new System.Windows.Forms.Label();
             this.lbl_avgPrelim = new System.Windows.Forms.Label();
-            this.btn_Compute = new System.Windows.Forms.Button();
-            this.btn_inputGradeBack = new System.Windows.Forms.Button();
             this.lbl_studID = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -88,6 +86,8 @@
             this.lbl_ovrAll_English = new System.Windows.Forms.Label();
             this.cmb_term = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
+            this.btn_inputGradeBack = new System.Windows.Forms.Button();
+            this.btn_Compute = new System.Windows.Forms.Button();
             this.pnl_Prelim.SuspendLayout();
             this.pnl_Midterm.SuspendLayout();
             this.pnl_Final.SuspendLayout();
@@ -425,30 +425,6 @@
             this.lbl_avgPrelim.TabIndex = 44;
             this.lbl_avgPrelim.Text = "000";
             // 
-            // btn_Compute
-            // 
-            this.btn_Compute.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Compute.ForeColor = System.Drawing.Color.Black;
-            this.btn_Compute.Location = new System.Drawing.Point(976, 809);
-            this.btn_Compute.Name = "btn_Compute";
-            this.btn_Compute.Size = new System.Drawing.Size(146, 37);
-            this.btn_Compute.TabIndex = 50;
-            this.btn_Compute.Text = "Compute";
-            this.btn_Compute.UseVisualStyleBackColor = true;
-            this.btn_Compute.Click += new System.EventHandler(this.btn_Compute_Click);
-            // 
-            // btn_inputGradeBack
-            // 
-            this.btn_inputGradeBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_inputGradeBack.ForeColor = System.Drawing.Color.Black;
-            this.btn_inputGradeBack.Location = new System.Drawing.Point(863, 808);
-            this.btn_inputGradeBack.Name = "btn_inputGradeBack";
-            this.btn_inputGradeBack.Size = new System.Drawing.Size(99, 38);
-            this.btn_inputGradeBack.TabIndex = 51;
-            this.btn_inputGradeBack.Text = "Back";
-            this.btn_inputGradeBack.UseVisualStyleBackColor = true;
-            this.btn_inputGradeBack.Click += new System.EventHandler(this.btn_inputGradeBack_Click);
-            // 
             // lbl_studID
             // 
             this.lbl_studID.AutoSize = true;
@@ -632,6 +608,7 @@
             this.pnl_overall.Controls.Add(this.lbl_ovrAll_Math);
             this.pnl_overall.Controls.Add(this.lbl_ovrAll_English);
             this.pnl_overall.Controls.Add(this.lbl_ovrAll_Mapeh);
+            this.pnl_overall.Controls.Add(this.btn_Compute);
             this.pnl_overall.Location = new System.Drawing.Point(969, 242);
             this.pnl_overall.Name = "pnl_overall";
             this.pnl_overall.Size = new System.Drawing.Size(197, 546);
@@ -733,6 +710,30 @@
             this.label23.TabIndex = 62;
             this.label23.Text = "SCIENCE";
             // 
+            // btn_inputGradeBack
+            // 
+            this.btn_inputGradeBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_inputGradeBack.ForeColor = System.Drawing.Color.Black;
+            this.btn_inputGradeBack.Location = new System.Drawing.Point(1171, 815);
+            this.btn_inputGradeBack.Name = "btn_inputGradeBack";
+            this.btn_inputGradeBack.Size = new System.Drawing.Size(99, 38);
+            this.btn_inputGradeBack.TabIndex = 51;
+            this.btn_inputGradeBack.Text = "Back";
+            this.btn_inputGradeBack.UseVisualStyleBackColor = true;
+            this.btn_inputGradeBack.Click += new System.EventHandler(this.btn_inputGradeBack_Click);
+            // 
+            // btn_Compute
+            // 
+            this.btn_Compute.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Compute.ForeColor = System.Drawing.Color.Black;
+            this.btn_Compute.Location = new System.Drawing.Point(21, 485);
+            this.btn_Compute.Name = "btn_Compute";
+            this.btn_Compute.Size = new System.Drawing.Size(146, 31);
+            this.btn_Compute.TabIndex = 50;
+            this.btn_Compute.Text = "Refresh";
+            this.btn_Compute.UseVisualStyleBackColor = true;
+            this.btn_Compute.Click += new System.EventHandler(this.btn_Compute_Click);
+            // 
             // InputGrades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -749,7 +750,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lbl_studID);
             this.Controls.Add(this.btn_inputGradeBack);
-            this.Controls.Add(this.btn_Compute);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
@@ -817,8 +817,6 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label lbl_avgMidterm;
         private System.Windows.Forms.Label lbl_avgPrelim;
-        private System.Windows.Forms.Button btn_Compute;
-        private System.Windows.Forms.Button btn_inputGradeBack;
         private System.Windows.Forms.Label lbl_studID;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label9;
@@ -844,5 +842,7 @@
         private System.Windows.Forms.Button btn_UpdateMidterm;
         private System.Windows.Forms.Button btn_UpdateFinal;
         private System.Windows.Forms.Button btn_UpdatePrelim;
+        private System.Windows.Forms.Button btn_inputGradeBack;
+        private System.Windows.Forms.Button btn_Compute;
     }
 }

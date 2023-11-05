@@ -30,6 +30,7 @@ Create Table tbl_TeacherInfo(
 --STUDENT TABLE
 
 --GRADE 1
+
 Create Table tbl_Students(
 	studentId int identity(604500,1) Primary Key,
 	firstName nvarchar(50) Not Null,
@@ -40,8 +41,18 @@ Create Table tbl_Students(
 	birthDate date Not Null,
 	grade int,
 	section nvarchar(30),
+	Prelim_Status nvarchar(30) default 'TBI',
+	Midterm_Status nvarchar(30) default 'TBI',
+	Final_Status nvarchar(30) default 'TBI',
 	CreatedBy nvarchar(75) not null 
 );
+
+ALTER TABLE tbl_Students
+--Add Prelim_grade_Status nvarchar(30) default 'To be Input';
+--Add Midterm_grade_Status nvarchar(30) default 'To be Input';
+Add Final_grade_Status nvarchar(30) default 'To be Input';
+
+--Drop Column Final_grade_Status;
 
 
 --buhatig subject term table
@@ -55,6 +66,7 @@ Create table tbl_Student_PrelimSubject(
 	Science_Prelim float,
 	Period_Avg_Prelim float(3),
 	Period_Status_Prelim nvarchar(30),
+	GradeStatus nvarchar(30),
 	updatedBy nvarchar(50),
 	
 )
@@ -68,6 +80,7 @@ Create table tbl_Student_MidtermSubject(
 	Science_Midterm float,
 	Period_Avg_Midterm float (3),
 	Period_Status_MIdterm nvarchar(30),
+	GradeStatus nvarchar(30),
 	updatedBy nvarchar(50)
 	
 )
@@ -81,6 +94,7 @@ Create table tbl_Student_FinalSubject(
 	Science_Final float,
 	Period_Avg_Final float(3),
 	Period_Status_Final nvarchar(30),
+	GradeStatus nvarchar(30),
 	updatedBy nvarchar(50)
 	
 )
@@ -88,11 +102,16 @@ Create table tbl_Student_FinalSubject(
 --STUDENT TERMS TABLE
 
 Create Table tbl_Grading_Period(
+
 	FK_studentID int FOREIGN KEY REFERENCES tbl_Students(studentId),
 	prelim_avg float(3),
 	midterm_avg float(3),
 	final_avg float(3),
 	overall float(3),
+	grade int,
+	term nvarchar(30)
+
+
 	
 	--status
 --	prelim_Status nvarchar(30),
@@ -101,11 +120,13 @@ Create Table tbl_Grading_Period(
 --	Overall_Status nvarchar(30),
 );
 
-Select * from tbl_Student_PrelimSubject
+Select * from tbl_Grading_Period
 
 Select * from tbl_Grading_Period
 where grade = 1;
 
+
+Truncate Table tbl_Students
 	
 
 Drop table tbl_Grading_Period

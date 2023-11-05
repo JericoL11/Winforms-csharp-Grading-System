@@ -52,7 +52,7 @@ namespace Int_GradeSystem.TeacherForm
                         Passcode = "one";
 
                         //table display
-                        dgv_studentList.DataSource = data.SP_stud_View_Students(gradelevel);
+                        dgv_studentList.DataSource = data.SP_stud_ViewStudents(gradelevel);
                     }
                     break;
                 case "2 - Rosal":
@@ -60,7 +60,7 @@ namespace Int_GradeSystem.TeacherForm
                         gradelevel = 2;
                         section = "Rosal";
                         Passcode = "two";
-                        dgv_studentList.DataSource = data.SP_stud_View_Students(gradelevel);
+                        dgv_studentList.DataSource = data.SP_stud_ViewStudents(gradelevel);
                     }
                     break;
                 case "3 - Earth":
@@ -68,7 +68,7 @@ namespace Int_GradeSystem.TeacherForm
                         gradelevel = 3;
                         section = "Earth";
                         Passcode = "three";
-                        dgv_studentList.DataSource = data.SP_stud_View_Students(gradelevel);
+                        dgv_studentList.DataSource = data.SP_stud_ViewStudents(gradelevel);
                     }
                     break;
                 case "4 - Hope":
@@ -76,7 +76,7 @@ namespace Int_GradeSystem.TeacherForm
                         gradelevel = 4;
                         section = "Hope";
                         Passcode = "four";
-                        dgv_studentList.DataSource = data.SP_stud_View_Students(gradelevel);
+                        dgv_studentList.DataSource = data.SP_stud_ViewStudents(gradelevel);
                     }
                     break;
                 case "5 - Fourier":
@@ -84,7 +84,7 @@ namespace Int_GradeSystem.TeacherForm
                         gradelevel = 5;
                         section = "Fourier";
                         Passcode = "five";
-                        dgv_studentList.DataSource = data.SP_stud_View_Students(gradelevel);
+                        dgv_studentList.DataSource = data.SP_stud_ViewStudents(gradelevel);
                     }
                     break;
                 case "6 - Hawking":
@@ -92,7 +92,7 @@ namespace Int_GradeSystem.TeacherForm
                         gradelevel = 6;
                         section = "Hawking";
                         Passcode = "six";
-                        dgv_studentList.DataSource = data.SP_stud_View_Students(gradelevel);
+                        dgv_studentList.DataSource = data.SP_stud_ViewStudents(gradelevel);
                     }
                     break;
                 default:
@@ -110,7 +110,11 @@ namespace Int_GradeSystem.TeacherForm
         {
             if (e.ColumnIndex == 0 && e.RowIndex >= 0 || e.ColumnIndex == 1 && e.RowIndex >= 0 ||
               e.ColumnIndex == 2 && e.RowIndex >= 0 || e.ColumnIndex == 3 && e.RowIndex >= 0 ||
-              e.ColumnIndex == 4 && e.RowIndex >= 0 || e.ColumnIndex == 5 && e.RowIndex >= 0)
+              e.ColumnIndex == 4 && e.RowIndex >= 0 || e.ColumnIndex == 5 && e.RowIndex >= 0 ||
+              e.ColumnIndex == 6 && e.RowIndex >= 0 || e.ColumnIndex == 7 && e.RowIndex >= 0 ||
+              e.ColumnIndex == 8 && e.RowIndex >= 0 || e.ColumnIndex == 9 && e.RowIndex >= 0 ||
+              e.ColumnIndex == 10 && e.RowIndex >= 0 || e.ColumnIndex == 11 && e.RowIndex >= 0 || 
+              e.ColumnIndex == 12 && e.RowIndex >= 0)
             {
                 // Handle the click action for the clickable cells
                 string clickedValue = dgv_studentList.Rows[e.RowIndex].Cells[0].Value.ToString();
@@ -357,6 +361,11 @@ namespace Int_GradeSystem.TeacherForm
         {
             pnl_verification.Visible=false;
             txt_passCode.Clear();
+        }
+
+        private void dgv_studentList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

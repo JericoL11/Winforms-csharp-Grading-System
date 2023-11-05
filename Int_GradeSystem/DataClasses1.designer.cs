@@ -111,19 +111,19 @@ namespace Int_GradeSystem
 			}
 		}
 		
-		public System.Data.Linq.Table<tbl_Student_PrelimSubject> tbl_Student_PrelimSubjects
-		{
-			get
-			{
-				return this.GetTable<tbl_Student_PrelimSubject>();
-			}
-		}
-		
 		public System.Data.Linq.Table<tbl_Student_MidtermSubject> tbl_Student_MidtermSubjects
 		{
 			get
 			{
 				return this.GetTable<tbl_Student_MidtermSubject>();
+			}
+		}
+		
+		public System.Data.Linq.Table<tbl_Student_PrelimSubject> tbl_Student_PrelimSubjects
+		{
+			get
+			{
+				return this.GetTable<tbl_Student_PrelimSubject>();
 			}
 		}
 		
@@ -191,6 +191,13 @@ namespace Int_GradeSystem
 			return ((int)(result.ReturnValue));
 		}
 		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_stud_Grading_Avg")]
+		public int SP_stud_Grading_Avg([global::System.Data.Linq.Mapping.ParameterAttribute(Name="StudentId", DbType="Int")] System.Nullable<int> studentId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Prelim_Avg", DbType="Real")] System.Nullable<float> prelim_Avg, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Midterm_Avg", DbType="Real")] System.Nullable<float> midterm_Avg, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Final_Avg", DbType="Real")] System.Nullable<float> final_Avg, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> grade, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Overall", DbType="Real")] System.Nullable<float> overall)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), studentId, prelim_Avg, midterm_Avg, final_Avg, grade, overall);
+			return ((int)(result.ReturnValue));
+		}
+		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_stud_Add_Students")]
 		public int SP_stud_Add_Students([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(50)")] string fname, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(50)")] string lname, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Mname", DbType="NVarChar(50)")] string mname, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(30)")] string gender, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Bdate", DbType="Date")] System.Nullable<System.DateTime> bdate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> age, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> grade, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(30)")] string section, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(75)")] string createdBy)
 		{
@@ -198,22 +205,8 @@ namespace Int_GradeSystem
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_stud_View_Students")]
-		public ISingleResult<SP_stud_View_StudentsResult> SP_stud_View_Students([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> grade)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), grade);
-			return ((ISingleResult<SP_stud_View_StudentsResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_stud_Prelim_InputGrades")]
 		public int SP_stud_Prelim_InputGrades([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Mapeh", DbType="Float")] System.Nullable<double> mapeh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="English", DbType="Float")] System.Nullable<double> english, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Math", DbType="Float")] System.Nullable<double> math, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Filipino", DbType="Float")] System.Nullable<double> filipino, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Science", DbType="Float")] System.Nullable<double> science, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Prelim_Avg", DbType="Float")] System.Nullable<double> prelim_Avg, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Student_status", DbType="VarChar(50)")] string student_status, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="StudentId", DbType="Int")] System.Nullable<int> studentId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Teacher", DbType="NVarChar(50)")] string teacher)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), mapeh, english, math, filipino, science, prelim_Avg, student_status, studentId, teacher);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_stud_Final_InputGrades")]
-		public int SP_stud_Final_InputGrades([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Mapeh", DbType="Float")] System.Nullable<double> mapeh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="English", DbType="Float")] System.Nullable<double> english, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Math", DbType="Float")] System.Nullable<double> math, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Filipino", DbType="Float")] System.Nullable<double> filipino, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Science", DbType="Float")] System.Nullable<double> science, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Prelim_Avg", DbType="Float")] System.Nullable<double> prelim_Avg, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Student_status", DbType="VarChar(50)")] string student_status, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="StudentId", DbType="Int")] System.Nullable<int> studentId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Teacher", DbType="NVarChar(50)")] string teacher)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), mapeh, english, math, filipino, science, prelim_Avg, student_status, studentId, teacher);
 			return ((int)(result.ReturnValue));
@@ -226,11 +219,25 @@ namespace Int_GradeSystem
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_stud_Grading_Avg")]
-		public int SP_stud_Grading_Avg([global::System.Data.Linq.Mapping.ParameterAttribute(Name="StudentId", DbType="Int")] System.Nullable<int> studentId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Prelim_Avg", DbType="Real")] System.Nullable<float> prelim_Avg, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Midterm_Avg", DbType="Real")] System.Nullable<float> midterm_Avg, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Final_Avg", DbType="Real")] System.Nullable<float> final_Avg, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Overall", DbType="Real")] System.Nullable<float> overall)
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_stud_Final_InputGrades")]
+		public int SP_stud_Final_InputGrades([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Mapeh", DbType="Float")] System.Nullable<double> mapeh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="English", DbType="Float")] System.Nullable<double> english, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Math", DbType="Float")] System.Nullable<double> math, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Filipino", DbType="Float")] System.Nullable<double> filipino, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Science", DbType="Float")] System.Nullable<double> science, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Prelim_Avg", DbType="Float")] System.Nullable<double> prelim_Avg, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Student_status", DbType="VarChar(50)")] string student_status, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="StudentId", DbType="Int")] System.Nullable<int> studentId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Teacher", DbType="NVarChar(50)")] string teacher)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), studentId, prelim_Avg, midterm_Avg, final_Avg, overall);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), mapeh, english, math, filipino, science, prelim_Avg, student_status, studentId, teacher);
 			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_stud_ViewStudents")]
+		public ISingleResult<SP_stud_ViewStudentsResult> SP_stud_ViewStudents([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> grade)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), grade);
+			return ((ISingleResult<SP_stud_ViewStudentsResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_stud_PrelimRankings")]
+		public ISingleResult<SP_stud_PrelimRankingsResult> SP_stud_PrelimRankings([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> grade, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(30)")] string term)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), grade, term);
+			return ((ISingleResult<SP_stud_PrelimRankingsResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -643,6 +650,12 @@ namespace Int_GradeSystem
 		
 		private string _section;
 		
+		private string _Prelim_Status;
+		
+		private string _Midterm_Status;
+		
+		private string _Final_Status;
+		
 		private string _CreatedBy;
 		
     #region Extensibility Method Definitions
@@ -667,6 +680,12 @@ namespace Int_GradeSystem
     partial void OngradeChanged();
     partial void OnsectionChanging(string value);
     partial void OnsectionChanged();
+    partial void OnPrelim_StatusChanging(string value);
+    partial void OnPrelim_StatusChanged();
+    partial void OnMidterm_StatusChanging(string value);
+    partial void OnMidterm_StatusChanged();
+    partial void OnFinal_StatusChanging(string value);
+    partial void OnFinal_StatusChanged();
     partial void OnCreatedByChanging(string value);
     partial void OnCreatedByChanged();
     #endregion
@@ -856,6 +875,66 @@ namespace Int_GradeSystem
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Prelim_Status", DbType="NVarChar(30)")]
+		public string Prelim_Status
+		{
+			get
+			{
+				return this._Prelim_Status;
+			}
+			set
+			{
+				if ((this._Prelim_Status != value))
+				{
+					this.OnPrelim_StatusChanging(value);
+					this.SendPropertyChanging();
+					this._Prelim_Status = value;
+					this.SendPropertyChanged("Prelim_Status");
+					this.OnPrelim_StatusChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Midterm_Status", DbType="NVarChar(30)")]
+		public string Midterm_Status
+		{
+			get
+			{
+				return this._Midterm_Status;
+			}
+			set
+			{
+				if ((this._Midterm_Status != value))
+				{
+					this.OnMidterm_StatusChanging(value);
+					this.SendPropertyChanging();
+					this._Midterm_Status = value;
+					this.SendPropertyChanged("Midterm_Status");
+					this.OnMidterm_StatusChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Final_Status", DbType="NVarChar(30)")]
+		public string Final_Status
+		{
+			get
+			{
+				return this._Final_Status;
+			}
+			set
+			{
+				if ((this._Final_Status != value))
+				{
+					this.OnFinal_StatusChanging(value);
+					this.SendPropertyChanging();
+					this._Final_Status = value;
+					this.SendPropertyChanged("Final_Status");
+					this.OnFinal_StatusChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="NVarChar(75) NOT NULL", CanBeNull=false)]
 		public string CreatedBy
 		{
@@ -916,6 +995,8 @@ namespace Int_GradeSystem
 		private System.Nullable<float> _Period_Avg_Final;
 		
 		private string _Period_Status_Final;
+		
+		private string _GradeStatus;
 		
 		private string _updatedBy;
 		
@@ -1051,173 +1132,18 @@ namespace Int_GradeSystem
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_updatedBy", DbType="NVarChar(50)")]
-		public string updatedBy
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GradeStatus", DbType="NVarChar(30)")]
+		public string GradeStatus
 		{
 			get
 			{
-				return this._updatedBy;
+				return this._GradeStatus;
 			}
 			set
 			{
-				if ((this._updatedBy != value))
+				if ((this._GradeStatus != value))
 				{
-					this._updatedBy = value;
-				}
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tbl_Student_PrelimSubject")]
-	public partial class tbl_Student_PrelimSubject
-	{
-		
-		private System.Nullable<int> _FK_studentID;
-		
-		private System.Nullable<double> _Mapeh_Prelim;
-		
-		private System.Nullable<double> _English_Prelim;
-		
-		private System.Nullable<double> _Math_Prelim;
-		
-		private System.Nullable<double> _Filipino_Prelim;
-		
-		private System.Nullable<double> _Science_Prelim;
-		
-		private System.Nullable<float> _Period_Avg_Prelim;
-		
-		private string _Period_Status_Prelim;
-		
-		private string _updatedBy;
-		
-		public tbl_Student_PrelimSubject()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FK_studentID", DbType="Int")]
-		public System.Nullable<int> FK_studentID
-		{
-			get
-			{
-				return this._FK_studentID;
-			}
-			set
-			{
-				if ((this._FK_studentID != value))
-				{
-					this._FK_studentID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Mapeh_Prelim", DbType="Float")]
-		public System.Nullable<double> Mapeh_Prelim
-		{
-			get
-			{
-				return this._Mapeh_Prelim;
-			}
-			set
-			{
-				if ((this._Mapeh_Prelim != value))
-				{
-					this._Mapeh_Prelim = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_English_Prelim", DbType="Float")]
-		public System.Nullable<double> English_Prelim
-		{
-			get
-			{
-				return this._English_Prelim;
-			}
-			set
-			{
-				if ((this._English_Prelim != value))
-				{
-					this._English_Prelim = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Math_Prelim", DbType="Float")]
-		public System.Nullable<double> Math_Prelim
-		{
-			get
-			{
-				return this._Math_Prelim;
-			}
-			set
-			{
-				if ((this._Math_Prelim != value))
-				{
-					this._Math_Prelim = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Filipino_Prelim", DbType="Float")]
-		public System.Nullable<double> Filipino_Prelim
-		{
-			get
-			{
-				return this._Filipino_Prelim;
-			}
-			set
-			{
-				if ((this._Filipino_Prelim != value))
-				{
-					this._Filipino_Prelim = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Science_Prelim", DbType="Float")]
-		public System.Nullable<double> Science_Prelim
-		{
-			get
-			{
-				return this._Science_Prelim;
-			}
-			set
-			{
-				if ((this._Science_Prelim != value))
-				{
-					this._Science_Prelim = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Period_Avg_Prelim", DbType="Real")]
-		public System.Nullable<float> Period_Avg_Prelim
-		{
-			get
-			{
-				return this._Period_Avg_Prelim;
-			}
-			set
-			{
-				if ((this._Period_Avg_Prelim != value))
-				{
-					this._Period_Avg_Prelim = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Period_Status_Prelim", DbType="NVarChar(30)")]
-		public string Period_Status_Prelim
-		{
-			get
-			{
-				return this._Period_Status_Prelim;
-			}
-			set
-			{
-				if ((this._Period_Status_Prelim != value))
-				{
-					this._Period_Status_Prelim = value;
+					this._GradeStatus = value;
 				}
 			}
 		}
@@ -1258,6 +1184,8 @@ namespace Int_GradeSystem
 		private System.Nullable<float> _Period_Avg_Midterm;
 		
 		private string _Period_Status_MIdterm;
+		
+		private string _GradeStatus;
 		
 		private string _updatedBy;
 		
@@ -1393,6 +1321,211 @@ namespace Int_GradeSystem
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GradeStatus", DbType="NVarChar(30)")]
+		public string GradeStatus
+		{
+			get
+			{
+				return this._GradeStatus;
+			}
+			set
+			{
+				if ((this._GradeStatus != value))
+				{
+					this._GradeStatus = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_updatedBy", DbType="NVarChar(50)")]
+		public string updatedBy
+		{
+			get
+			{
+				return this._updatedBy;
+			}
+			set
+			{
+				if ((this._updatedBy != value))
+				{
+					this._updatedBy = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tbl_Student_PrelimSubject")]
+	public partial class tbl_Student_PrelimSubject
+	{
+		
+		private System.Nullable<int> _FK_studentID;
+		
+		private System.Nullable<double> _Mapeh_Prelim;
+		
+		private System.Nullable<double> _English_Prelim;
+		
+		private System.Nullable<double> _Math_Prelim;
+		
+		private System.Nullable<double> _Filipino_Prelim;
+		
+		private System.Nullable<double> _Science_Prelim;
+		
+		private System.Nullable<float> _Period_Avg_Prelim;
+		
+		private string _Period_Status_Prelim;
+		
+		private string _GradeStatus;
+		
+		private string _updatedBy;
+		
+		public tbl_Student_PrelimSubject()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FK_studentID", DbType="Int")]
+		public System.Nullable<int> FK_studentID
+		{
+			get
+			{
+				return this._FK_studentID;
+			}
+			set
+			{
+				if ((this._FK_studentID != value))
+				{
+					this._FK_studentID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Mapeh_Prelim", DbType="Float")]
+		public System.Nullable<double> Mapeh_Prelim
+		{
+			get
+			{
+				return this._Mapeh_Prelim;
+			}
+			set
+			{
+				if ((this._Mapeh_Prelim != value))
+				{
+					this._Mapeh_Prelim = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_English_Prelim", DbType="Float")]
+		public System.Nullable<double> English_Prelim
+		{
+			get
+			{
+				return this._English_Prelim;
+			}
+			set
+			{
+				if ((this._English_Prelim != value))
+				{
+					this._English_Prelim = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Math_Prelim", DbType="Float")]
+		public System.Nullable<double> Math_Prelim
+		{
+			get
+			{
+				return this._Math_Prelim;
+			}
+			set
+			{
+				if ((this._Math_Prelim != value))
+				{
+					this._Math_Prelim = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Filipino_Prelim", DbType="Float")]
+		public System.Nullable<double> Filipino_Prelim
+		{
+			get
+			{
+				return this._Filipino_Prelim;
+			}
+			set
+			{
+				if ((this._Filipino_Prelim != value))
+				{
+					this._Filipino_Prelim = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Science_Prelim", DbType="Float")]
+		public System.Nullable<double> Science_Prelim
+		{
+			get
+			{
+				return this._Science_Prelim;
+			}
+			set
+			{
+				if ((this._Science_Prelim != value))
+				{
+					this._Science_Prelim = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Period_Avg_Prelim", DbType="Real")]
+		public System.Nullable<float> Period_Avg_Prelim
+		{
+			get
+			{
+				return this._Period_Avg_Prelim;
+			}
+			set
+			{
+				if ((this._Period_Avg_Prelim != value))
+				{
+					this._Period_Avg_Prelim = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Period_Status_Prelim", DbType="NVarChar(30)")]
+		public string Period_Status_Prelim
+		{
+			get
+			{
+				return this._Period_Status_Prelim;
+			}
+			set
+			{
+				if ((this._Period_Status_Prelim != value))
+				{
+					this._Period_Status_Prelim = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GradeStatus", DbType="NVarChar(30)")]
+		public string GradeStatus
+		{
+			get
+			{
+				return this._GradeStatus;
+			}
+			set
+			{
+				if ((this._GradeStatus != value))
+				{
+					this._GradeStatus = value;
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_updatedBy", DbType="NVarChar(50)")]
 		public string updatedBy
 		{
@@ -1423,6 +1556,10 @@ namespace Int_GradeSystem
 		private System.Nullable<float> _final_avg;
 		
 		private System.Nullable<float> _overall;
+		
+		private System.Nullable<int> _grade;
+		
+		private string _term;
 		
 		public tbl_Grading_Period()
 		{
@@ -1504,6 +1641,38 @@ namespace Int_GradeSystem
 				if ((this._overall != value))
 				{
 					this._overall = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_grade", DbType="Int")]
+		public System.Nullable<int> grade
+		{
+			get
+			{
+				return this._grade;
+			}
+			set
+			{
+				if ((this._grade != value))
+				{
+					this._grade = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_term", DbType="NVarChar(30)")]
+		public string term
+		{
+			get
+			{
+				return this._term;
+			}
+			set
+			{
+				if ((this._term != value))
+				{
+					this._term = value;
 				}
 			}
 		}
@@ -1607,7 +1776,7 @@ namespace Int_GradeSystem
 		}
 	}
 	
-	public partial class SP_stud_View_StudentsResult
+	public partial class SP_stud_ViewStudentsResult
 	{
 		
 		private int _studentId;
@@ -1628,9 +1797,15 @@ namespace Int_GradeSystem
 		
 		private string _section;
 		
+		private string _Prelim_Status;
+		
+		private string _Midterm_Status;
+		
+		private string _Final_Status;
+		
 		private string _CreatedBy;
 		
-		public SP_stud_View_StudentsResult()
+		public SP_stud_ViewStudentsResult()
 		{
 		}
 		
@@ -1778,6 +1953,54 @@ namespace Int_GradeSystem
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Prelim_Status", DbType="NVarChar(30)")]
+		public string Prelim_Status
+		{
+			get
+			{
+				return this._Prelim_Status;
+			}
+			set
+			{
+				if ((this._Prelim_Status != value))
+				{
+					this._Prelim_Status = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Midterm_Status", DbType="NVarChar(30)")]
+		public string Midterm_Status
+		{
+			get
+			{
+				return this._Midterm_Status;
+			}
+			set
+			{
+				if ((this._Midterm_Status != value))
+				{
+					this._Midterm_Status = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Final_Status", DbType="NVarChar(30)")]
+		public string Final_Status
+		{
+			get
+			{
+				return this._Final_Status;
+			}
+			set
+			{
+				if ((this._Final_Status != value))
+				{
+					this._Final_Status = value;
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedBy", DbType="NVarChar(75) NOT NULL", CanBeNull=false)]
 		public string CreatedBy
 		{
@@ -1790,6 +2013,86 @@ namespace Int_GradeSystem
 				if ((this._CreatedBy != value))
 				{
 					this._CreatedBy = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_stud_PrelimRankingsResult
+	{
+		
+		private int _ID_no_;
+		
+		private string _Last_Name;
+		
+		private string _First_Name;
+		
+		private System.Nullable<float> _Average;
+		
+		public SP_stud_PrelimRankingsResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[ID no.]", Storage="_ID_no_", DbType="Int NOT NULL")]
+		public int ID_no_
+		{
+			get
+			{
+				return this._ID_no_;
+			}
+			set
+			{
+				if ((this._ID_no_ != value))
+				{
+					this._ID_no_ = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Last Name]", Storage="_Last_Name", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string Last_Name
+		{
+			get
+			{
+				return this._Last_Name;
+			}
+			set
+			{
+				if ((this._Last_Name != value))
+				{
+					this._Last_Name = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[First Name]", Storage="_First_Name", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string First_Name
+		{
+			get
+			{
+				return this._First_Name;
+			}
+			set
+			{
+				if ((this._First_Name != value))
+				{
+					this._First_Name = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Average", DbType="Real")]
+		public System.Nullable<float> Average
+		{
+			get
+			{
+				return this._Average;
+			}
+			set
+			{
+				if ((this._Average != value))
+				{
+					this._Average = value;
 				}
 			}
 		}

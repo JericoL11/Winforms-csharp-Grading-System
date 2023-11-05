@@ -100,14 +100,15 @@
             this.dgv_studentList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_studentList.BackgroundColor = System.Drawing.Color.White;
             this.dgv_studentList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_studentList.Location = new System.Drawing.Point(73, 143);
+            this.dgv_studentList.Location = new System.Drawing.Point(12, 143);
             this.dgv_studentList.Name = "dgv_studentList";
             this.dgv_studentList.ReadOnly = true;
             this.dgv_studentList.RowHeadersWidth = 51;
             this.dgv_studentList.RowTemplate.Height = 24;
-            this.dgv_studentList.Size = new System.Drawing.Size(1000, 362);
+            this.dgv_studentList.Size = new System.Drawing.Size(1113, 362);
             this.dgv_studentList.TabIndex = 10;
             this.dgv_studentList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_studentList_CellClick);
+            this.dgv_studentList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_studentList_CellContentClick);
             // 
             // cmb_GradeLevels
             // 

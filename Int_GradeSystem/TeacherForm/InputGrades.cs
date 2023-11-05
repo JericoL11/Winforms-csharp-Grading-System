@@ -38,6 +38,9 @@ namespace Int_GradeSystem.TeacherForm
         public float average { get; set; }
 
         public string status { get; set; }
+
+
+        string Gradingstatus = "Done";
         public InputGrades()
         {
             InitializeComponent();
@@ -52,9 +55,79 @@ namespace Int_GradeSystem.TeacherForm
             pnl_overall.Visible = false;
 
 
+
+            //assiging of form textbox if tbl student status is DONE
+            var database = data.tbl_Students
+                            .FirstOrDefault(st => st.studentId == SelectedID);
+
+            var Prelim_data = data.tbl_Student_PrelimSubjects
+                            .FirstOrDefault(p => p.FK_studentID == SelectedID);
+
+            var Midterm_data = data.tbl_Student_MidtermSubjects
+                             .FirstOrDefault(p => p.FK_studentID == SelectedID);
+
+            var Final_data = data.tbl_Student_FinalSubjects
+                         .FirstOrDefault(p => p.FK_studentID == SelectedID);
+
+            if (database.Prelim_Status == "Done")
+            {
+                txt_PreMapeh.Text = Prelim_data.Mapeh_Prelim.ToString();
+                txt_PreEnglish.Text = Prelim_data.English_Prelim.ToString();
+                txt_PreMath.Text = Prelim_data.Math_Prelim.ToString();
+                txt_PreFilipino.Text = Prelim_data.Filipino_Prelim.ToString();
+                txt_PreScience.Text = Prelim_data.Science_Prelim.ToString();
+                lbl_avgPrelim.Text = Prelim_data.Period_Avg_Prelim.ToString();
+                lbl_StatusPrelim.Text = Prelim_data.Period_Status_Prelim;
+            }
+            else
+            {
+                goto inputdata;
+            }
+
+            if (database.Midterm_Status == "Done")
+            {
+                // if true , display the stored data
+                txt_MidMapeh.Text = Midterm_data.Mapeh_Midterm.ToString();
+                txt_MidEnglish.Text = Midterm_data.English_Midterm.ToString();
+                txt_MidMath.Text = Midterm_data.Math_Midterm.ToString();
+                txt_MidFilipino.Text = Midterm_data.Filipino_Midterm.ToString();
+                txt_MidScience.Text = Midterm_data.Science_Midterm.ToString();
+                lbl_avgMidterm.Text = Midterm_data.Period_Avg_Midterm.ToString();
+                lbl_StatusMidterm.Text = Midterm_data.Period_Status_MIdterm;
+            }
+            else
+            {
+                goto inputdata;
+            }
+
+            if (database.Final_Status == "Done")
+            {
+                // if true , display the stored data
+                txt_FinMapeh.Text = Final_data.Mapeh_Final.ToString();
+                txt_FinEnglish.Text = Final_data.English_Final.ToString();
+                txt_FinMath.Text = Final_data.Math_Final.ToString();
+                txt_FinFilipino.Text = Final_data.Filipino_Final.ToString();
+                txt_FinScience.Text = Final_data.Science_Final.ToString();
+                lbl_avgFinal.Text = Final_data.Period_Avg_Final.ToString();
+                lbl_StatusFinal.Text = Final_data.Period_Status_Final;
+
+                OverALL_Calculation();
+           
+            }
+            else
+            {
+                goto inputdata;
+            }
+
+
+
+        inputdata:
             //based reference
             switch (gradelevel)
             {
+
+               
+
                 //To display student iNFO
                 case 1: { Students_Added(); } break;
                 case 2: { Students_Added(); } break;
@@ -137,10 +210,11 @@ namespace Int_GradeSystem.TeacherForm
                         }
                         else
                         {
+                            pnl_Prelim.Visible = true;
                             MessageBox.Show("No data inputted yet");
                         }
-
                         pnl_Prelim.Visible = true;
+
 
                     }
                     break;
@@ -154,9 +228,10 @@ namespace Int_GradeSystem.TeacherForm
                         }
                         else
                         {
+                            pnl_overall.Visible = false;
                             pnl_Final.Visible = false;
                             pnl_Midterm.Visible = true;
-                            
+                         
 
                             if (Midterm_data!= null)
                             {
@@ -192,6 +267,7 @@ namespace Int_GradeSystem.TeacherForm
 
                             if (Final_data != null)
                             {
+                              
                                 // if true , display the stored data
                                 txt_FinMapeh.Text = Final_data.Mapeh_Final.ToString();
                                 txt_FinEnglish.Text = Final_data.English_Final.ToString();
@@ -200,8 +276,10 @@ namespace Int_GradeSystem.TeacherForm
                                 txt_FinScience.Text = Final_data.Science_Final.ToString();
                                 lbl_avgFinal.Text = Final_data.Period_Avg_Final.ToString();
                                 lbl_StatusFinal.Text = Final_data.Period_Status_Final;
-                               
-                               
+                              
+                                OverALL_Calculation();
+                                pnl_overall.Visible = true;
+
                             }
                             pnl_Midterm.Visible = true;
                             pnl_Prelim.Visible = true;
@@ -262,6 +340,7 @@ namespace Int_GradeSystem.TeacherForm
             else
             {
                         Final_GradesCalculator();
+                        
             }
         }
         void CheckTextBox_Midterm()
@@ -373,9 +452,8 @@ namespace Int_GradeSystem.TeacherForm
 
                 var Teacher_name = $"{Teacher_database.firstname} {Teacher_database.lastname}";
 
+
                 //passing to database
-
-
 
                 data.SP_stud_Prelim_InputGrades(Convert.ToSingle(txt_PreMapeh.Text), Convert.ToSingle(txt_PreEnglish.Text), Convert.ToSingle(txt_PreMath.Text), Convert.ToSingle(txt_PreFilipino.Text), Convert.ToSingle(txt_PreScience.Text), average, status, SelectedID, Teacher_name);
 
@@ -579,8 +657,10 @@ namespace Int_GradeSystem.TeacherForm
                 data.SP_stud_Final_InputGrades(Convert.ToSingle(txt_FinMapeh.Text), Convert.ToSingle(txt_FinEnglish.Text), Convert.ToSingle(txt_FinMath.Text), Convert.ToSingle(txt_FinFilipino.Text), Convert.ToSingle(txt_FinScience.Text), average, status, SelectedID, Teacher_name);
 
                 alert.Updated();
-             
-               
+                pnl_overall.Visible = true; 
+                OverALL_Calculation();
+
+
 
             }
         }
@@ -698,14 +778,14 @@ namespace Int_GradeSystem.TeacherForm
             //getting the average
 
             var Overall_avg_Period = Overall_avg_Array.Average();
-            data.SP_stud_Grading_Avg(SelectedID, Prelim_data.Period_Avg_Prelim, Midterm_data.Period_Avg_Midterm, Final_data.Period_Avg_Final, Overall_avg_Period);
-           alert.ReadytoView();
+            data.SP_stud_Grading_Avg(SelectedID, Prelim_data.Period_Avg_Prelim, Midterm_data.Period_Avg_Midterm, Final_data.Period_Avg_Final,  gradelevel, Overall_avg_Period);
+         
 
 
         }
         #endregion
 
-        //Compute methods
+        //Compute methods 
         private void btn_Compute_Click(object sender, EventArgs e)
         {
             if (lbl_avgPrelim.Text == "000" || lbl_avgMidterm.Text == "000" || lbl_avgFinal.Text == "000")
@@ -714,7 +794,7 @@ namespace Int_GradeSystem.TeacherForm
             }
             else
             {
-
+                alert.ReadytoView();
                 OverALL_Calculation();
                 pnl_overall.Visible = true;
             }
