@@ -43,24 +43,35 @@ namespace Int_GradeSystem.TeacherForm
         private void btn_View_Click(object sender, EventArgs e)
         {
 
-            var database = data.tbl_Grading_Periods
-                            .Select(g => g.FK_studentID);
-
                 if (cmb_gradelevel.Text == "Select ---" || cmb_Terms.Text == "Select ---")
                 {
                     MessageBox.Show("Please select grade level and terms");
                 }
                 else
                 {
-
-                    if (database == null)
+             
+                    switch (gradelevel)
                     {
-                        MessageBox.Show("There is no Data for rankings yet");
-                    }
-                    else
-                    {
-                        dgv_ranking.DataSource = data.SP_stud_PrelimRankings(gradelevel,term);
-                    }
+                        case 1:
+                        Display_Ranking();
+                            break;
+                        case 2:
+                        Display_Ranking();
+                            break;
+                        case 3:
+                        Display_Ranking();
+                            break;
+                        case 4:
+                        Display_Ranking();
+                            break;
+                        case 5:
+                        Display_Ranking();
+                            break;
+                        case 6:
+                        Display_Ranking();
+                            break;
+                }
+      
             }  
         }
 
@@ -81,13 +92,51 @@ namespace Int_GradeSystem.TeacherForm
 
         private void cmb_Terms_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (cmb_gradelevel.SelectedIndex)
+            switch (cmb_Terms.SelectedIndex)
             {
                 //assigning of Terms
-                case  0:  { term = "Prelim";  } break;
-                case  1:  { term = "Midterm"; } break;
-                case  2:  { term = "Final";   } break;
+                case  0:  { term = "First"; lbl_term.Text = term; } break;
+                case  1:  { term = "Second";lbl_term.Text = term; } break;
+                case  2:  { term = "Third"; lbl_term.Text = term;  } break;
+                case  3:  { term = "Fourth"; lbl_term.Text = term; } break;
             }
+        }
+        void Display_Ranking()
+        {
+            dgv_ranking.Rows.Clear();
+
+
+            switch (term)
+            {
+                case "First":
+                    {
+                        dgv_ranking.DataSource = data.SP_stud_Ranking_FirstGrading(gradelevel);
+                    }
+                    break;
+                case "Second":
+                    {
+                        dgv_ranking.DataSource = data.SP_stud_Ranking_SecondGrading(gradelevel);
+                    }
+                    break;
+                case "Third":
+                    {
+                        dgv_ranking.DataSource = data.SP_stud_Ranking_ThirdGrading(gradelevel);
+                    }
+                    break;
+                case "Fourth":
+                    {
+                        dgv_ranking.DataSource = data.SP_stud_Ranking_FourthGrading(gradelevel);
+                    }
+                    break;
+
+                default:
+                    {
+                        dgv_ranking.Rows.Clear();
+                    }
+                    break;
+            }
+
+         
         }
      
     }

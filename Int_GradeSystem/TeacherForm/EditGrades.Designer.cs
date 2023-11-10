@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_editGradeBack = new System.Windows.Forms.Button();
@@ -81,9 +84,10 @@
             // 
             // btn_EditGrades
             // 
+            this.btn_EditGrades.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_EditGrades.BackColor = System.Drawing.Color.White;
             this.btn_EditGrades.ForeColor = System.Drawing.Color.Black;
-            this.btn_EditGrades.Location = new System.Drawing.Point(685, 537);
+            this.btn_EditGrades.Location = new System.Drawing.Point(1076, 569);
             this.btn_EditGrades.Name = "btn_EditGrades";
             this.btn_EditGrades.Size = new System.Drawing.Size(105, 50);
             this.btn_EditGrades.TabIndex = 1;
@@ -97,15 +101,38 @@
             this.dgv_studentList.AllowUserToDeleteRows = false;
             this.dgv_studentList.AllowUserToResizeColumns = false;
             this.dgv_studentList.AllowUserToResizeRows = false;
+            this.dgv_studentList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_studentList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_studentList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
             this.dgv_studentList.BackgroundColor = System.Drawing.Color.White;
-            this.dgv_studentList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_studentList.Location = new System.Drawing.Point(12, 143);
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dgv_studentList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_studentList.ColumnHeadersHeight = 29;
+            this.dgv_studentList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_studentList.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_studentList.Location = new System.Drawing.Point(12, 159);
+            this.dgv_studentList.MultiSelect = false;
             this.dgv_studentList.Name = "dgv_studentList";
             this.dgv_studentList.ReadOnly = true;
-            this.dgv_studentList.RowHeadersWidth = 51;
+            this.dgv_studentList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_studentList.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_studentList.RowTemplate.Height = 24;
-            this.dgv_studentList.Size = new System.Drawing.Size(1113, 362);
+            this.dgv_studentList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_studentList.Size = new System.Drawing.Size(1300, 381);
             this.dgv_studentList.TabIndex = 10;
             this.dgv_studentList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_studentList_CellClick);
             this.dgv_studentList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_studentList_CellContentClick);
@@ -124,16 +151,17 @@
             "6 - Hawking"});
             this.cmb_GradeLevels.Location = new System.Drawing.Point(395, 103);
             this.cmb_GradeLevels.Name = "cmb_GradeLevels";
-            this.cmb_GradeLevels.Size = new System.Drawing.Size(134, 24);
+            this.cmb_GradeLevels.Size = new System.Drawing.Size(243, 24);
             this.cmb_GradeLevels.TabIndex = 72;
             this.cmb_GradeLevels.Text = "Select -------";
             this.cmb_GradeLevels.SelectedIndexChanged += new System.EventHandler(this.cmb_GradeLevels_SelectedIndexChanged);
             // 
             // btn_Delete
             // 
+            this.btn_Delete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_Delete.BackColor = System.Drawing.Color.White;
             this.btn_Delete.ForeColor = System.Drawing.Color.Black;
-            this.btn_Delete.Location = new System.Drawing.Point(811, 537);
+            this.btn_Delete.Location = new System.Drawing.Point(1187, 569);
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.Size = new System.Drawing.Size(105, 50);
             this.btn_Delete.TabIndex = 73;
@@ -165,17 +193,15 @@
             // 
             // pnl_verification
             // 
-            this.pnl_verification.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnl_verification.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnl_verification.BackColor = System.Drawing.Color.Blue;
             this.pnl_verification.Controls.Add(this.btn_enter);
             this.pnl_verification.Controls.Add(this.label3);
             this.pnl_verification.Controls.Add(this.txt_passCode);
             this.pnl_verification.Controls.Add(this.btn_cancel);
-            this.pnl_verification.Location = new System.Drawing.Point(395, 246);
+            this.pnl_verification.Location = new System.Drawing.Point(492, 257);
             this.pnl_verification.Name = "pnl_verification";
-            this.pnl_verification.Size = new System.Drawing.Size(361, 148);
+            this.pnl_verification.Size = new System.Drawing.Size(404, 148);
             this.pnl_verification.TabIndex = 77;
             // 
             // btn_enter
@@ -225,7 +251,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SaddleBrown;
-            this.ClientSize = new System.Drawing.Size(1137, 664);
+            this.ClientSize = new System.Drawing.Size(1362, 664);
             this.Controls.Add(this.pnl_verification);
             this.Controls.Add(this.lbl_StudID);
             this.Controls.Add(this.label4);
@@ -240,6 +266,7 @@
             this.Name = "EditGrades";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditGrades";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.EditGrades_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_studentList)).EndInit();
             this.pnl_verification.ResumeLayout(false);

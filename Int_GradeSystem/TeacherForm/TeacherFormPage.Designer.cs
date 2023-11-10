@@ -177,6 +177,7 @@
             this.Name = "TeacherFormPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TeacherFormPage";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TeacherFormPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

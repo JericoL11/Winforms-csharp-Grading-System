@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -339,7 +340,22 @@ namespace Int_GradeSystem.TeacherForm
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            //THROW SOME CODE HERE
+
+            //Notifying the user for final decision
+            var ResultDialog = MessageBox.Show($"Do you want to delete the selected ID \"{SelectedID}\" ?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+           
+            if (ResultDialog == DialogResult.Yes)
+            {
+               
+                //Stored Procedure Function
+                data.SP_tch_DeleteStudent(SelectedID);
+                ReloadData();
+
+            }
+           
+          
+          
+           
         }
 
         private void btn_EditGrades_Click(object sender, EventArgs e)
@@ -367,5 +383,12 @@ namespace Int_GradeSystem.TeacherForm
         {
 
         }
+        void ReloadData()
+        {
+            
+            dgv_studentList.DataSource = data.SP_stud_ViewStudents(gradelevel);
+         
+        }
     }
+   
 }

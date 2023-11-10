@@ -40,40 +40,40 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.txt_PreMapeh = new System.Windows.Forms.TextBox();
-            this.txt_MidMapeh = new System.Windows.Forms.TextBox();
-            this.txt_FinMapeh = new System.Windows.Forms.TextBox();
-            this.txt_FinEnglish = new System.Windows.Forms.TextBox();
-            this.txt_MidEnglish = new System.Windows.Forms.TextBox();
-            this.txt_PreEnglish = new System.Windows.Forms.TextBox();
-            this.txt_FinMath = new System.Windows.Forms.TextBox();
-            this.txt_MidMath = new System.Windows.Forms.TextBox();
-            this.txt_PreMath = new System.Windows.Forms.TextBox();
-            this.txt_FinScience = new System.Windows.Forms.TextBox();
-            this.txt_PreScience = new System.Windows.Forms.TextBox();
-            this.txt_FinFilipino = new System.Windows.Forms.TextBox();
-            this.txt_MidFilipino = new System.Windows.Forms.TextBox();
-            this.txt_PreFilipino = new System.Windows.Forms.TextBox();
-            this.lbl_StatusPrelim = new System.Windows.Forms.Label();
+            this.txt_FirstMapeh = new System.Windows.Forms.TextBox();
+            this.txt_SecondMapeh = new System.Windows.Forms.TextBox();
+            this.txt_ThirdMapeh = new System.Windows.Forms.TextBox();
+            this.txt_ThirdEnglish = new System.Windows.Forms.TextBox();
+            this.txt_SecondEnglish = new System.Windows.Forms.TextBox();
+            this.txt_FirstEnglish = new System.Windows.Forms.TextBox();
+            this.txt_ThirdMath = new System.Windows.Forms.TextBox();
+            this.txt_SecondMath = new System.Windows.Forms.TextBox();
+            this.txt_FirstMath = new System.Windows.Forms.TextBox();
+            this.txt_ThirdScience = new System.Windows.Forms.TextBox();
+            this.txt_FirstScience = new System.Windows.Forms.TextBox();
+            this.txt_ThirdFilipino = new System.Windows.Forms.TextBox();
+            this.txt_SecondFilipino = new System.Windows.Forms.TextBox();
+            this.txt_FirstFilipino = new System.Windows.Forms.TextBox();
+            this.lbl_StatusFirst = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.lbl_avgMidterm = new System.Windows.Forms.Label();
-            this.lbl_avgPrelim = new System.Windows.Forms.Label();
+            this.lbl_avgSecond = new System.Windows.Forms.Label();
+            this.lbl_avgFirst = new System.Windows.Forms.Label();
             this.lbl_studID = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.pnl_Prelim = new System.Windows.Forms.Panel();
-            this.btn_UpdatePrelim = new System.Windows.Forms.Button();
-            this.pnl_Midterm = new System.Windows.Forms.Panel();
-            this.btn_UpdateMidterm = new System.Windows.Forms.Button();
-            this.txt_MidScience = new System.Windows.Forms.TextBox();
-            this.lbl_StatusMidterm = new System.Windows.Forms.Label();
-            this.pnl_Final = new System.Windows.Forms.Panel();
-            this.btn_UpdateFinal = new System.Windows.Forms.Button();
-            this.lbl_avgFinal = new System.Windows.Forms.Label();
-            this.lbl_StatusFinal = new System.Windows.Forms.Label();
+            this.pnl_First = new System.Windows.Forms.Panel();
+            this.btn_UpdateFirst = new System.Windows.Forms.Button();
+            this.pnl_Second = new System.Windows.Forms.Panel();
+            this.btn_UpdateSecond = new System.Windows.Forms.Button();
+            this.txt_SecondScience = new System.Windows.Forms.TextBox();
+            this.lbl_StatusSecond = new System.Windows.Forms.Label();
+            this.pnl_Third = new System.Windows.Forms.Panel();
+            this.btn_UpdateThird = new System.Windows.Forms.Button();
+            this.lbl_avgThird = new System.Windows.Forms.Label();
+            this.lbl_StatusThird = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.lbl_ovrAll_Mapeh = new System.Windows.Forms.Label();
             this.pnl_overall = new System.Windows.Forms.Panel();
@@ -84,14 +84,25 @@
             this.lbl_ovrAll_Filipino = new System.Windows.Forms.Label();
             this.lbl_ovrAll_Math = new System.Windows.Forms.Label();
             this.lbl_ovrAll_English = new System.Windows.Forms.Label();
+            this.btn_Compute = new System.Windows.Forms.Button();
             this.cmb_term = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.btn_inputGradeBack = new System.Windows.Forms.Button();
-            this.btn_Compute = new System.Windows.Forms.Button();
-            this.pnl_Prelim.SuspendLayout();
-            this.pnl_Midterm.SuspendLayout();
-            this.pnl_Final.SuspendLayout();
+            this.pnl_Fourth = new System.Windows.Forms.Panel();
+            this.btn_UpdateFourth = new System.Windows.Forms.Button();
+            this.lbl_avgFourth = new System.Windows.Forms.Label();
+            this.lbl_StatusFourth = new System.Windows.Forms.Label();
+            this.txt_FourthMapeh = new System.Windows.Forms.TextBox();
+            this.txt_FourthEnglish = new System.Windows.Forms.TextBox();
+            this.txt_FourthMath = new System.Windows.Forms.TextBox();
+            this.txt_FourthFilipino = new System.Windows.Forms.TextBox();
+            this.txt_FourthScience = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pnl_First.SuspendLayout();
+            this.pnl_Second.SuspendLayout();
+            this.pnl_Third.SuspendLayout();
             this.pnl_overall.SuspendLayout();
+            this.pnl_Fourth.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -177,28 +188,28 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(52, 43);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(42, 43);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(101, 29);
+            this.label10.Size = new System.Drawing.Size(123, 25);
             this.label10.TabIndex = 8;
-            this.label10.Text = "PRELIM";
+            this.label10.Text = "First Grading";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(58, 37);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label11.Location = new System.Drawing.Point(39, 43);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(80, 29);
+            this.label11.Size = new System.Drawing.Size(131, 25);
             this.label11.TabIndex = 10;
-            this.label11.Text = "FINAL";
+            this.label11.Text = "Third Grading";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(161, 618);
+            this.label12.Location = new System.Drawing.Point(46, 627);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(125, 29);
             this.label12.TabIndex = 11;
@@ -208,168 +219,168 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(161, 285);
+            this.label13.Location = new System.Drawing.Point(46, 294);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(115, 29);
             this.label13.TabIndex = 12;
             this.label13.Text = "COURSE";
             // 
-            // txt_PreMapeh
+            // txt_FirstMapeh
             // 
-            this.txt_PreMapeh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_PreMapeh.Location = new System.Drawing.Point(67, 110);
-            this.txt_PreMapeh.MaxLength = 3;
-            this.txt_PreMapeh.Name = "txt_PreMapeh";
-            this.txt_PreMapeh.Size = new System.Drawing.Size(71, 22);
-            this.txt_PreMapeh.TabIndex = 13;
-            this.txt_PreMapeh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_FirstMapeh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_FirstMapeh.Location = new System.Drawing.Point(67, 110);
+            this.txt_FirstMapeh.MaxLength = 3;
+            this.txt_FirstMapeh.Name = "txt_FirstMapeh";
+            this.txt_FirstMapeh.Size = new System.Drawing.Size(71, 22);
+            this.txt_FirstMapeh.TabIndex = 13;
+            this.txt_FirstMapeh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txt_MidMapeh
+            // txt_SecondMapeh
             // 
-            this.txt_MidMapeh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.txt_MidMapeh.Location = new System.Drawing.Point(67, 110);
-            this.txt_MidMapeh.MaxLength = 3;
-            this.txt_MidMapeh.Name = "txt_MidMapeh";
-            this.txt_MidMapeh.Size = new System.Drawing.Size(71, 22);
-            this.txt_MidMapeh.TabIndex = 14;
-            this.txt_MidMapeh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_SecondMapeh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txt_SecondMapeh.Location = new System.Drawing.Point(67, 110);
+            this.txt_SecondMapeh.MaxLength = 3;
+            this.txt_SecondMapeh.Name = "txt_SecondMapeh";
+            this.txt_SecondMapeh.Size = new System.Drawing.Size(71, 22);
+            this.txt_SecondMapeh.TabIndex = 14;
+            this.txt_SecondMapeh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txt_FinMapeh
+            // txt_ThirdMapeh
             // 
-            this.txt_FinMapeh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.txt_FinMapeh.Location = new System.Drawing.Point(63, 110);
-            this.txt_FinMapeh.MaxLength = 3;
-            this.txt_FinMapeh.Name = "txt_FinMapeh";
-            this.txt_FinMapeh.Size = new System.Drawing.Size(71, 22);
-            this.txt_FinMapeh.TabIndex = 15;
-            this.txt_FinMapeh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_ThirdMapeh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txt_ThirdMapeh.Location = new System.Drawing.Point(63, 110);
+            this.txt_ThirdMapeh.MaxLength = 3;
+            this.txt_ThirdMapeh.Name = "txt_ThirdMapeh";
+            this.txt_ThirdMapeh.Size = new System.Drawing.Size(71, 22);
+            this.txt_ThirdMapeh.TabIndex = 15;
+            this.txt_ThirdMapeh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txt_FinEnglish
+            // txt_ThirdEnglish
             // 
-            this.txt_FinEnglish.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.txt_FinEnglish.Location = new System.Drawing.Point(63, 157);
-            this.txt_FinEnglish.MaxLength = 3;
-            this.txt_FinEnglish.Name = "txt_FinEnglish";
-            this.txt_FinEnglish.Size = new System.Drawing.Size(71, 22);
-            this.txt_FinEnglish.TabIndex = 18;
-            this.txt_FinEnglish.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_ThirdEnglish.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txt_ThirdEnglish.Location = new System.Drawing.Point(63, 157);
+            this.txt_ThirdEnglish.MaxLength = 3;
+            this.txt_ThirdEnglish.Name = "txt_ThirdEnglish";
+            this.txt_ThirdEnglish.Size = new System.Drawing.Size(71, 22);
+            this.txt_ThirdEnglish.TabIndex = 18;
+            this.txt_ThirdEnglish.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txt_MidEnglish
+            // txt_SecondEnglish
             // 
-            this.txt_MidEnglish.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.txt_MidEnglish.Location = new System.Drawing.Point(67, 157);
-            this.txt_MidEnglish.MaxLength = 3;
-            this.txt_MidEnglish.Name = "txt_MidEnglish";
-            this.txt_MidEnglish.Size = new System.Drawing.Size(71, 22);
-            this.txt_MidEnglish.TabIndex = 17;
-            this.txt_MidEnglish.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_SecondEnglish.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txt_SecondEnglish.Location = new System.Drawing.Point(67, 157);
+            this.txt_SecondEnglish.MaxLength = 3;
+            this.txt_SecondEnglish.Name = "txt_SecondEnglish";
+            this.txt_SecondEnglish.Size = new System.Drawing.Size(71, 22);
+            this.txt_SecondEnglish.TabIndex = 17;
+            this.txt_SecondEnglish.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txt_PreEnglish
+            // txt_FirstEnglish
             // 
-            this.txt_PreEnglish.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.txt_PreEnglish.Location = new System.Drawing.Point(67, 157);
-            this.txt_PreEnglish.MaxLength = 3;
-            this.txt_PreEnglish.Name = "txt_PreEnglish";
-            this.txt_PreEnglish.Size = new System.Drawing.Size(71, 22);
-            this.txt_PreEnglish.TabIndex = 16;
-            this.txt_PreEnglish.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_FirstEnglish.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txt_FirstEnglish.Location = new System.Drawing.Point(67, 157);
+            this.txt_FirstEnglish.MaxLength = 3;
+            this.txt_FirstEnglish.Name = "txt_FirstEnglish";
+            this.txt_FirstEnglish.Size = new System.Drawing.Size(71, 22);
+            this.txt_FirstEnglish.TabIndex = 16;
+            this.txt_FirstEnglish.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txt_FinMath
+            // txt_ThirdMath
             // 
-            this.txt_FinMath.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.txt_FinMath.Location = new System.Drawing.Point(63, 209);
-            this.txt_FinMath.MaxLength = 3;
-            this.txt_FinMath.Name = "txt_FinMath";
-            this.txt_FinMath.Size = new System.Drawing.Size(71, 22);
-            this.txt_FinMath.TabIndex = 21;
-            this.txt_FinMath.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_ThirdMath.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txt_ThirdMath.Location = new System.Drawing.Point(63, 209);
+            this.txt_ThirdMath.MaxLength = 3;
+            this.txt_ThirdMath.Name = "txt_ThirdMath";
+            this.txt_ThirdMath.Size = new System.Drawing.Size(71, 22);
+            this.txt_ThirdMath.TabIndex = 21;
+            this.txt_ThirdMath.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txt_MidMath
+            // txt_SecondMath
             // 
-            this.txt_MidMath.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.txt_MidMath.Location = new System.Drawing.Point(67, 209);
-            this.txt_MidMath.MaxLength = 3;
-            this.txt_MidMath.Name = "txt_MidMath";
-            this.txt_MidMath.Size = new System.Drawing.Size(71, 22);
-            this.txt_MidMath.TabIndex = 20;
-            this.txt_MidMath.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_MidMath.TextChanged += new System.EventHandler(this.txt_MidMath_TextChanged);
+            this.txt_SecondMath.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txt_SecondMath.Location = new System.Drawing.Point(67, 209);
+            this.txt_SecondMath.MaxLength = 3;
+            this.txt_SecondMath.Name = "txt_SecondMath";
+            this.txt_SecondMath.Size = new System.Drawing.Size(71, 22);
+            this.txt_SecondMath.TabIndex = 20;
+            this.txt_SecondMath.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_SecondMath.TextChanged += new System.EventHandler(this.txt_MidMath_TextChanged);
             // 
-            // txt_PreMath
+            // txt_FirstMath
             // 
-            this.txt_PreMath.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.txt_PreMath.Location = new System.Drawing.Point(67, 209);
-            this.txt_PreMath.MaxLength = 3;
-            this.txt_PreMath.Name = "txt_PreMath";
-            this.txt_PreMath.Size = new System.Drawing.Size(71, 22);
-            this.txt_PreMath.TabIndex = 19;
-            this.txt_PreMath.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_FirstMath.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txt_FirstMath.Location = new System.Drawing.Point(67, 209);
+            this.txt_FirstMath.MaxLength = 3;
+            this.txt_FirstMath.Name = "txt_FirstMath";
+            this.txt_FirstMath.Size = new System.Drawing.Size(71, 22);
+            this.txt_FirstMath.TabIndex = 19;
+            this.txt_FirstMath.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txt_FinScience
+            // txt_ThirdScience
             // 
-            this.txt_FinScience.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.txt_FinScience.Location = new System.Drawing.Point(63, 313);
-            this.txt_FinScience.MaxLength = 3;
-            this.txt_FinScience.Name = "txt_FinScience";
-            this.txt_FinScience.Size = new System.Drawing.Size(71, 22);
-            this.txt_FinScience.TabIndex = 27;
-            this.txt_FinScience.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_ThirdScience.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txt_ThirdScience.Location = new System.Drawing.Point(63, 313);
+            this.txt_ThirdScience.MaxLength = 3;
+            this.txt_ThirdScience.Name = "txt_ThirdScience";
+            this.txt_ThirdScience.Size = new System.Drawing.Size(71, 22);
+            this.txt_ThirdScience.TabIndex = 27;
+            this.txt_ThirdScience.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txt_PreScience
+            // txt_FirstScience
             // 
-            this.txt_PreScience.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.txt_PreScience.Location = new System.Drawing.Point(67, 313);
-            this.txt_PreScience.MaxLength = 3;
-            this.txt_PreScience.Name = "txt_PreScience";
-            this.txt_PreScience.Size = new System.Drawing.Size(71, 22);
-            this.txt_PreScience.TabIndex = 25;
-            this.txt_PreScience.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_FirstScience.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txt_FirstScience.Location = new System.Drawing.Point(67, 313);
+            this.txt_FirstScience.MaxLength = 3;
+            this.txt_FirstScience.Name = "txt_FirstScience";
+            this.txt_FirstScience.Size = new System.Drawing.Size(71, 22);
+            this.txt_FirstScience.TabIndex = 25;
+            this.txt_FirstScience.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txt_FinFilipino
+            // txt_ThirdFilipino
             // 
-            this.txt_FinFilipino.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.txt_FinFilipino.Location = new System.Drawing.Point(63, 261);
-            this.txt_FinFilipino.MaxLength = 3;
-            this.txt_FinFilipino.Name = "txt_FinFilipino";
-            this.txt_FinFilipino.Size = new System.Drawing.Size(71, 22);
-            this.txt_FinFilipino.TabIndex = 24;
-            this.txt_FinFilipino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_ThirdFilipino.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txt_ThirdFilipino.Location = new System.Drawing.Point(63, 261);
+            this.txt_ThirdFilipino.MaxLength = 3;
+            this.txt_ThirdFilipino.Name = "txt_ThirdFilipino";
+            this.txt_ThirdFilipino.Size = new System.Drawing.Size(71, 22);
+            this.txt_ThirdFilipino.TabIndex = 24;
+            this.txt_ThirdFilipino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txt_MidFilipino
+            // txt_SecondFilipino
             // 
-            this.txt_MidFilipino.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.txt_MidFilipino.Location = new System.Drawing.Point(67, 261);
-            this.txt_MidFilipino.MaxLength = 3;
-            this.txt_MidFilipino.Name = "txt_MidFilipino";
-            this.txt_MidFilipino.Size = new System.Drawing.Size(71, 22);
-            this.txt_MidFilipino.TabIndex = 23;
-            this.txt_MidFilipino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_SecondFilipino.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txt_SecondFilipino.Location = new System.Drawing.Point(67, 261);
+            this.txt_SecondFilipino.MaxLength = 3;
+            this.txt_SecondFilipino.Name = "txt_SecondFilipino";
+            this.txt_SecondFilipino.Size = new System.Drawing.Size(71, 22);
+            this.txt_SecondFilipino.TabIndex = 23;
+            this.txt_SecondFilipino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txt_PreFilipino
+            // txt_FirstFilipino
             // 
-            this.txt_PreFilipino.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.txt_PreFilipino.Location = new System.Drawing.Point(67, 261);
-            this.txt_PreFilipino.MaxLength = 3;
-            this.txt_PreFilipino.Name = "txt_PreFilipino";
-            this.txt_PreFilipino.Size = new System.Drawing.Size(71, 22);
-            this.txt_PreFilipino.TabIndex = 22;
-            this.txt_PreFilipino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_FirstFilipino.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txt_FirstFilipino.Location = new System.Drawing.Point(67, 261);
+            this.txt_FirstFilipino.MaxLength = 3;
+            this.txt_FirstFilipino.Name = "txt_FirstFilipino";
+            this.txt_FirstFilipino.Size = new System.Drawing.Size(71, 22);
+            this.txt_FirstFilipino.TabIndex = 22;
+            this.txt_FirstFilipino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // lbl_StatusPrelim
+            // lbl_StatusFirst
             // 
-            this.lbl_StatusPrelim.AutoSize = true;
-            this.lbl_StatusPrelim.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_StatusPrelim.Location = new System.Drawing.Point(16, 432);
-            this.lbl_StatusPrelim.Name = "lbl_StatusPrelim";
-            this.lbl_StatusPrelim.Size = new System.Drawing.Size(19, 29);
-            this.lbl_StatusPrelim.TabIndex = 29;
-            this.lbl_StatusPrelim.Text = ".";
+            this.lbl_StatusFirst.AutoSize = true;
+            this.lbl_StatusFirst.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_StatusFirst.Location = new System.Drawing.Point(16, 432);
+            this.lbl_StatusFirst.Name = "lbl_StatusFirst";
+            this.lbl_StatusFirst.Size = new System.Drawing.Size(19, 29);
+            this.lbl_StatusFirst.TabIndex = 29;
+            this.lbl_StatusFirst.Text = ".";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(155, 345);
+            this.label19.Location = new System.Drawing.Point(40, 354);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(97, 29);
             this.label19.TabIndex = 33;
@@ -379,7 +390,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(155, 399);
+            this.label20.Location = new System.Drawing.Point(40, 408);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(117, 29);
             this.label20.TabIndex = 34;
@@ -389,7 +400,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(155, 444);
+            this.label21.Location = new System.Drawing.Point(40, 453);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(81, 29);
             this.label21.TabIndex = 35;
@@ -399,31 +410,31 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(155, 498);
+            this.label22.Location = new System.Drawing.Point(40, 507);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(112, 29);
             this.label22.TabIndex = 36;
             this.label22.Text = "FILIPINO";
             // 
-            // lbl_avgMidterm
+            // lbl_avgSecond
             // 
-            this.lbl_avgMidterm.AutoSize = true;
-            this.lbl_avgMidterm.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_avgMidterm.Location = new System.Drawing.Point(73, 376);
-            this.lbl_avgMidterm.Name = "lbl_avgMidterm";
-            this.lbl_avgMidterm.Size = new System.Drawing.Size(52, 29);
-            this.lbl_avgMidterm.TabIndex = 40;
-            this.lbl_avgMidterm.Text = "000";
+            this.lbl_avgSecond.AutoSize = true;
+            this.lbl_avgSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_avgSecond.Location = new System.Drawing.Point(73, 376);
+            this.lbl_avgSecond.Name = "lbl_avgSecond";
+            this.lbl_avgSecond.Size = new System.Drawing.Size(52, 29);
+            this.lbl_avgSecond.TabIndex = 40;
+            this.lbl_avgSecond.Text = "000";
             // 
-            // lbl_avgPrelim
+            // lbl_avgFirst
             // 
-            this.lbl_avgPrelim.AutoSize = true;
-            this.lbl_avgPrelim.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_avgPrelim.Location = new System.Drawing.Point(76, 376);
-            this.lbl_avgPrelim.Name = "lbl_avgPrelim";
-            this.lbl_avgPrelim.Size = new System.Drawing.Size(52, 29);
-            this.lbl_avgPrelim.TabIndex = 44;
-            this.lbl_avgPrelim.Text = "000";
+            this.lbl_avgFirst.AutoSize = true;
+            this.lbl_avgFirst.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_avgFirst.Location = new System.Drawing.Point(76, 376);
+            this.lbl_avgFirst.Name = "lbl_avgFirst";
+            this.lbl_avgFirst.Size = new System.Drawing.Size(52, 29);
+            this.lbl_avgFirst.TabIndex = 44;
+            this.lbl_avgFirst.Text = "000";
             // 
             // lbl_studID
             // 
@@ -448,141 +459,141 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(44, 37);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label9.Location = new System.Drawing.Point(18, 43);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(125, 29);
+            this.label9.Size = new System.Drawing.Size(154, 25);
             this.label9.TabIndex = 54;
-            this.label9.Text = "MIDTERM";
+            this.label9.Text = "Second Grading";
             // 
-            // pnl_Prelim
+            // pnl_First
             // 
-            this.pnl_Prelim.Controls.Add(this.btn_UpdatePrelim);
-            this.pnl_Prelim.Controls.Add(this.txt_PreMapeh);
-            this.pnl_Prelim.Controls.Add(this.txt_PreEnglish);
-            this.pnl_Prelim.Controls.Add(this.txt_PreMath);
-            this.pnl_Prelim.Controls.Add(this.txt_PreFilipino);
-            this.pnl_Prelim.Controls.Add(this.txt_PreScience);
-            this.pnl_Prelim.Controls.Add(this.lbl_avgPrelim);
-            this.pnl_Prelim.Controls.Add(this.lbl_StatusPrelim);
-            this.pnl_Prelim.Controls.Add(this.label10);
-            this.pnl_Prelim.Location = new System.Drawing.Point(298, 242);
-            this.pnl_Prelim.Name = "pnl_Prelim";
-            this.pnl_Prelim.Size = new System.Drawing.Size(200, 546);
-            this.pnl_Prelim.TabIndex = 55;
+            this.pnl_First.Controls.Add(this.btn_UpdateFirst);
+            this.pnl_First.Controls.Add(this.txt_FirstMapeh);
+            this.pnl_First.Controls.Add(this.txt_FirstEnglish);
+            this.pnl_First.Controls.Add(this.txt_FirstMath);
+            this.pnl_First.Controls.Add(this.txt_FirstFilipino);
+            this.pnl_First.Controls.Add(this.txt_FirstScience);
+            this.pnl_First.Controls.Add(this.lbl_avgFirst);
+            this.pnl_First.Controls.Add(this.lbl_StatusFirst);
+            this.pnl_First.Controls.Add(this.label10);
+            this.pnl_First.Location = new System.Drawing.Point(183, 251);
+            this.pnl_First.Name = "pnl_First";
+            this.pnl_First.Size = new System.Drawing.Size(200, 546);
+            this.pnl_First.TabIndex = 55;
             // 
-            // btn_UpdatePrelim
+            // btn_UpdateFirst
             // 
-            this.btn_UpdatePrelim.ForeColor = System.Drawing.Color.Black;
-            this.btn_UpdatePrelim.Location = new System.Drawing.Point(42, 491);
-            this.btn_UpdatePrelim.Name = "btn_UpdatePrelim";
-            this.btn_UpdatePrelim.Size = new System.Drawing.Size(123, 25);
-            this.btn_UpdatePrelim.TabIndex = 61;
-            this.btn_UpdatePrelim.Text = "Update";
-            this.btn_UpdatePrelim.UseVisualStyleBackColor = true;
-            this.btn_UpdatePrelim.Click += new System.EventHandler(this.btn_UpdatePrelim_Click);
+            this.btn_UpdateFirst.ForeColor = System.Drawing.Color.Black;
+            this.btn_UpdateFirst.Location = new System.Drawing.Point(42, 491);
+            this.btn_UpdateFirst.Name = "btn_UpdateFirst";
+            this.btn_UpdateFirst.Size = new System.Drawing.Size(123, 25);
+            this.btn_UpdateFirst.TabIndex = 62;
+            this.btn_UpdateFirst.Text = "Update";
+            this.btn_UpdateFirst.UseVisualStyleBackColor = true;
+            this.btn_UpdateFirst.Click += new System.EventHandler(this.btn_UpdateFirst_Click);
             // 
-            // pnl_Midterm
+            // pnl_Second
             // 
-            this.pnl_Midterm.Controls.Add(this.btn_UpdateMidterm);
-            this.pnl_Midterm.Controls.Add(this.txt_MidScience);
-            this.pnl_Midterm.Controls.Add(this.lbl_StatusMidterm);
-            this.pnl_Midterm.Controls.Add(this.txt_MidMapeh);
-            this.pnl_Midterm.Controls.Add(this.txt_MidEnglish);
-            this.pnl_Midterm.Controls.Add(this.txt_MidMath);
-            this.pnl_Midterm.Controls.Add(this.txt_MidFilipino);
-            this.pnl_Midterm.Controls.Add(this.lbl_avgMidterm);
-            this.pnl_Midterm.Controls.Add(this.label9);
-            this.pnl_Midterm.Location = new System.Drawing.Point(521, 242);
-            this.pnl_Midterm.Name = "pnl_Midterm";
-            this.pnl_Midterm.Size = new System.Drawing.Size(197, 546);
-            this.pnl_Midterm.TabIndex = 56;
+            this.pnl_Second.Controls.Add(this.btn_UpdateSecond);
+            this.pnl_Second.Controls.Add(this.txt_SecondScience);
+            this.pnl_Second.Controls.Add(this.lbl_StatusSecond);
+            this.pnl_Second.Controls.Add(this.txt_SecondMapeh);
+            this.pnl_Second.Controls.Add(this.txt_SecondEnglish);
+            this.pnl_Second.Controls.Add(this.txt_SecondMath);
+            this.pnl_Second.Controls.Add(this.txt_SecondFilipino);
+            this.pnl_Second.Controls.Add(this.lbl_avgSecond);
+            this.pnl_Second.Controls.Add(this.label9);
+            this.pnl_Second.Location = new System.Drawing.Point(406, 251);
+            this.pnl_Second.Name = "pnl_Second";
+            this.pnl_Second.Size = new System.Drawing.Size(197, 546);
+            this.pnl_Second.TabIndex = 56;
             // 
-            // btn_UpdateMidterm
+            // btn_UpdateSecond
             // 
-            this.btn_UpdateMidterm.ForeColor = System.Drawing.Color.Black;
-            this.btn_UpdateMidterm.Location = new System.Drawing.Point(49, 491);
-            this.btn_UpdateMidterm.Name = "btn_UpdateMidterm";
-            this.btn_UpdateMidterm.Size = new System.Drawing.Size(123, 25);
-            this.btn_UpdateMidterm.TabIndex = 61;
-            this.btn_UpdateMidterm.Text = "Update";
-            this.btn_UpdateMidterm.UseVisualStyleBackColor = true;
-            this.btn_UpdateMidterm.Click += new System.EventHandler(this.btn_UpdateMidterm_Click);
+            this.btn_UpdateSecond.ForeColor = System.Drawing.Color.Black;
+            this.btn_UpdateSecond.Location = new System.Drawing.Point(40, 491);
+            this.btn_UpdateSecond.Name = "btn_UpdateSecond";
+            this.btn_UpdateSecond.Size = new System.Drawing.Size(123, 25);
+            this.btn_UpdateSecond.TabIndex = 62;
+            this.btn_UpdateSecond.Text = "Update";
+            this.btn_UpdateSecond.UseVisualStyleBackColor = true;
+            this.btn_UpdateSecond.Click += new System.EventHandler(this.btn_UpdateSecond_Click);
             // 
-            // txt_MidScience
+            // txt_SecondScience
             // 
-            this.txt_MidScience.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_MidScience.Location = new System.Drawing.Point(67, 313);
-            this.txt_MidScience.MaxLength = 3;
-            this.txt_MidScience.Name = "txt_MidScience";
-            this.txt_MidScience.Size = new System.Drawing.Size(71, 22);
-            this.txt_MidScience.TabIndex = 55;
-            this.txt_MidScience.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_SecondScience.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_SecondScience.Location = new System.Drawing.Point(67, 313);
+            this.txt_SecondScience.MaxLength = 3;
+            this.txt_SecondScience.Name = "txt_SecondScience";
+            this.txt_SecondScience.Size = new System.Drawing.Size(71, 22);
+            this.txt_SecondScience.TabIndex = 55;
+            this.txt_SecondScience.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // lbl_StatusMidterm
+            // lbl_StatusSecond
             // 
-            this.lbl_StatusMidterm.AutoSize = true;
-            this.lbl_StatusMidterm.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_StatusMidterm.Location = new System.Drawing.Point(12, 432);
-            this.lbl_StatusMidterm.Name = "lbl_StatusMidterm";
-            this.lbl_StatusMidterm.Size = new System.Drawing.Size(19, 29);
-            this.lbl_StatusMidterm.TabIndex = 45;
-            this.lbl_StatusMidterm.Text = ".";
+            this.lbl_StatusSecond.AutoSize = true;
+            this.lbl_StatusSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_StatusSecond.Location = new System.Drawing.Point(12, 432);
+            this.lbl_StatusSecond.Name = "lbl_StatusSecond";
+            this.lbl_StatusSecond.Size = new System.Drawing.Size(19, 29);
+            this.lbl_StatusSecond.TabIndex = 45;
+            this.lbl_StatusSecond.Text = ".";
             // 
-            // pnl_Final
+            // pnl_Third
             // 
-            this.pnl_Final.Controls.Add(this.btn_UpdateFinal);
-            this.pnl_Final.Controls.Add(this.lbl_avgFinal);
-            this.pnl_Final.Controls.Add(this.lbl_StatusFinal);
-            this.pnl_Final.Controls.Add(this.txt_FinMapeh);
-            this.pnl_Final.Controls.Add(this.txt_FinEnglish);
-            this.pnl_Final.Controls.Add(this.txt_FinMath);
-            this.pnl_Final.Controls.Add(this.txt_FinFilipino);
-            this.pnl_Final.Controls.Add(this.txt_FinScience);
-            this.pnl_Final.Controls.Add(this.label11);
-            this.pnl_Final.Location = new System.Drawing.Point(745, 242);
-            this.pnl_Final.Name = "pnl_Final";
-            this.pnl_Final.Size = new System.Drawing.Size(197, 546);
-            this.pnl_Final.TabIndex = 57;
-            this.pnl_Final.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Final_Paint);
+            this.pnl_Third.Controls.Add(this.btn_UpdateThird);
+            this.pnl_Third.Controls.Add(this.lbl_avgThird);
+            this.pnl_Third.Controls.Add(this.lbl_StatusThird);
+            this.pnl_Third.Controls.Add(this.txt_ThirdMapeh);
+            this.pnl_Third.Controls.Add(this.txt_ThirdEnglish);
+            this.pnl_Third.Controls.Add(this.txt_ThirdMath);
+            this.pnl_Third.Controls.Add(this.txt_ThirdFilipino);
+            this.pnl_Third.Controls.Add(this.txt_ThirdScience);
+            this.pnl_Third.Controls.Add(this.label11);
+            this.pnl_Third.Location = new System.Drawing.Point(630, 251);
+            this.pnl_Third.Name = "pnl_Third";
+            this.pnl_Third.Size = new System.Drawing.Size(197, 546);
+            this.pnl_Third.TabIndex = 57;
+            this.pnl_Third.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Final_Paint);
             // 
-            // btn_UpdateFinal
+            // btn_UpdateThird
             // 
-            this.btn_UpdateFinal.ForeColor = System.Drawing.Color.Black;
-            this.btn_UpdateFinal.Location = new System.Drawing.Point(44, 491);
-            this.btn_UpdateFinal.Name = "btn_UpdateFinal";
-            this.btn_UpdateFinal.Size = new System.Drawing.Size(123, 25);
-            this.btn_UpdateFinal.TabIndex = 62;
-            this.btn_UpdateFinal.Text = "Update";
-            this.btn_UpdateFinal.UseVisualStyleBackColor = true;
-            this.btn_UpdateFinal.Click += new System.EventHandler(this.btn_UpdateFinal_Click);
+            this.btn_UpdateThird.ForeColor = System.Drawing.Color.Black;
+            this.btn_UpdateThird.Location = new System.Drawing.Point(44, 491);
+            this.btn_UpdateThird.Name = "btn_UpdateThird";
+            this.btn_UpdateThird.Size = new System.Drawing.Size(123, 25);
+            this.btn_UpdateThird.TabIndex = 63;
+            this.btn_UpdateThird.Text = "Update";
+            this.btn_UpdateThird.UseVisualStyleBackColor = true;
+            this.btn_UpdateThird.Click += new System.EventHandler(this.btn_UpdateThird_Click);
             // 
-            // lbl_avgFinal
+            // lbl_avgThird
             // 
-            this.lbl_avgFinal.AutoSize = true;
-            this.lbl_avgFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_avgFinal.Location = new System.Drawing.Point(72, 376);
-            this.lbl_avgFinal.Name = "lbl_avgFinal";
-            this.lbl_avgFinal.Size = new System.Drawing.Size(52, 29);
-            this.lbl_avgFinal.TabIndex = 47;
-            this.lbl_avgFinal.Text = "000";
+            this.lbl_avgThird.AutoSize = true;
+            this.lbl_avgThird.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_avgThird.Location = new System.Drawing.Point(72, 376);
+            this.lbl_avgThird.Name = "lbl_avgThird";
+            this.lbl_avgThird.Size = new System.Drawing.Size(52, 29);
+            this.lbl_avgThird.TabIndex = 47;
+            this.lbl_avgThird.Text = "000";
             // 
-            // lbl_StatusFinal
+            // lbl_StatusThird
             // 
-            this.lbl_StatusFinal.AutoSize = true;
-            this.lbl_StatusFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_StatusFinal.Location = new System.Drawing.Point(15, 432);
-            this.lbl_StatusFinal.Name = "lbl_StatusFinal";
-            this.lbl_StatusFinal.Size = new System.Drawing.Size(19, 29);
-            this.lbl_StatusFinal.TabIndex = 46;
-            this.lbl_StatusFinal.Text = ".";
-            this.lbl_StatusFinal.Click += new System.EventHandler(this.lbl_StatusFinal_Click);
+            this.lbl_StatusThird.AutoSize = true;
+            this.lbl_StatusThird.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_StatusThird.Location = new System.Drawing.Point(15, 432);
+            this.lbl_StatusThird.Name = "lbl_StatusThird";
+            this.lbl_StatusThird.Size = new System.Drawing.Size(19, 29);
+            this.lbl_StatusThird.TabIndex = 46;
+            this.lbl_StatusThird.Text = ".";
+            this.lbl_StatusThird.Click += new System.EventHandler(this.lbl_StatusFinal_Click);
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(161, 674);
+            this.label17.Location = new System.Drawing.Point(46, 683);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(109, 29);
             this.label17.TabIndex = 58;
@@ -609,7 +620,7 @@
             this.pnl_overall.Controls.Add(this.lbl_ovrAll_English);
             this.pnl_overall.Controls.Add(this.lbl_ovrAll_Mapeh);
             this.pnl_overall.Controls.Add(this.btn_Compute);
-            this.pnl_overall.Location = new System.Drawing.Point(969, 242);
+            this.pnl_overall.Location = new System.Drawing.Point(1066, 251);
             this.pnl_overall.Name = "pnl_overall";
             this.pnl_overall.Size = new System.Drawing.Size(197, 546);
             this.pnl_overall.TabIndex = 58;
@@ -684,44 +695,6 @@
             this.lbl_ovrAll_English.TabIndex = 47;
             this.lbl_ovrAll_English.Text = "000";
             // 
-            // cmb_term
-            // 
-            this.cmb_term.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_term.FormattingEnabled = true;
-            this.cmb_term.Items.AddRange(new object[] {
-            "Select Term ---",
-            "PRELIM",
-            "MIDTERM",
-            "FINAL"});
-            this.cmb_term.Location = new System.Drawing.Point(160, 197);
-            this.cmb_term.Name = "cmb_term";
-            this.cmb_term.Size = new System.Drawing.Size(161, 28);
-            this.cmb_term.TabIndex = 61;
-            this.cmb_term.Text = "Select Term ---";
-            this.cmb_term.SelectedIndexChanged += new System.EventHandler(this.cmb_term_SelectedIndexChanged);
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(161, 555);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(119, 29);
-            this.label23.TabIndex = 62;
-            this.label23.Text = "SCIENCE";
-            // 
-            // btn_inputGradeBack
-            // 
-            this.btn_inputGradeBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_inputGradeBack.ForeColor = System.Drawing.Color.Black;
-            this.btn_inputGradeBack.Location = new System.Drawing.Point(1171, 815);
-            this.btn_inputGradeBack.Name = "btn_inputGradeBack";
-            this.btn_inputGradeBack.Size = new System.Drawing.Size(99, 38);
-            this.btn_inputGradeBack.TabIndex = 51;
-            this.btn_inputGradeBack.Text = "Back";
-            this.btn_inputGradeBack.UseVisualStyleBackColor = true;
-            this.btn_inputGradeBack.Click += new System.EventHandler(this.btn_inputGradeBack_Click);
-            // 
             // btn_Compute
             // 
             this.btn_Compute.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -734,19 +707,166 @@
             this.btn_Compute.UseVisualStyleBackColor = true;
             this.btn_Compute.Click += new System.EventHandler(this.btn_Compute_Click);
             // 
+            // cmb_term
+            // 
+            this.cmb_term.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_term.FormattingEnabled = true;
+            this.cmb_term.Items.AddRange(new object[] {
+            "Select Grading Term ---",
+            "First",
+            "Second",
+            "Third",
+            "Fourth"});
+            this.cmb_term.Location = new System.Drawing.Point(160, 197);
+            this.cmb_term.Name = "cmb_term";
+            this.cmb_term.Size = new System.Drawing.Size(311, 28);
+            this.cmb_term.TabIndex = 61;
+            this.cmb_term.Text = "Select Term ---";
+            this.cmb_term.SelectedIndexChanged += new System.EventHandler(this.cmb_term_SelectedIndexChanged);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(46, 564);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(119, 29);
+            this.label23.TabIndex = 62;
+            this.label23.Text = "SCIENCE";
+            // 
+            // btn_inputGradeBack
+            // 
+            this.btn_inputGradeBack.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_inputGradeBack.ForeColor = System.Drawing.Color.Black;
+            this.btn_inputGradeBack.Location = new System.Drawing.Point(12, 23);
+            this.btn_inputGradeBack.Name = "btn_inputGradeBack";
+            this.btn_inputGradeBack.Size = new System.Drawing.Size(99, 38);
+            this.btn_inputGradeBack.TabIndex = 51;
+            this.btn_inputGradeBack.Text = "Back";
+            this.btn_inputGradeBack.UseVisualStyleBackColor = true;
+            this.btn_inputGradeBack.Click += new System.EventHandler(this.btn_inputGradeBack_Click);
+            // 
+            // pnl_Fourth
+            // 
+            this.pnl_Fourth.Controls.Add(this.btn_UpdateFourth);
+            this.pnl_Fourth.Controls.Add(this.lbl_avgFourth);
+            this.pnl_Fourth.Controls.Add(this.lbl_StatusFourth);
+            this.pnl_Fourth.Controls.Add(this.txt_FourthMapeh);
+            this.pnl_Fourth.Controls.Add(this.txt_FourthEnglish);
+            this.pnl_Fourth.Controls.Add(this.txt_FourthMath);
+            this.pnl_Fourth.Controls.Add(this.txt_FourthFilipino);
+            this.pnl_Fourth.Controls.Add(this.txt_FourthScience);
+            this.pnl_Fourth.Controls.Add(this.label6);
+            this.pnl_Fourth.Location = new System.Drawing.Point(851, 251);
+            this.pnl_Fourth.Name = "pnl_Fourth";
+            this.pnl_Fourth.Size = new System.Drawing.Size(197, 546);
+            this.pnl_Fourth.TabIndex = 63;
+            // 
+            // btn_UpdateFourth
+            // 
+            this.btn_UpdateFourth.ForeColor = System.Drawing.Color.Black;
+            this.btn_UpdateFourth.Location = new System.Drawing.Point(44, 491);
+            this.btn_UpdateFourth.Name = "btn_UpdateFourth";
+            this.btn_UpdateFourth.Size = new System.Drawing.Size(123, 25);
+            this.btn_UpdateFourth.TabIndex = 63;
+            this.btn_UpdateFourth.Text = "Update";
+            this.btn_UpdateFourth.UseVisualStyleBackColor = true;
+            this.btn_UpdateFourth.Click += new System.EventHandler(this.btn_UpdateFourth_Click_1);
+            // 
+            // lbl_avgFourth
+            // 
+            this.lbl_avgFourth.AutoSize = true;
+            this.lbl_avgFourth.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_avgFourth.Location = new System.Drawing.Point(72, 376);
+            this.lbl_avgFourth.Name = "lbl_avgFourth";
+            this.lbl_avgFourth.Size = new System.Drawing.Size(52, 29);
+            this.lbl_avgFourth.TabIndex = 47;
+            this.lbl_avgFourth.Text = "000";
+            // 
+            // lbl_StatusFourth
+            // 
+            this.lbl_StatusFourth.AutoSize = true;
+            this.lbl_StatusFourth.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_StatusFourth.Location = new System.Drawing.Point(15, 432);
+            this.lbl_StatusFourth.Name = "lbl_StatusFourth";
+            this.lbl_StatusFourth.Size = new System.Drawing.Size(19, 29);
+            this.lbl_StatusFourth.TabIndex = 46;
+            this.lbl_StatusFourth.Text = ".";
+            // 
+            // txt_FourthMapeh
+            // 
+            this.txt_FourthMapeh.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txt_FourthMapeh.Location = new System.Drawing.Point(63, 110);
+            this.txt_FourthMapeh.MaxLength = 3;
+            this.txt_FourthMapeh.Name = "txt_FourthMapeh";
+            this.txt_FourthMapeh.Size = new System.Drawing.Size(71, 22);
+            this.txt_FourthMapeh.TabIndex = 15;
+            this.txt_FourthMapeh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txt_FourthEnglish
+            // 
+            this.txt_FourthEnglish.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txt_FourthEnglish.Location = new System.Drawing.Point(63, 157);
+            this.txt_FourthEnglish.MaxLength = 3;
+            this.txt_FourthEnglish.Name = "txt_FourthEnglish";
+            this.txt_FourthEnglish.Size = new System.Drawing.Size(71, 22);
+            this.txt_FourthEnglish.TabIndex = 18;
+            this.txt_FourthEnglish.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txt_FourthMath
+            // 
+            this.txt_FourthMath.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txt_FourthMath.Location = new System.Drawing.Point(63, 209);
+            this.txt_FourthMath.MaxLength = 3;
+            this.txt_FourthMath.Name = "txt_FourthMath";
+            this.txt_FourthMath.Size = new System.Drawing.Size(71, 22);
+            this.txt_FourthMath.TabIndex = 21;
+            this.txt_FourthMath.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txt_FourthFilipino
+            // 
+            this.txt_FourthFilipino.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txt_FourthFilipino.Location = new System.Drawing.Point(63, 261);
+            this.txt_FourthFilipino.MaxLength = 3;
+            this.txt_FourthFilipino.Name = "txt_FourthFilipino";
+            this.txt_FourthFilipino.Size = new System.Drawing.Size(71, 22);
+            this.txt_FourthFilipino.TabIndex = 24;
+            this.txt_FourthFilipino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txt_FourthScience
+            // 
+            this.txt_FourthScience.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.txt_FourthScience.Location = new System.Drawing.Point(63, 313);
+            this.txt_FourthScience.MaxLength = 3;
+            this.txt_FourthScience.Name = "txt_FourthScience";
+            this.txt_FourthScience.Size = new System.Drawing.Size(71, 22);
+            this.txt_FourthScience.TabIndex = 27;
+            this.txt_FourthScience.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label6.Location = new System.Drawing.Point(25, 43);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(142, 25);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Fourth Grading";
+            // 
             // InputGrades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SaddleBrown;
-            this.ClientSize = new System.Drawing.Size(1291, 883);
+            this.ClientSize = new System.Drawing.Size(1283, 952);
+            this.Controls.Add(this.pnl_Fourth);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.cmb_term);
             this.Controls.Add(this.pnl_overall);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.pnl_Final);
-            this.Controls.Add(this.pnl_Midterm);
-            this.Controls.Add(this.pnl_Prelim);
+            this.Controls.Add(this.pnl_Third);
+            this.Controls.Add(this.pnl_Second);
+            this.Controls.Add(this.pnl_First);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lbl_studID);
             this.Controls.Add(this.btn_inputGradeBack);
@@ -769,14 +889,16 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InputGrades";
             this.Load += new System.EventHandler(this.InputGrades_Load);
-            this.pnl_Prelim.ResumeLayout(false);
-            this.pnl_Prelim.PerformLayout();
-            this.pnl_Midterm.ResumeLayout(false);
-            this.pnl_Midterm.PerformLayout();
-            this.pnl_Final.ResumeLayout(false);
-            this.pnl_Final.PerformLayout();
+            this.pnl_First.ResumeLayout(false);
+            this.pnl_First.PerformLayout();
+            this.pnl_Second.ResumeLayout(false);
+            this.pnl_Second.PerformLayout();
+            this.pnl_Third.ResumeLayout(false);
+            this.pnl_Third.PerformLayout();
             this.pnl_overall.ResumeLayout(false);
             this.pnl_overall.PerformLayout();
+            this.pnl_Fourth.ResumeLayout(false);
+            this.pnl_Fourth.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -796,35 +918,35 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txt_PreMapeh;
-        private System.Windows.Forms.TextBox txt_MidMapeh;
-        private System.Windows.Forms.TextBox txt_FinMapeh;
-        private System.Windows.Forms.TextBox txt_FinEnglish;
-        private System.Windows.Forms.TextBox txt_MidEnglish;
-        private System.Windows.Forms.TextBox txt_PreEnglish;
-        private System.Windows.Forms.TextBox txt_FinMath;
-        private System.Windows.Forms.TextBox txt_MidMath;
-        private System.Windows.Forms.TextBox txt_PreMath;
-        private System.Windows.Forms.TextBox txt_FinScience;
-        private System.Windows.Forms.TextBox txt_PreScience;
-        private System.Windows.Forms.TextBox txt_FinFilipino;
-        private System.Windows.Forms.TextBox txt_MidFilipino;
-        private System.Windows.Forms.TextBox txt_PreFilipino;
-        private System.Windows.Forms.Label lbl_StatusPrelim;
+        private System.Windows.Forms.TextBox txt_FirstMapeh;
+        private System.Windows.Forms.TextBox txt_SecondMapeh;
+        private System.Windows.Forms.TextBox txt_ThirdMapeh;
+        private System.Windows.Forms.TextBox txt_ThirdEnglish;
+        private System.Windows.Forms.TextBox txt_SecondEnglish;
+        private System.Windows.Forms.TextBox txt_FirstEnglish;
+        private System.Windows.Forms.TextBox txt_ThirdMath;
+        private System.Windows.Forms.TextBox txt_SecondMath;
+        private System.Windows.Forms.TextBox txt_FirstMath;
+        private System.Windows.Forms.TextBox txt_ThirdScience;
+        private System.Windows.Forms.TextBox txt_FirstScience;
+        private System.Windows.Forms.TextBox txt_ThirdFilipino;
+        private System.Windows.Forms.TextBox txt_SecondFilipino;
+        private System.Windows.Forms.TextBox txt_FirstFilipino;
+        private System.Windows.Forms.Label lbl_StatusFirst;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label lbl_avgMidterm;
-        private System.Windows.Forms.Label lbl_avgPrelim;
+        private System.Windows.Forms.Label lbl_avgSecond;
+        private System.Windows.Forms.Label lbl_avgFirst;
         private System.Windows.Forms.Label lbl_studID;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel pnl_Prelim;
-        private System.Windows.Forms.Panel pnl_Midterm;
-        private System.Windows.Forms.Panel pnl_Final;
-        private System.Windows.Forms.Label lbl_StatusMidterm;
-        private System.Windows.Forms.Label lbl_StatusFinal;
+        private System.Windows.Forms.Panel pnl_First;
+        private System.Windows.Forms.Panel pnl_Second;
+        private System.Windows.Forms.Panel pnl_Third;
+        private System.Windows.Forms.Label lbl_StatusSecond;
+        private System.Windows.Forms.Label lbl_StatusThird;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label lbl_ovrAll_Mapeh;
         private System.Windows.Forms.Panel pnl_overall;
@@ -837,12 +959,22 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.ComboBox cmb_term;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label lbl_avgFinal;
-        private System.Windows.Forms.TextBox txt_MidScience;
-        private System.Windows.Forms.Button btn_UpdateMidterm;
-        private System.Windows.Forms.Button btn_UpdateFinal;
-        private System.Windows.Forms.Button btn_UpdatePrelim;
+        private System.Windows.Forms.Label lbl_avgThird;
+        private System.Windows.Forms.TextBox txt_SecondScience;
         private System.Windows.Forms.Button btn_inputGradeBack;
         private System.Windows.Forms.Button btn_Compute;
+        private System.Windows.Forms.Panel pnl_Fourth;
+        private System.Windows.Forms.Label lbl_avgFourth;
+        private System.Windows.Forms.Label lbl_StatusFourth;
+        private System.Windows.Forms.TextBox txt_FourthMapeh;
+        private System.Windows.Forms.TextBox txt_FourthEnglish;
+        private System.Windows.Forms.TextBox txt_FourthMath;
+        private System.Windows.Forms.TextBox txt_FourthFilipino;
+        private System.Windows.Forms.TextBox txt_FourthScience;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btn_UpdateFirst;
+        private System.Windows.Forms.Button btn_UpdateSecond;
+        private System.Windows.Forms.Button btn_UpdateThird;
+        private System.Windows.Forms.Button btn_UpdateFourth;
     }
 }

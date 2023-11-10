@@ -51,37 +51,42 @@ namespace Int_GradeSystem.TeacherForm
                 case "1 - Diamond":
                     {
                         //assigning of grade level
-                        dgv_studentList.DataSource = data.SP_stud_ViewStudents(1);
+                        dgv_studentList.DataSource = data.SP_stud_ViewLIst(1);
                     }
                     break;
                 case "2 - Rosal":
                     {
-                        dgv_studentList.DataSource = data.SP_stud_ViewStudents(2);
+                        dgv_studentList.DataSource = data.SP_stud_ViewLIst(2);
                     }
                     break;
                 case "3 - Earth":
                     {
-                        dgv_studentList.DataSource = data.SP_stud_ViewStudents(3);
+                        dgv_studentList.DataSource = data.SP_stud_ViewLIst(3); ;
                     }
                     break;
                 case "4 - Hope":
                     {
-                        dgv_studentList.DataSource = data.SP_stud_ViewStudents(4);
+                        dgv_studentList.DataSource = data.SP_stud_ViewLIst(4); ;
                     }
                     break;
                 case "5 - Fourier":
                     {
-                        dgv_studentList.DataSource = data.SP_stud_ViewStudents(5);
+                        dgv_studentList.DataSource = data.SP_stud_ViewLIst(5);
                     }
                     break;
                 case "6 - Hawking":
                     {
-                        dgv_studentList.DataSource = data.SP_stud_ViewStudents(6);
+                        dgv_studentList.DataSource = data.SP_stud_ViewLIst(6);
                     }
                     break;
                 default:
                     break;
             }
+        }
+
+        private void dgv_studentList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }

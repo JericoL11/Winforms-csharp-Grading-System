@@ -69,78 +69,86 @@ namespace Int_GradeSystem.AdminForm
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-
-            //checking the database if the ID is available
-            var Database = data.tbl_TeacherAccs
-                .FirstOrDefault(t => t.teacherId.ToString() == txt_IDselector.Text);
-
-
-            //for information - assigning of information from database tbl_TeacherInfos
-            var database_Info = data.tbl_TeacherInfos
-                                .FirstOrDefault(i => i.FK_teacherId == int.Parse(txt_IDselector.Text));
-
+            
 
             if (string.IsNullOrEmpty(txt_IDselector.Text))
             {
                 alert.Select_ID();
-            }
-            else if(Database != null && database_Info != null)
-            {
-                switch (SelectedID)
-                {
-                    case null:
-                        alert.Select_ID();
-                        break;
-
-                    default:
-
-                        //Notifying the user for final decision
-                        var ResultDialog = MessageBox.Show($"Do you want to delete the selected ID \"{SelectedID}\" ?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                        if (ResultDialog == DialogResult.Yes)
-                        {
-                            //Stored Procedure Function
-                            data.SP_adm_DeleteAccountBothTables(int.Parse(txt_IDselector.Text));
-                            ViewReload();
-                        }
-                        else
-                        {
-                            break;
-                        }
-                        break;
-                }
-            }
-
-            //with existing data from another table
-            else if (Database != null && database_Info == null)
-            {
-                switch (SelectedID)
-                {
-                    case null:
-                        alert.Select_ID();
-                        break;
-
-                    default:
-
-                        //Notifying the user for final decision
-                        var ResultDialog = MessageBox.Show($"Do you want to delete the selected ID \"{SelectedID}\" ?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                        if (ResultDialog == DialogResult.Yes)
-                        {
-                            //Stored Procedure Function
-                            data.SP_adm_DeleteAccount(int.Parse(txt_IDselector.Text));
-                          
-                            ViewReload();
-                        }
-                        else
-                        {
-                            break;
-                        }
-                        break;
-                }
+              
             }
             else
             {
-                alert.id_Notfound();
+                //checking the database if the ID is available
+                var Database = data.tbl_TeacherAccs
+                    .FirstOrDefault(t => t.teacherId.ToString() == txt_IDselector.Text);
+
+                //for information - assigning of information from database tbl_TeacherInfos
+                var database_Info = data.tbl_TeacherInfos
+                                    .FirstOrDefault(i => i.FK_teacherId == int.Parse(txt_IDselector.Text));
+
+
+
+
+                if (Database != null && database_Info != null)
+                {
+                    switch (SelectedID)
+                    {
+                        case null:
+                            alert.Select_ID();
+                            break;
+
+                        default:
+
+                            //Notifying the user for final decision
+                            var ResultDialog = MessageBox.Show($"Do you want to delete the selected ID \"{SelectedID}\" ?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                            if (ResultDialog == DialogResult.Yes)
+                            {
+                                //Stored Procedure Function
+                                data.SP_adm_DeleteAccountBothTables(int.Parse(txt_IDselector.Text));
+                                ViewReload();
+                            }
+                            else
+                            {
+                                break;
+                            }
+                            break;
+                    }
+                }
+
+                //with existing data from another table
+                else if (Database != null && database_Info == null)
+                {
+                    switch (SelectedID)
+                    {
+                        case null:
+                            alert.Select_ID();
+                            break;
+
+                        default:
+
+                            //Notifying the user for final decision
+                            var ResultDialog = MessageBox.Show($"Do you want to delete the selected ID \"{SelectedID}\" ?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                            if (ResultDialog == DialogResult.Yes)
+                            {
+                                //Stored Procedure Function
+                                data.SP_adm_DeleteAccount(int.Parse(txt_IDselector.Text));
+
+                                ViewReload();
+                            }
+                            else
+                            {
+                                break;
+                            }
+                            break;
+                    }
+                }
+                else
+                {
+                    alert.id_Notfound();
+                }
             }
+
+           
         }
 
         #region==  VIEW RELOADER function ==

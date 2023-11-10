@@ -41,72 +41,98 @@ Create Table tbl_Students(
 	birthDate date Not Null,
 	grade int,
 	section nvarchar(30),
-	Prelim_Status nvarchar(30) default 'TBI',
-	Midterm_Status nvarchar(30) default 'TBI',
-	Final_Status nvarchar(30) default 'TBI',
+	First_Grading nvarchar(30) default 'TBI',
+	Second_Grading nvarchar(30) default 'TBI',
+	Third_Grading nvarchar(30) default 'TBI',
+	Fourth_Grading nvarchar(30) default 'TBI',
 	CreatedBy nvarchar(75) not null 
 );
 
+--Sp_rename 'tbl_students.CreatedBy', 'UpdatedBy'
+
+
+--ALTERED COLUMN
 ALTER TABLE tbl_Students
---Add Prelim_grade_Status nvarchar(30) default 'To be Input';
---Add Midterm_grade_Status nvarchar(30) default 'To be Input';
-Add Final_grade_Status nvarchar(30) default 'To be Input';
+Add UpdatedBy_f1 nvarchar(30) default 'TBI';
 
---Drop Column Final_grade_Status;
+ALTER TABLE tbl_Students
+Add UpdatedBy_sc nvarchar(30) default 'TBI';
+
+ALTER TABLE tbl_Students
+Add UpdatedBy_th nvarchar(30) default 'TBI';
+
+ALTER TABLE tbl_Students
+Add UpdatedBy_f4 nvarchar(30) default 'TBI';
+
+;
 
 
---buhatig subject term table
-
-Create table tbl_Student_PrelimSubject(
+Create table tbl_Student_FirstG_Subject(
 	FK_studentID int FOREIGN KEY REFERENCES tbl_Students(studentId),
-	Mapeh_Prelim float,
-	English_Prelim float,
-	Math_Prelim float,
-	Filipino_Prelim float,
-	Science_Prelim float,
-	Period_Avg_Prelim float(3),
-	Period_Status_Prelim nvarchar(30),
+	Mapeh_firstG float,
+	English_firstG float,
+	Math_firstG float,
+	Filipino_firstG float,
+	Science_firstG float,
+	Period_Avg_firstG float(3),
+	Period_Status_firstG nvarchar(30),
 	GradeStatus nvarchar(30),
 	updatedBy nvarchar(50),
 	
 )
 
-Create table tbl_Student_MidtermSubject(
+Create table tbl_Student_SecondG_Subject(
 	FK_studentID int FOREIGN KEY REFERENCES tbl_Students(studentId),
-	Mapeh_Midterm float,
-	English_Midterm float,
-	Math_Midterm float,
-	Filipino_Midterm float,
-	Science_Midterm float,
-	Period_Avg_Midterm float (3),
-	Period_Status_MIdterm nvarchar(30),
+	Mapeh_SecondG float,
+	English_SecondG float,
+	Math_SecondG float,
+	Filipino_SecondG float,
+	Science_SecondG float,
+	Period_Avg_SecondG float (3),
+	Period_Status_SecondG nvarchar(30),
 	GradeStatus nvarchar(30),
 	updatedBy nvarchar(50)
 	
 )
 
-Create table tbl_Student_FinalSubject(
+Create table tbl_Student_ThirdG_Subject(
 	FK_studentID int FOREIGN KEY REFERENCES tbl_Students(studentId),
-	Mapeh_Final float,
-	English_Final float,
-	Math_Final float,
-	Filipino_Final float,
-	Science_Final float,
-	Period_Avg_Final float(3),
-	Period_Status_Final nvarchar(30),
+	Mapeh_ThirdG float,
+	English_ThirdG float,
+	Math_ThirdG float,
+	Filipino_ThirdG float,
+	Science_ThirdG float,
+	Period_Avg_ThirdG float(3),
+	Period_Status_ThirdG nvarchar(30),
 	GradeStatus nvarchar(30),
 	updatedBy nvarchar(50)
 	
 )
+
+Create table tbl_Student_FourthG_Subject(
+	FK_studentID int FOREIGN KEY REFERENCES tbl_Students(studentId),
+	Mapeh_FourthG float,
+	English_FourthG float,
+	Math_FourthG float,
+	Filipino_FourthG float,
+	Science_FourthG float,
+	Period_Avg_FourthG float(3),
+	Period_Status_FourthG nvarchar(30),
+	GradeStatus nvarchar(30),
+	updatedBy nvarchar(50)
+	
+)
+
 
 --STUDENT TERMS TABLE
 
 Create Table tbl_Grading_Period(
 
 	FK_studentID int FOREIGN KEY REFERENCES tbl_Students(studentId),
-	prelim_avg float(3),
-	midterm_avg float(3),
-	final_avg float(3),
+	FirstGrading_avg float(3),
+	SecondGraing_avg float(3),
+	ThirdGrading_avg float(3),
+	FourthGrading_avg float(3),
 	overall float(3),
 	grade int,
 	term nvarchar(30)
@@ -120,9 +146,9 @@ Create Table tbl_Grading_Period(
 --	Overall_Status nvarchar(30),
 );
 
-Select * from tbl_Grading_Period
+Select * from tbl_Students
 
-Select * from tbl_Grading_Period
+Select * from tbl_Student_PrelimSubject
 where grade = 1;
 
 

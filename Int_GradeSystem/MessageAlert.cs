@@ -148,16 +148,23 @@ namespace Int_GradeSystem
             string message = $"Please Fill-out the grades commpletely";
             MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
-        public void Prelim_avg()
+        public void FirstGrading_avg()
         {
             string title = "Notification";
-            string message = $"Prelim Grades is requred before to input grades in Midterm";
+            string message = $"First Grading Grades is requred before to input grades in Second Grading";
             MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
-        public void Midterm_avg()
+        public void SecondGrading_avg()
         {
             string title = "Notification";
-            string message = $"Midterm Grades is requred before to input grades in Final";
+            string message = $"Second Grading Grades is requred before to input grades in Third Grading";
+            MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
+
+        public void ThirdGrading_avg()
+        {
+            string title = "Notification";
+            string message = $"Third Grading Grades is requred before to input grades in Fourth Grading";
             MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
         public void Teacher_Age_Invalid(int age)
