@@ -16,9 +16,21 @@ namespace Int_GradeSystem.TeacherForm
         public ChangePassword()
         {
             InitializeComponent();
+            //fix screen flickering
+            this.DoubleBuffered = true;
+
         }
 
-
+        // set the WS_EX_COMPOSITED flag, which provides similar double-buffering behavior:
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+                return cp;
+            }
+        }
         //database instantiation
         DataClasses1DataContext data = new DataClasses1DataContext();
 
@@ -34,8 +46,7 @@ namespace Int_GradeSystem.TeacherForm
 
         private void bnt_Cancel_Click(object sender, EventArgs e)
         {
-            EditProfile ep = new EditProfile();
-            ep.ID = this.ID;
+       
             this.Close();
             
         }
@@ -82,6 +93,16 @@ namespace Int_GradeSystem.TeacherForm
                     }
                     break;
             }
+        }
+
+        private void lbl_ID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

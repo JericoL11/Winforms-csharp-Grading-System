@@ -21,7 +21,23 @@ namespace Int_GradeSystem
         public Form1()
         {
             InitializeComponent();
+            //to fix screen flickering
+            this.DoubleBuffered = true;
+
+        }  
+        
+        // set the WS_EX_COMPOSITED flag, which provides similar double-buffering behavior:
+        protected override CreateParams CreateParams
+        {
+            
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+                return cp;
+            }
         }
+
 
         //datase instantiation
         DataClasses1DataContext data = new DataClasses1DataContext();
@@ -31,7 +47,7 @@ namespace Int_GradeSystem
 
  
 
-        private void btn_login_Click(object sender, EventArgs e)
+        private  void btn_login_Click(object sender, EventArgs e)
         {
             ////matching the data in database
             var Teacher_Login = data.tbl_TeacherAccs
@@ -44,13 +60,25 @@ namespace Int_GradeSystem
 
                 alert.login_Success();
 
-                TeacherFormPage tf = new TeacherFormPage();
-                //assigning of property
-                tf.ID = txt_username.Text;
+                this.Opacity = 10;
+                Timer timer = new Timer();
+                timer.Interval = 15;
+                timer.Tick += (senders, es) =>
+                {
+                    this.Opacity -= 0.1;
+                    if (this.Opacity <= 0)
+                    {
+                        TeacherFormPage tf = new TeacherFormPage();
+                        tf.ID = txt_username.Text;
+                        tf.Show();
+                        timer.Stop();
+                  
 
-                tf.Show();
-                this.Hide();
-              
+                        this.Hide();
+                    }
+                };
+                timer.Start();
+            
                
             }
             else if(txt_username.Text == "Username" ||  txt_password.Text == "Password")
@@ -61,14 +89,37 @@ namespace Int_GradeSystem
             {
                 alert.login_Fail();
             }
-            
-
-         
+       
         }
+        #region =========Transition Hide original code =================
+        
+      /*  private void ShowNextFormWithTransition()
+        {
+            // Implement custom animations or transitions between forms
+            // For instance, you can use timers to gradually change opacity or position
+            // Here's a simplified example using opacity change:
+
+            this.Opacity = 5;
+            Timer timer = new Timer();
+            timer.Interval = 20;
+            timer.Tick += (sender, e) =>
+            {
+                this.Opacity -= 0.05;
+                if (this.Opacity <= 0)
+                {
+                    timer.Stop();
+                    TeacherFormPage nextForm = new TeacherFormPage();
+                    nextForm.Show();
+                    this.Hide();
+                }
+            };
+            timer.Start();
+        }*/
+        #endregion
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+         
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -78,9 +129,29 @@ namespace Int_GradeSystem
 
         private void llnk_AdminForm_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            AdminLogin al = new AdminLogin();
-            al.Show();
-            this.Hide();
+            // Implement custom animations or transitions between forms
+            // For instance, you can use timers to gradually change opacity or position
+            // Here's a simplified example using opacity change:
+
+
+            this.Opacity = 10;
+            Timer timer = new Timer();
+            timer.Interval = 15;
+            timer.Tick += (senders, es) =>
+            {
+                this.Opacity -= 0.1;
+                if (this.Opacity <= 0)
+                {
+                    AdminLogin nextForm = new AdminLogin();
+                    nextForm.Show();
+                    timer.Stop();
+
+
+                    this.Hide();
+                }
+            };
+            timer.Start();
+
         }
 
         #region == Textbox ===
@@ -130,6 +201,17 @@ namespace Int_GradeSystem
 #endregion
         private void label1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void pnl_bg_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+           this.Close();
 
         }
     }

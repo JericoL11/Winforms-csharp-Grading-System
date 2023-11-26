@@ -228,6 +228,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Unused_Form\RegistrationForm.resx">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
@@ -258,8 +259,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\AccntRecords%28FS%29.png" />
+    <Content Include="img\Add Student %28FS%29.png" />
+    <Content Include="img\Admin Login Form %28FS%29N.png" />
+    <Content Include="img\AdminFormPage%28FS%29.png" />
+    <Content Include="img\Change Password %28FS%29.png" />
+    <Content Include="img\Edit Grades %28FS%29.png" />
+    <Content Include="img\Edit Profile %28FS%29.png" />
+    <Content Include="img\Grade Level  Login %28FS%29.png" />
+    <Content Include="img\Input Grades %28FS%29.png" />
     <Content Include="img\loading.gif" />
     <Content Include="img\loading2.gif" />
+    <Content Include="img\Ranking %28FS%29.png" />
+    <Content Include="img\RegisterTeacherAcc%28FS%29.png" />
+    <Content Include="img\Student List %28FS%29.png" />
+    <Content Include="img\Teacher Form Page %28FS%29.png" />
+    <Content Include="img\Teachers Form %28FS%29.png" />
+    <Content Include="img\Untitled design.png" />
+    <Content Include="img\UpdatePassword%28FS%29.png" />
+    <None Include="Resources\Teachers Form %28FS%29.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

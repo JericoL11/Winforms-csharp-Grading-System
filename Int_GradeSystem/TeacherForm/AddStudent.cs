@@ -16,8 +16,22 @@ namespace Int_GradeSystem.TeacherForm
         public AddStudent()
         {
             InitializeComponent();
+
+            //fix screen flickering
+            this.DoubleBuffered = true;
+
         }
 
+        // set the WS_EX_COMPOSITED flag, which provides similar double-buffering behavior:
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+                return cp;
+            }
+        }
         //datase instantiation
         DataClasses1DataContext data = new DataClasses1DataContext();
 
@@ -52,7 +66,7 @@ namespace Int_GradeSystem.TeacherForm
         
 
            //Id handler
-            pnl_id.Visible = false;
+          
             lbl_teacherID.Text = ID;
             lbl_GradeAndSec.Text = Grade;
         }
@@ -60,11 +74,9 @@ namespace Int_GradeSystem.TeacherForm
       
         private void btn_Cancel_Click(object sender, EventArgs e)
         {
-            TeacherFormPage tf = new TeacherFormPage();
-
-            tf.ID = ID;
+           
             this.Close();
-            tf.Show();
+       
         }
 
         private void btn_StudRegister_Click(object sender, EventArgs e)
@@ -209,6 +221,51 @@ namespace Int_GradeSystem.TeacherForm
             lbl_age.Text = null;
             
             
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_teacherID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtp_bdate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_GradeAndSec_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_age_Click(object sender, EventArgs e)
+        {
+
         }
     }
     #endregion

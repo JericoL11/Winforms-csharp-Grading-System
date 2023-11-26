@@ -53,8 +53,22 @@ namespace Int_GradeSystem.TeacherForm
         public InputGrades()
         {
             InitializeComponent();
-        }
 
+            //fix screen flickering
+            this.DoubleBuffered = true;
+
+     
+        }
+        // set the WS_EX_COMPOSITED flag, which provides similar double-buffering behavior:
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+                return cp;
+            }
+        }
         private void InputGrades_Load(object sender, EventArgs e)
         {
             //Hidden of panels
@@ -67,9 +81,9 @@ namespace Int_GradeSystem.TeacherForm
 
 
             //assiging of form textbox if tbl student status is DONE
+
             var database = data.tbl_Students
                             .FirstOrDefault(st => st.studentId == SelectedID);
-
             var FirstG_data = data.tbl_Student_FirstG_Subjects
                                 .FirstOrDefault(p => p.FK_studentID == SelectedID);
 
@@ -177,9 +191,7 @@ namespace Int_GradeSystem.TeacherForm
 
         private void btn_inputGradeBack_Click(object sender, EventArgs e)
         {
-            EditGrades eg = new EditGrades();
-            eg.ID = ID;
-            eg.Show();
+        
             this.Close();
         }
 
@@ -1030,7 +1042,95 @@ namespace Int_GradeSystem.TeacherForm
 
         }
 
-      
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_fullName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_grade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl_First_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnl_Second_Paint(object sender, PaintEventArgs e)
+        {
+                
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_studID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_section_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_gender_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl_overall_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnl_Fourth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
    

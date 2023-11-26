@@ -37,9 +37,22 @@ namespace Int_GradeSystem.AdminForm
         public EditProfile()
         {
             InitializeComponent();
-        }
-   
 
+            //fix screen flickering
+            this.DoubleBuffered = true;
+
+        }
+
+        // set the WS_EX_COMPOSITED flag, which provides similar double-buffering behavior:
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+                return cp;
+            }
+        }
         private void EditProfile_Load(object sender, EventArgs e)
         {
             //hidden panel that are used for messagebox
@@ -103,9 +116,7 @@ namespace Int_GradeSystem.AdminForm
 
         private void btn_editProfileBack_Click(object sender, EventArgs e)
         {
-            TeacherFormPage tf = new TeacherFormPage();
-            tf.ID = lbl_teacherID.Text;
-            tf.Show();
+            
             this.Close();
         }
    
@@ -221,6 +232,16 @@ namespace Int_GradeSystem.AdminForm
             cp.ID = this.ID;
 
             cp.ShowDialog();
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
 
         }
     }

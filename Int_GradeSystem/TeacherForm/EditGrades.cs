@@ -36,8 +36,26 @@ namespace Int_GradeSystem.TeacherForm
         public EditGrades()
         {
             InitializeComponent();
+
+            //fix screen flickering
+            this.DoubleBuffered = true;
+
         }
 
+        // set the WS_EX_COMPOSITED flag, which provides similar double-buffering behavior:
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+                return cp;
+            }
+        }
+        private void EditGrades_Load(object sender, EventArgs e)
+        {
+            pnl_verification.Visible = false;
+        }
         private void cmb_GradeLevels_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -102,10 +120,7 @@ namespace Int_GradeSystem.TeacherForm
             }
         }
 
-        private void EditGrades_Load(object sender, EventArgs e)
-        {
-            pnl_verification.Visible = false;
-        }
+      
 
         private void dgv_studentList_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -132,9 +147,6 @@ namespace Int_GradeSystem.TeacherForm
 
         private void btn_editGradeBack_Click(object sender, EventArgs e)
         {
-            TeacherFormPage tf = new TeacherFormPage();
-            tf.ID = ID;
-            tf.Show();
             this.Close();
         }
 
@@ -162,6 +174,7 @@ namespace Int_GradeSystem.TeacherForm
                         {
                             InputGrades ig = new InputGrades();
                             //PASSING OF TEACHER'S ID
+                       
                             ig.ID = ID;
 
                             //Passing of selected grade level
@@ -169,9 +182,12 @@ namespace Int_GradeSystem.TeacherForm
                             ig.section = section;
                             //passing of student ID
                             ig.SelectedID = SelectedID;
-                            ig.Show();
+                            ig.ShowDialog();
+                            txt_passCode.Clear();
+                            pnl_verification.Visible=false;
 
-                            this.Close();
+
+
                         }
                     }
                     break;
@@ -199,10 +215,10 @@ namespace Int_GradeSystem.TeacherForm
                             ig.gradelevel = gradelevel;
                             ig.section = section;
                             //passing of student ID
-                            ig.SelectedID = SelectedID;
-                            ig.Show();
-
-                            this.Close();
+                            ig.SelectedID = SelectedID;                      
+                            ig.ShowDialog();
+                            txt_passCode.Clear();
+                            pnl_verification.Visible = false;
                         }
                     }
                     break;
@@ -232,9 +248,9 @@ namespace Int_GradeSystem.TeacherForm
                             ig.section = section;
                             //passing of student ID
                             ig.SelectedID = SelectedID;
-                            ig.Show();
-
-                            this.Close();
+                            ig.ShowDialog();
+                            txt_passCode.Clear();
+                            pnl_verification.Visible = false;
                         }
                     }
                     break;
@@ -263,9 +279,9 @@ namespace Int_GradeSystem.TeacherForm
                             ig.section = section;
                             //passing of student ID
                             ig.SelectedID = SelectedID;
-                            ig.Show();
-
-                            this.Close();
+                            ig.ShowDialog();
+                            txt_passCode.Clear();
+                            pnl_verification.Visible = false;
                         }
                     }
                     break;
@@ -294,9 +310,9 @@ namespace Int_GradeSystem.TeacherForm
                             ig.section = section;
                             //passing of student ID
                             ig.SelectedID = SelectedID;
-                            ig.Show();
-
-                            this.Close();
+                            ig.ShowDialog();
+                            txt_passCode.Clear();
+                            pnl_verification.Visible = false;
                         }
                     }
                     break;
@@ -325,9 +341,9 @@ namespace Int_GradeSystem.TeacherForm
                             ig.section = section;
                             //passing of student ID
                             ig.SelectedID = SelectedID;
-                            ig.Show();
-
-                            this.Close();
+                            ig.ShowDialog();
+                            txt_passCode.Clear();
+                            pnl_verification.Visible = false;
                         }
                     }
                     break;
@@ -388,6 +404,21 @@ namespace Int_GradeSystem.TeacherForm
             
             dgv_studentList.DataSource = data.SP_stud_ViewStudents(gradelevel);
          
+        }
+
+        private void pnl_verification_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_passCode_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
    

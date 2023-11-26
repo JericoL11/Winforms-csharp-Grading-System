@@ -33,18 +33,17 @@
             this.txt_password = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_enter = new System.Windows.Forms.Button();
-            this.pnl_Id = new System.Windows.Forms.Panel();
             this.lbl_teacherID = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_exit = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pnl_Id.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmb_GradeLevels
             // 
+            this.cmb_GradeLevels.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmb_GradeLevels.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_GradeLevels.ForeColor = System.Drawing.Color.Black;
             this.cmb_GradeLevels.FormattingEnabled = true;
             this.cmb_GradeLevels.Items.AddRange(new object[] {
@@ -54,136 +53,146 @@
             "4 - Hope",
             "5 - Fourier",
             "6 - Hawking"});
-            this.cmb_GradeLevels.Location = new System.Drawing.Point(283, 196);
+            this.cmb_GradeLevels.Location = new System.Drawing.Point(755, 438);
+            this.cmb_GradeLevels.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_GradeLevels.Name = "cmb_GradeLevels";
-            this.cmb_GradeLevels.Size = new System.Drawing.Size(134, 24);
+            this.cmb_GradeLevels.Size = new System.Drawing.Size(135, 28);
             this.cmb_GradeLevels.TabIndex = 64;
             this.cmb_GradeLevels.Text = "1 - Diamond";
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 8.8F, System.Drawing.FontStyle.Bold);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(114, 196);
+            this.label3.Location = new System.Drawing.Point(619, 384);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 20);
+            this.label3.Size = new System.Drawing.Size(170, 27);
             this.label3.TabIndex = 66;
             this.label3.Text = "Select Grade level";
             // 
             // txt_password
             // 
+            this.txt_password.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_password.ForeColor = System.Drawing.Color.Black;
-            this.txt_password.Location = new System.Drawing.Point(283, 246);
+            this.txt_password.Location = new System.Drawing.Point(755, 644);
+            this.txt_password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_password.Name = "txt_password";
-            this.txt_password.Size = new System.Drawing.Size(134, 22);
+            this.txt_password.Size = new System.Drawing.Size(135, 27);
             this.txt_password.TabIndex = 67;
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 8.8F, System.Drawing.FontStyle.Bold);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(119, 248);
+            this.label1.Location = new System.Drawing.Point(631, 577);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 20);
+            this.label1.Size = new System.Drawing.Size(108, 27);
             this.label1.TabIndex = 68;
             this.label1.Text = "Pass Code";
             // 
             // btn_enter
             // 
+            this.btn_enter.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_enter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn_enter.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_enter.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_enter.ForeColor = System.Drawing.Color.Black;
-            this.btn_enter.Location = new System.Drawing.Point(316, 291);
+            this.btn_enter.Location = new System.Drawing.Point(1142, 577);
+            this.btn_enter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_enter.Name = "btn_enter";
-            this.btn_enter.Size = new System.Drawing.Size(81, 30);
+            this.btn_enter.Size = new System.Drawing.Size(113, 61);
             this.btn_enter.TabIndex = 69;
             this.btn_enter.Text = "Enter";
-            this.btn_enter.UseVisualStyleBackColor = true;
+            this.btn_enter.UseVisualStyleBackColor = false;
             this.btn_enter.Click += new System.EventHandler(this.btn_enter_Click);
-            // 
-            // pnl_Id
-            // 
-            this.pnl_Id.Controls.Add(this.lbl_teacherID);
-            this.pnl_Id.Controls.Add(this.label2);
-            this.pnl_Id.Location = new System.Drawing.Point(96, 78);
-            this.pnl_Id.Name = "pnl_Id";
-            this.pnl_Id.Size = new System.Drawing.Size(232, 56);
-            this.pnl_Id.TabIndex = 71;
-            this.pnl_Id.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Id_Paint);
             // 
             // lbl_teacherID
             // 
+            this.lbl_teacherID.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_teacherID.AutoSize = true;
-            this.lbl_teacherID.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lbl_teacherID.Location = new System.Drawing.Point(124, 17);
+            this.lbl_teacherID.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_teacherID.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_teacherID.Location = new System.Drawing.Point(231, 1011);
             this.lbl_teacherID.Name = "lbl_teacherID";
-            this.lbl_teacherID.Size = new System.Drawing.Size(21, 20);
+            this.lbl_teacherID.Size = new System.Drawing.Size(41, 33);
             this.lbl_teacherID.TabIndex = 65;
             this.lbl_teacherID.Text = "__";
+            this.lbl_teacherID.Click += new System.EventHandler(this.lbl_teacherID_Click);
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.label2.Location = new System.Drawing.Point(18, 17);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(60, 1004);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 20);
+            this.label2.Size = new System.Drawing.Size(165, 35);
             this.label2.TabIndex = 64;
             this.label2.Text = "Teacher ID : ";
             // 
             // btn_exit
             // 
+            this.btn_exit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_exit.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_exit.ForeColor = System.Drawing.Color.Black;
-            this.btn_exit.Location = new System.Drawing.Point(316, 336);
+            this.btn_exit.Location = new System.Drawing.Point(1142, 658);
+            this.btn_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(81, 30);
+            this.btn_exit.Size = new System.Drawing.Size(113, 60);
             this.btn_exit.TabIndex = 72;
             this.btn_exit.Text = "Exit";
-            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.UseVisualStyleBackColor = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.panel2.Controls.Add(this.pnl_Id);
-            this.panel2.Controls.Add(this.btn_exit);
-            this.panel2.Controls.Add(this.cmb_GradeLevels);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.btn_enter);
-            this.panel2.Controls.Add(this.txt_password);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(196, 128);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(687, 466);
-            this.panel2.TabIndex = 73;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(37, 48);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(460, 16);
-            this.label4.TabIndex = 74;
-            this.label4.Text = "(ILISI ANG COLOR UG BACKGROUND SA TEACHER FORM PAGE @NIñO)";
             // 
             // GradeLevelLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(1155, 712);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.panel2);
+            this.BackgroundImage = global::Int_GradeSystem.Properties.Resources.Grade_Level__Login__FS_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.lbl_teacherID);
+            this.Controls.Add(this.btn_exit);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cmb_GradeLevels);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.btn_enter);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txt_password);
+            this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "GradeLevelLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GradeLevelLogin";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.GradeLevelLogin_Load);
-            this.pnl_Id.ResumeLayout(false);
-            this.pnl_Id.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,11 +205,8 @@
         private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_enter;
-        private System.Windows.Forms.Panel pnl_Id;
         private System.Windows.Forms.Label lbl_teacherID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_exit;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label4;
     }
 }

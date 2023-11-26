@@ -48,164 +48,190 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(85, 274);
+            this.label5.Location = new System.Drawing.Point(690, 640);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(148, 18);
+            this.label5.Size = new System.Drawing.Size(217, 27);
             this.label5.TabIndex = 15;
             this.label5.Text = "Confirm Password";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(139, 235);
+            this.label4.Location = new System.Drawing.Point(692, 586);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 18);
+            this.label4.Size = new System.Drawing.Size(122, 27);
             this.label4.TabIndex = 14;
             this.label4.Text = "Password";
             // 
             // txt_regConfirmPass
             // 
-            this.txt_regConfirmPass.Location = new System.Drawing.Point(257, 274);
+            this.txt_regConfirmPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_regConfirmPass.Location = new System.Drawing.Point(999, 646);
+            this.txt_regConfirmPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_regConfirmPass.Name = "txt_regConfirmPass";
-            this.txt_regConfirmPass.Size = new System.Drawing.Size(223, 22);
+            this.txt_regConfirmPass.Size = new System.Drawing.Size(223, 27);
             this.txt_regConfirmPass.TabIndex = 13;
             // 
             // txt_regPassword
             // 
-            this.txt_regPassword.Location = new System.Drawing.Point(257, 235);
+            this.txt_regPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_regPassword.Location = new System.Drawing.Point(999, 592);
+            this.txt_regPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_regPassword.Name = "txt_regPassword";
-            this.txt_regPassword.Size = new System.Drawing.Size(223, 22);
+            this.txt_regPassword.Size = new System.Drawing.Size(223, 27);
             this.txt_regPassword.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(139, 127);
+            this.label1.Location = new System.Drawing.Point(692, 433);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 18);
+            this.label1.Size = new System.Drawing.Size(123, 27);
             this.label1.TabIndex = 16;
             this.label1.Text = "Firstname";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(139, 163);
+            this.label2.Location = new System.Drawing.Point(692, 483);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 18);
+            this.label2.Size = new System.Drawing.Size(120, 27);
             this.label2.TabIndex = 17;
             this.label2.Text = "Lastname";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(139, 198);
+            this.label3.Location = new System.Drawing.Point(692, 534);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 18);
+            this.label3.Size = new System.Drawing.Size(73, 27);
             this.label3.TabIndex = 18;
             this.label3.Text = "Email";
             // 
             // lbl_fname
             // 
             this.lbl_fname.AutoSize = true;
-            this.lbl_fname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_fname.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_fname.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_fname.ForeColor = System.Drawing.Color.White;
-            this.lbl_fname.Location = new System.Drawing.Point(254, 127);
+            this.lbl_fname.Location = new System.Drawing.Point(995, 439);
             this.lbl_fname.Name = "lbl_fname";
-            this.lbl_fname.Size = new System.Drawing.Size(62, 18);
+            this.lbl_fname.Size = new System.Drawing.Size(70, 21);
             this.lbl_fname.TabIndex = 19;
             this.lbl_fname.Text = "______";
             // 
             // lbl_lname
             // 
             this.lbl_lname.AutoSize = true;
-            this.lbl_lname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_lname.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_lname.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_lname.ForeColor = System.Drawing.Color.White;
-            this.lbl_lname.Location = new System.Drawing.Point(254, 163);
+            this.lbl_lname.Location = new System.Drawing.Point(995, 489);
             this.lbl_lname.Name = "lbl_lname";
-            this.lbl_lname.Size = new System.Drawing.Size(62, 18);
+            this.lbl_lname.Size = new System.Drawing.Size(70, 21);
             this.lbl_lname.TabIndex = 20;
             this.lbl_lname.Text = "______";
             // 
             // lbl_email
             // 
             this.lbl_email.AutoSize = true;
-            this.lbl_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_email.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_email.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_email.ForeColor = System.Drawing.Color.White;
-            this.lbl_email.Location = new System.Drawing.Point(254, 198);
+            this.lbl_email.Location = new System.Drawing.Point(995, 540);
             this.lbl_email.Name = "lbl_email";
-            this.lbl_email.Size = new System.Drawing.Size(62, 18);
+            this.lbl_email.Size = new System.Drawing.Size(70, 21);
             this.lbl_email.TabIndex = 21;
             this.lbl_email.Text = "______";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(123, 30);
+            this.label9.Location = new System.Drawing.Point(671, 246);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(377, 32);
+            this.label9.Size = new System.Drawing.Size(554, 51);
             this.label9.TabIndex = 22;
             this.label9.Text = "UPDATE USER ACCOUNT";
             // 
             // btn_save
             // 
-            this.btn_save.Location = new System.Drawing.Point(510, 363);
+            this.btn_save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_save.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save.Location = new System.Drawing.Point(1137, 757);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(90, 30);
+            this.btn_save.Size = new System.Drawing.Size(109, 61);
             this.btn_save.TabIndex = 23;
             this.btn_save.Text = "Save";
-            this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.UseVisualStyleBackColor = false;
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // btn_cancel
             // 
-            this.btn_cancel.Location = new System.Drawing.Point(410, 363);
+            this.btn_cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_cancel.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancel.Location = new System.Drawing.Point(680, 757);
+            this.btn_cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(90, 30);
+            this.btn_cancel.Size = new System.Drawing.Size(109, 61);
             this.btn_cancel.TabIndex = 24;
             this.btn_cancel.Text = "Cancel";
-            this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.UseVisualStyleBackColor = false;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(139, 93);
+            this.label6.Location = new System.Drawing.Point(692, 385);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 18);
+            this.label6.Size = new System.Drawing.Size(129, 27);
             this.label6.TabIndex = 25;
             this.label6.Text = "Teacher ID";
             // 
             // lbl_ID
             // 
             this.lbl_ID.AutoSize = true;
-            this.lbl_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ID.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_ID.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ID.ForeColor = System.Drawing.Color.White;
-            this.lbl_ID.Location = new System.Drawing.Point(254, 93);
+            this.lbl_ID.Location = new System.Drawing.Point(995, 395);
             this.lbl_ID.Name = "lbl_ID";
-            this.lbl_ID.Size = new System.Drawing.Size(62, 18);
+            this.lbl_ID.Size = new System.Drawing.Size(70, 21);
             this.lbl_ID.TabIndex = 26;
             this.lbl_ID.Text = "______";
+            this.lbl_ID.Click += new System.EventHandler(this.lbl_ID_Click);
             // 
             // UpdatePassoword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
-            this.ClientSize = new System.Drawing.Size(628, 429);
+            this.BackgroundImage = global::Int_GradeSystem.Properties.Resources.UpdatePassword_FS_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.Controls.Add(this.lbl_ID);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btn_cancel);
@@ -221,10 +247,13 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_regConfirmPass);
             this.Controls.Add(this.txt_regPassword);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UpdatePassoword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UPDATE USER PASSWORD";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.UpdatePassoword_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -15,8 +15,22 @@ namespace Int_GradeSystem.AdminForm
         public UpdatePassoword()
         {
             InitializeComponent();
+            //to fix screen flickering
+            this.DoubleBuffered = true;
+
         }
 
+        // set the WS_EX_COMPOSITED flag, which provides similar double-buffering behavior:
+        protected override CreateParams CreateParams
+        {
+
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+                return cp;
+            }
+        }
         DataClasses1DataContext data = new DataClasses1DataContext();
         MessageAlert alert = new MessageAlert();
 
@@ -52,6 +66,11 @@ namespace Int_GradeSystem.AdminForm
                 alert.Upate_Save();
 
             }
+        }
+
+        private void lbl_ID_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -25,9 +25,22 @@ namespace Int_GradeSystem.TeacherForm
         public Student_List()
         {
             InitializeComponent();
+            //fix screen flickering
+            this.DoubleBuffered = true;
+
         }
 
-   
+        // set the WS_EX_COMPOSITED flag, which provides similar double-buffering behavior:
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+                return cp;
+            }
+        }
+
 
         private void Student_List_Load(object sender, EventArgs e)
         {
@@ -38,9 +51,7 @@ namespace Int_GradeSystem.TeacherForm
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            TeacherFormPage tf = new TeacherFormPage();
-            tf.ID = ID;
-            tf.Show();
+          
             this.Close();
         }
 

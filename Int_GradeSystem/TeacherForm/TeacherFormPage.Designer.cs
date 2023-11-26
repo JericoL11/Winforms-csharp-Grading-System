@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeacherFormPage));
             this.btn_Ranking = new System.Windows.Forms.Button();
             this.btn_editProfile = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,12 +41,16 @@
             // 
             // btn_Ranking
             // 
+            this.btn_Ranking.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Ranking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_Ranking.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Ranking.Location = new System.Drawing.Point(546, 327);
+            this.btn_Ranking.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Ranking.Location = new System.Drawing.Point(668, 620);
             this.btn_Ranking.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Ranking.Name = "btn_Ranking";
-            this.btn_Ranking.Size = new System.Drawing.Size(163, 82);
+            this.btn_Ranking.Size = new System.Drawing.Size(209, 90);
             this.btn_Ranking.TabIndex = 5;
             this.btn_Ranking.Text = "View Ranking";
             this.btn_Ranking.UseVisualStyleBackColor = false;
@@ -55,12 +58,16 @@
             // 
             // btn_editProfile
             // 
+            this.btn_editProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_editProfile.BackColor = System.Drawing.Color.LightGray;
             this.btn_editProfile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_editProfile.Location = new System.Drawing.Point(284, 257);
+            this.btn_editProfile.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editProfile.Location = new System.Drawing.Point(600, 775);
             this.btn_editProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_editProfile.Name = "btn_editProfile";
-            this.btn_editProfile.Size = new System.Drawing.Size(123, 27);
+            this.btn_editProfile.Size = new System.Drawing.Size(185, 59);
             this.btn_editProfile.TabIndex = 4;
             this.btn_editProfile.Text = "Edit Profile";
             this.btn_editProfile.UseVisualStyleBackColor = false;
@@ -68,25 +75,32 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(401, 194);
+            this.label1.Location = new System.Drawing.Point(685, 316);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(384, 32);
+            this.label1.Size = new System.Drawing.Size(545, 46);
             this.label1.TabIndex = 3;
             this.label1.Text = "T E A C H E R     P O R T A L";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_editGrades
             // 
+            this.btn_editGrades.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_editGrades.BackColor = System.Drawing.Color.Snow;
             this.btn_editGrades.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_editGrades.Location = new System.Drawing.Point(361, 327);
+            this.btn_editGrades.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editGrades.Location = new System.Drawing.Point(1021, 419);
             this.btn_editGrades.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_editGrades.Name = "btn_editGrades";
-            this.btn_editGrades.Size = new System.Drawing.Size(163, 82);
+            this.btn_editGrades.Size = new System.Drawing.Size(209, 90);
             this.btn_editGrades.TabIndex = 1;
             this.btn_editGrades.Text = "Edit Grades";
             this.btn_editGrades.UseVisualStyleBackColor = false;
@@ -94,12 +108,16 @@
             // 
             // btn_AdStudents
             // 
+            this.btn_AdStudents.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_AdStudents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btn_AdStudents.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_AdStudents.Location = new System.Drawing.Point(170, 327);
+            this.btn_AdStudents.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AdStudents.Location = new System.Drawing.Point(668, 419);
             this.btn_AdStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_AdStudents.Name = "btn_AdStudents";
-            this.btn_AdStudents.Size = new System.Drawing.Size(163, 82);
+            this.btn_AdStudents.Size = new System.Drawing.Size(209, 90);
             this.btn_AdStudents.TabIndex = 0;
             this.btn_AdStudents.Text = "Add Students";
             this.btn_AdStudents.UseVisualStyleBackColor = false;
@@ -107,49 +125,63 @@
             // 
             // btn_logout
             // 
+            this.btn_logout.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_logout.Location = new System.Drawing.Point(757, 467);
+            this.btn_logout.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logout.Location = new System.Drawing.Point(1106, 775);
             this.btn_logout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(117, 32);
+            this.btn_logout.Size = new System.Drawing.Size(185, 59);
             this.btn_logout.TabIndex = 6;
-            this.btn_logout.Text = "&Log-out";
+            this.btn_logout.Text = "Log-out";
             this.btn_logout.UseVisualStyleBackColor = false;
             this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(22, 22);
+            this.label2.Location = new System.Drawing.Point(42, 91);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 27);
+            this.label2.Size = new System.Drawing.Size(167, 34);
             this.label2.TabIndex = 7;
             this.label2.Text = "Good day, ";
             // 
             // lbl_fullName
             // 
+            this.lbl_fullName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_fullName.AutoSize = true;
             this.lbl_fullName.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_fullName.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_fullName.Font = new System.Drawing.Font("Arial", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_fullName.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_fullName.Location = new System.Drawing.Point(154, 22);
+            this.lbl_fullName.Location = new System.Drawing.Point(215, 91);
             this.lbl_fullName.Name = "lbl_fullName";
-            this.lbl_fullName.Size = new System.Drawing.Size(116, 27);
+            this.lbl_fullName.Size = new System.Drawing.Size(151, 34);
             this.lbl_fullName.TabIndex = 8;
             this.lbl_fullName.Text = "________";
             // 
             // btn_ViewStudents
             // 
+            this.btn_ViewStudents.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_ViewStudents.BackColor = System.Drawing.Color.Snow;
             this.btn_ViewStudents.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_ViewStudents.Location = new System.Drawing.Point(728, 327);
+            this.btn_ViewStudents.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ViewStudents.Location = new System.Drawing.Point(1021, 620);
             this.btn_ViewStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_ViewStudents.Name = "btn_ViewStudents";
-            this.btn_ViewStudents.Size = new System.Drawing.Size(163, 82);
+            this.btn_ViewStudents.Size = new System.Drawing.Size(209, 90);
             this.btn_ViewStudents.TabIndex = 9;
             this.btn_ViewStudents.Text = "View Students";
             this.btn_ViewStudents.UseVisualStyleBackColor = false;
@@ -159,9 +191,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.SaddleBrown;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1137, 665);
+            this.BackgroundImage = global::Int_GradeSystem.Properties.Resources.Teacher_Form_Page__FS_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.ControlBox = false;
             this.Controls.Add(this.btn_ViewStudents);
             this.Controls.Add(this.lbl_fullName);
             this.Controls.Add(this.label2);
@@ -171,6 +206,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_AdStudents);
             this.Controls.Add(this.btn_editGrades);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

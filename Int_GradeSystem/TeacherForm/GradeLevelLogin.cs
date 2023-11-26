@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,7 +17,22 @@ namespace Int_GradeSystem.TeacherForm
         public GradeLevelLogin()
         {
             InitializeComponent();
+            //fix screen flickering
+            this.DoubleBuffered = true;
+
         }
+        // set the WS_EX_COMPOSITED flag, which provides similar double-buffering behavior:
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+                return cp;
+            }
+        }
+
+
         //datase instantiation
         DataClasses1DataContext data = new DataClasses1DataContext();
 
@@ -36,7 +51,7 @@ namespace Int_GradeSystem.TeacherForm
         {
             //id handler
             lbl_teacherID.Text = ID;
-            pnl_Id.Visible = false;
+          /*  pnl_Id.Visible = false;*/
         }
 
         private void btn_enter_Click(object sender, EventArgs e)
@@ -172,14 +187,16 @@ namespace Int_GradeSystem.TeacherForm
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            TeacherFormPage tfp = new TeacherFormPage();
-
-            tfp.ID = ID;
-            tfp.Show();
+        
             this.Close();
         }
 
         private void pnl_Id_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_teacherID_Click(object sender, EventArgs e)
         {
 
         }

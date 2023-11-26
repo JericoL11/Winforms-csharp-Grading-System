@@ -14,7 +14,22 @@ namespace Int_GradeSystem.AdminForm
     {
         public AccntRecords()
         {
-            InitializeComponent();
+            InitializeComponent();  
+            //to fix screen flickering
+            this.DoubleBuffered = true;
+
+        }
+
+        // set the WS_EX_COMPOSITED flag, which provides similar double-buffering behavior:
+        protected override CreateParams CreateParams
+        {
+
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+                return cp;
+            }
         }
         //DATABASE
         DataClasses1DataContext data = new DataClasses1DataContext();
@@ -33,9 +48,10 @@ namespace Int_GradeSystem.AdminForm
 
         private void btn_recordsBack_Click(object sender, EventArgs e)
         {
-            AdminFormPage af = new AdminFormPage();
+        
             this.Close();
-            af.Show();
+                
+            
         }
 
        

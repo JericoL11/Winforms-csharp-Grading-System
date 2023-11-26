@@ -14,7 +14,22 @@ namespace Int_GradeSystem.AdminForm
     {
         public RegisterTeacherAcc()
         {
-            InitializeComponent();
+            InitializeComponent(); 
+            //to fix screen flickering
+            this.DoubleBuffered = true;
+
+        }
+
+        // set the WS_EX_COMPOSITED flag, which provides similar double-buffering behavior:
+        protected override CreateParams CreateParams
+        {
+
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+                return cp;
+            }
         }
         //DataClasses declaration
         DataClasses1DataContext data = new DataClasses1DataContext();
@@ -34,9 +49,8 @@ namespace Int_GradeSystem.AdminForm
 
         private void btn_regTeacherBack_Click(object sender, EventArgs e)
         {
-            AdminFormPage ad = new AdminFormPage();
             this.Close();
-            ad.Show();
+    
         }
 
         private void btn_Register_Click(object sender, EventArgs e)
@@ -74,9 +88,58 @@ namespace Int_GradeSystem.AdminForm
             txt_regConfirmPass.Clear();
 
         }
+
+
         #endregion
 
+        private void label2_Click_1(object sender, EventArgs e)
+        {
 
+        }
 
+        private void txt_lastname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_regConfirmPass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_email_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_regPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_firstname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

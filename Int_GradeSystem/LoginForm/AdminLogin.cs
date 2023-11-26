@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Int_GradeSystem.AdminForm;
+using Int_GradeSystem.TeacherForm;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +21,22 @@ namespace Int_GradeSystem
     {
         public AdminLogin()
         {
+
             InitializeComponent();
+
+           //fix screen flickering
+            this.DoubleBuffered = true;
+
+        }
+        // set the WS_EX_COMPOSITED flag, which provides similar double-buffering behavior:
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+                return cp;
+            }
         }
 
         //database injection
@@ -30,9 +47,23 @@ namespace Int_GradeSystem
 
         private void llnk_TeacherForm_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form1 f1 = new Form1();
-            f1.Show();
-            this.Hide();
+            this.Opacity = 10;
+            Timer timer = new Timer();
+            timer.Interval = 15;
+            timer.Tick += (senders, es) =>
+            {
+                this.Opacity -= 0.1;
+                if (this.Opacity <= 0)
+                {
+                    Form1 nextForm = new Form1();
+                    nextForm.Show();
+                    timer.Stop();
+                   
+                   
+                    this.Hide();
+                }
+            };
+            timer.Start();
         }
 
         private void btn_AdminLogin_Click(object sender, EventArgs e)
@@ -50,9 +81,32 @@ namespace Int_GradeSystem
             else if (adminUser != null)
             {
                 alert.login_Success();
-                Admin.AdminFormPage ad = new Admin.AdminFormPage();
-                ad.Show();
-                this.Hide();
+
+                //assigning the opacity
+                this.Opacity = 10;
+
+                //declaring timer object
+                Timer timer = new Timer();
+
+                //assigning interval
+                timer.Interval = 15;
+
+                //concatenation
+                timer.Tick += (senders, es) =>
+                {
+                    this.Opacity -= 0.1;
+
+                    //true
+                    if (this.Opacity <= 0)
+                    {
+                        AdminFormPage ad = new AdminFormPage();
+                        ad.Show();
+                        timer.Stop();
+                        this.Hide();
+                    }
+                };
+                timer.Start();
+              
               
             }
             else
@@ -71,7 +125,7 @@ namespace Int_GradeSystem
 
         private void AdminLogin_Load(object sender, EventArgs e)
         {
-
+          
         }
 
 
@@ -130,5 +184,15 @@ namespace Int_GradeSystem
 
         }
         #endregion
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

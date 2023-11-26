@@ -26,8 +26,20 @@ namespace Int_GradeSystem.TeacherForm
         public Ranking()
         {
             InitializeComponent();
-        }
+            //fix screen flickering
+            this.DoubleBuffered = true;
 
+        }
+        // set the WS_EX_COMPOSITED flag, which provides similar double-buffering behavior:
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+                return cp;
+            }
+        }
         private void Ranking_Load(object sender, EventArgs e)
         {
 
@@ -35,9 +47,7 @@ namespace Int_GradeSystem.TeacherForm
 
         private void btn_rakingBack_Click(object sender, EventArgs e)
         {
-            TeacherFormPage tf = new TeacherFormPage();
-            tf.ID = ID;
-            tf.Show();
+  
             this.Close();
         }
         private void btn_View_Click(object sender, EventArgs e)
@@ -95,10 +105,10 @@ namespace Int_GradeSystem.TeacherForm
             switch (cmb_Terms.SelectedIndex)
             {
                 //assigning of Terms
-                case  0:  { term = "First"; lbl_term.Text = term; } break;
-                case  1:  { term = "Second";lbl_term.Text = term; } break;
-                case  2:  { term = "Third"; lbl_term.Text = term;  } break;
-                case  3:  { term = "Fourth"; lbl_term.Text = term; } break;
+                case  0:  { term = "First"; } break;
+                case  1:  { term = "Second"; } break;
+                case  2:  { term = "Third";  } break;
+                case  3:  { term = "Fourth";  } break;
             }
         }
         void Display_Ranking()
@@ -138,7 +148,16 @@ namespace Int_GradeSystem.TeacherForm
 
          
         }
-     
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

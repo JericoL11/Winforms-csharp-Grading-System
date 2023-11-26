@@ -23,8 +23,20 @@ namespace Int_GradeSystem.TeacherForm
         public TeacherFormPage()
         {
             InitializeComponent();
+            //fix screen flickering
+            this.DoubleBuffered = true;
+
         }
-        
+        // set the WS_EX_COMPOSITED flag, which provides similar double-buffering behavior:
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+                return cp;
+            }
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -55,16 +67,16 @@ namespace Int_GradeSystem.TeacherForm
             EditProfile ep = new EditProfile();
 
             ep.ID = this.ID;
-            ep.Show();
-            this.Close();
+            ep.ShowDialog();
+           
         }
 
         private void btn_AdStudents_Click(object sender, EventArgs e)
         {
             GradeLevelLogin gl = new GradeLevelLogin();
             gl.ID = this.ID;
-            gl.Show();
-            this.Close();
+            gl.ShowDialog();
+         
            
         }
 
@@ -72,24 +84,24 @@ namespace Int_GradeSystem.TeacherForm
         {
             Student_List sl = new Student_List();
             sl.ID = this.ID;
-            sl.Show();
-            this.Close();
+            sl.ShowDialog();
+           
         }
 
         private void btn_editGrades_Click(object sender, EventArgs e)
         {
             EditGrades eg = new EditGrades();
             eg.ID = ID;
-            eg.Show();
-            this.Close();
+            eg.ShowDialog();
+        
         }
 
         private void btn_Ranking_Click(object sender, EventArgs e)
         {
             Ranking rk = new Ranking();
             rk.ID = this.ID;
-            rk.Show();
-            this.Close();
+            rk.ShowDialog();
+          
         }
     }
 }
