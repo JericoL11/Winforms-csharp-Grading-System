@@ -196,6 +196,26 @@ namespace Int_GradeSystem
             string message = "Student is now ready to View in the ranking";
             MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        public void InputPasscode()
+        {
+            string title = "Notification";
+            string message = "Please input passcode";
+            MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        public void IncorrectPasscode()
+        {
+            string title = "Notification";
+            string message = "Incorrect Passcode";
+            MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+        public void SpecialCharacter_Error()
+        {
+            string title = "Notification";
+            string message = "Special characters or math operators is/are not computable";
+            MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         #endregion
 
     }

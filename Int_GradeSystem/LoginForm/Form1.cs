@@ -119,7 +119,8 @@ namespace Int_GradeSystem
 
         private void Form1_Load(object sender, EventArgs e)
         {
-         
+            //enable hide password
+            txt_password.UseSystemPasswordChar = true;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -153,28 +154,43 @@ namespace Int_GradeSystem
             timer.Start();
 
         }
+        private void btn_hide_Click(object sender, EventArgs e)
+        {
+            //Buttons visibility
+            btn_hide.Visible = false;
+            btn_Show.Visible = true;
+
+            //enable hide password
+            txt_password.UseSystemPasswordChar = true;
+        }
+        private void btn_Show_Click(object sender, EventArgs e)
+        {
+            //Buttons visibility
+            btn_Show.Visible = false;
+            btn_hide.Visible = true;
+
+            //disable hide password
+            txt_password.UseSystemPasswordChar = false;
+        }
 
         #region == Textbox ===
         private void txt_username_Enter(object sender, EventArgs e)
         {
-
-            if (txt_username.Text == "Username")
-            {
-                txt_username.Text = "";
-            }
-            
-
-         
+           
+            /*   if (txt_username.Text == "Username")
+               {
+                   txt_username.Text = "";
+               }*/
         }
 
         private void txt_username_Leave(object sender, EventArgs e)
         {
             //textbox Funtion
-            if (txt_username.Text == "")
+         /*   if (txt_username.Text == "")
             {
 
                 txt_username.Text = "Username";
-            }
+            */
            
         }
 
@@ -185,34 +201,43 @@ namespace Int_GradeSystem
 
         private void txt_password_Enter(object sender, EventArgs e)
         {
-            if(txt_password.Text == "Password")
+/*            if(txt_password.Text == "Password")
             {
                 txt_password.Text = "";
-            }
+                txt_password.PasswordChar = '*';
+
+            }*/
+         
+
         }
 
         private void txt_password_Leave(object sender, EventArgs e)
         {
-            if (txt_password.Text == "")
+          /*  if (txt_password.Text == "")
             {
                 txt_password.Text = "Password";
-            }
+            }*/
         }
-#endregion
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void pnl_bg_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
-           this.Close();
+            this.Close();
 
         }
+
+
+
+        private void txt_password_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        #endregion
+
     }
 }

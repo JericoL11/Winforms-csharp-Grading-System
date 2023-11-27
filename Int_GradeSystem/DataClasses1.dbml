@@ -25,6 +25,7 @@
       <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="phoneNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="FK_teacherId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="" Member="Property" Type="System.String" CanBeNull="false" />
       <Association Name="tbl_TeacherAcc_tbl_TeacherInfo" Member="tbl_TeacherAcc" ThisKey="FK_teacherId" OtherKey="teacherId" Type="tbl_TeacherAcc" IsForeignKey="true" />
     </Type>
   </Table>
@@ -248,30 +249,6 @@
     <Parameter Name="Teacher" Parameter="teacher" Type="System.String" DbType="NVarChar(50)" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.SP_stud_InputGrades_ThirdGrading" Method="SP_stud_InputGrades_ThirdGrading">
-    <Parameter Name="Mapeh" Parameter="mapeh" Type="System.Double" DbType="Float" />
-    <Parameter Name="English" Parameter="english" Type="System.Double" DbType="Float" />
-    <Parameter Name="Math" Parameter="math" Type="System.Double" DbType="Float" />
-    <Parameter Name="Filipino" Parameter="filipino" Type="System.Double" DbType="Float" />
-    <Parameter Name="Science" Parameter="science" Type="System.Double" DbType="Float" />
-    <Parameter Name="ThirdG_Avg" Parameter="thirdG_Avg" Type="System.Double" DbType="Float" />
-    <Parameter Name="Student_status" Parameter="student_status" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="StudentId" Parameter="studentId" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Teacher" Parameter="teacher" Type="System.String" DbType="NVarChar(50)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.SP_stud_InputGrades_FourthGrading" Method="SP_stud_InputGrades_FourthGrading">
-    <Parameter Name="Mapeh" Parameter="mapeh" Type="System.Double" DbType="Float" />
-    <Parameter Name="English" Parameter="english" Type="System.Double" DbType="Float" />
-    <Parameter Name="Math" Parameter="math" Type="System.Double" DbType="Float" />
-    <Parameter Name="Filipino" Parameter="filipino" Type="System.Double" DbType="Float" />
-    <Parameter Name="Science" Parameter="science" Type="System.Double" DbType="Float" />
-    <Parameter Name="FourthG_Avg" Parameter="fourthG_Avg" Type="System.Double" DbType="Float" />
-    <Parameter Name="Student_status" Parameter="student_status" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="StudentId" Parameter="studentId" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Teacher" Parameter="teacher" Type="System.String" DbType="NVarChar(50)" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.SP_stud_InputGrades_SecondGrading" Method="SP_stud_InputGrades_SecondGrading">
     <Parameter Name="Mapeh" Parameter="mapeh" Type="System.Double" DbType="Float" />
     <Parameter Name="English" Parameter="english" Type="System.Double" DbType="Float" />
@@ -301,5 +278,29 @@
       <Column Name="[Third Grading|Uptd by]" Member="Third_Grading_Uptd_by" Type="System.String" DbType="NVarChar(63) NOT NULL" CanBeNull="false" />
       <Column Name="[Fourth Grading|Uptd by]" Member="Fourth_Grading_Uptd_by" Type="System.String" DbType="NVarChar(63) NOT NULL" CanBeNull="false" />
     </ElementType>
+  </Function>
+  <Function Name="dbo.SP_stud_InputGrades_ThirdGrading" Method="SP_stud_InputGrades_ThirdGrading">
+    <Parameter Name="Mapeh" Parameter="mapeh" Type="System.Double" DbType="Float" />
+    <Parameter Name="English" Parameter="english" Type="System.Double" DbType="Float" />
+    <Parameter Name="Math" Parameter="math" Type="System.Double" DbType="Float" />
+    <Parameter Name="Filipino" Parameter="filipino" Type="System.Double" DbType="Float" />
+    <Parameter Name="Science" Parameter="science" Type="System.Double" DbType="Float" />
+    <Parameter Name="ThirdG_Avg" Parameter="thirdG_Avg" Type="System.Double" DbType="Float" />
+    <Parameter Name="Student_status" Parameter="student_status" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="StudentId" Parameter="studentId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Teacher" Parameter="teacher" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_stud_InputGrades_FourthGrading" Method="SP_stud_InputGrades_FourthGrading">
+    <Parameter Name="Mapeh" Parameter="mapeh" Type="System.Double" DbType="Float" />
+    <Parameter Name="English" Parameter="english" Type="System.Double" DbType="Float" />
+    <Parameter Name="Math" Parameter="math" Type="System.Double" DbType="Float" />
+    <Parameter Name="Filipino" Parameter="filipino" Type="System.Double" DbType="Float" />
+    <Parameter Name="Science" Parameter="science" Type="System.Double" DbType="Float" />
+    <Parameter Name="FourthG_Avg" Parameter="fourthG_Avg" Type="System.Double" DbType="Float" />
+    <Parameter Name="Student_status" Parameter="student_status" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="StudentId" Parameter="studentId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Teacher" Parameter="teacher" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
   </Function>
 </Database>

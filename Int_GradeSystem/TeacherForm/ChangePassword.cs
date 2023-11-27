@@ -42,6 +42,12 @@ namespace Int_GradeSystem.TeacherForm
         private void ChangePassword_Load(object sender, EventArgs e)
         {
             lbl_ID.Text = ID;
+            
+            //hiding of password by default
+            txt_oldPass.UseSystemPasswordChar = true;
+            txt_newPass.UseSystemPasswordChar = true;
+            txt_confirmPass.UseSystemPasswordChar = true;
+
         }
 
         private void bnt_Cancel_Click(object sender, EventArgs e)
@@ -71,7 +77,7 @@ namespace Int_GradeSystem.TeacherForm
                         alert.Fillout_Form_Password();
                     }
                     //if the inputed old password not match to database
-                    else if (int.Parse(txt_oldPass.Text) != int.Parse(database.teacher_password))
+                    else if (txt_oldPass.Text != database.teacher_password)
                     {
                         alert.Old_Password_Incorrect();
                     }
@@ -102,6 +108,51 @@ namespace Int_GradeSystem.TeacherForm
 
         private void label6_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btn_hide_Click(object sender, EventArgs e)
+        {
+            btn_hide.Visible = false;
+            btn_Show.Visible = true;
+
+            txt_oldPass.UseSystemPasswordChar = true;
+        }
+
+        private void btn_Show_Click(object sender, EventArgs e)
+        {
+            btn_hide.Visible = true;
+            btn_Show.Visible = false;
+
+            txt_oldPass.UseSystemPasswordChar = false;
+        }
+
+        private void txt_oldPass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_newPass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_show_new_Click(object sender, EventArgs e)
+        {
+            btn_hide_new.Visible = true;
+            btn_show_new.Visible = false;
+
+            txt_newPass.UseSystemPasswordChar = false;
+            txt_confirmPass.UseSystemPasswordChar = false;
+        }
+
+        private void btn_hide_new_Click(object sender, EventArgs e)
+        {
+            btn_hide_new.Visible = false;
+            btn_show_new.Visible = true;
+
+            txt_newPass.UseSystemPasswordChar = true;
+            txt_confirmPass.UseSystemPasswordChar = true;
 
         }
     }

@@ -148,7 +148,7 @@ namespace Int_GradeSystem.TeacherForm
             {
 
                 //age checker
-                if (age < 4)
+                if (age < 6)
                 {
                     alert.Invalid_Age(gradeLevel, (int)age);
                 }

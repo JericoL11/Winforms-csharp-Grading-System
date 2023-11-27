@@ -33,6 +33,8 @@ namespace Int_GradeSystem.TeacherForm
 
         //passcode 
         public string Passcode { get; set; }
+
+        private Timer refreshTimer;
         public EditGrades()
         {
             InitializeComponent();
@@ -42,18 +44,21 @@ namespace Int_GradeSystem.TeacherForm
 
         }
 
-        // set the WS_EX_COMPOSITED flag, which provides similar double-buffering behavior:
-        protected override CreateParams CreateParams
+        //for enablign controls
+        void FormControlsEnabled()
         {
-            get
-            {
-                CreateParams cp = base.CreateParams;
-                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
-                return cp;
-            }
+            //enabling background controls
+            btn_editGradeBack.Enabled = true;
+            cmb_GradeLevels.Enabled = true;
+            btn_EditGrades.Enabled = true;
+            btn_Delete.Enabled = true;
+            dgv_studentList.Enabled = true;
         }
         private void EditGrades_Load(object sender, EventArgs e)
         {
+            //hiding password by default
+            txt_passCode.UseSystemPasswordChar = true;
+
             pnl_verification.Visible = false;
         }
         private void cmb_GradeLevels_SelectedIndexChanged(object sender, EventArgs e)
@@ -154,243 +159,286 @@ namespace Int_GradeSystem.TeacherForm
 
         private void btn_enter_Click(object sender, EventArgs e)
         {
-            
-          switch(gradelevel)
+            //cheching the passcode if empty
+            if (string.IsNullOrWhiteSpace(txt_passCode.Text))
             {
-                case 1:
-                    if (txt_passCode.Text != Passcode)
-                    {
-                        alert.Incorrect_Passcode();
-                    }
-                   
-                    else
-                    {
-                        if (SelectedID == null || SelectedID == 0 || gradelevel == null || section == null)
-                        {
-                            alert.Select_ID();
-                        }
-
-                        else
-                        {
-                            InputGrades ig = new InputGrades();
-                            //PASSING OF TEACHER'S ID
-                       
-                            ig.ID = ID;
-
-                            //Passing of selected grade level
-                            ig.gradelevel = gradelevel;
-                            ig.section = section;
-                            //passing of student ID
-                            ig.SelectedID = SelectedID;
-                            ig.ShowDialog();
-                            txt_passCode.Clear();
-                            pnl_verification.Visible=false;
-
-
-
-                        }
-                    }
-                    break;
-
-                case 2:
-                    if (txt_passCode.Text != Passcode)
-                    {
-                        alert.Incorrect_Passcode();
-                    }
-
-                    else
-                    {
-                        if (SelectedID == null || SelectedID == 0 || gradelevel == null || section == null)
-                        {
-                            alert.Select_ID();
-                        }
-
-                        else
-                        {
-                            InputGrades ig = new InputGrades();
-                            //PASSING OF TEACHER'S ID
-                            ig.ID = ID;
-
-                            //Passing of selected grade level
-                            ig.gradelevel = gradelevel;
-                            ig.section = section;
-                            //passing of student ID
-                            ig.SelectedID = SelectedID;                      
-                            ig.ShowDialog();
-                            txt_passCode.Clear();
-                            pnl_verification.Visible = false;
-                        }
-                    }
-                    break;
-
-                case 3:
-                    if (txt_passCode.Text != Passcode)
-                    {
-                        alert.Incorrect_Passcode();
-                    }
-
-                    else
-                    {
-                        if (SelectedID == null || SelectedID == 0 || gradelevel == null || section == null)
-                        {
-                            alert.Select_ID();
-                        }
-
-                        else
-                        {
-                            InputGrades ig = new InputGrades();
-
-                            //PASSING OF TEACHER'S ID
-                            ig.ID = ID;
-
-                            //Passing of selected grade level
-                            ig.gradelevel = gradelevel;
-                            ig.section = section;
-                            //passing of student ID
-                            ig.SelectedID = SelectedID;
-                            ig.ShowDialog();
-                            txt_passCode.Clear();
-                            pnl_verification.Visible = false;
-                        }
-                    }
-                    break;
-
-                case 4:
-                    if (txt_passCode.Text != Passcode)
-                    {
-                        alert.Incorrect_Passcode();
-                    }
-
-                    else
-                    {
-                        if (SelectedID == null || SelectedID == 0 || gradelevel == null || section == null)
-                        {
-                            alert.Select_ID();
-                        }
-
-                        else
-                        {
-                            InputGrades ig = new InputGrades();
-                            //PASSING OF TEACHER'S ID
-                            ig.ID = ID;
-
-                            //Passing of selected grade level
-                            ig.gradelevel = gradelevel;
-                            ig.section = section;
-                            //passing of student ID
-                            ig.SelectedID = SelectedID;
-                            ig.ShowDialog();
-                            txt_passCode.Clear();
-                            pnl_verification.Visible = false;
-                        }
-                    }
-                    break;
-
-                case 5:
-                    if (txt_passCode.Text != Passcode)
-                    {
-                        alert.Incorrect_Passcode();
-                    }
-
-                    else
-                    {
-                        if (SelectedID == null || SelectedID == 0 || gradelevel == null || section == null)
-                        {
-                            alert.Select_ID();
-                        }
-
-                        else
-                        {
-                            InputGrades ig = new InputGrades();
-                            //PASSING OF TEACHER'S ID
-                            ig.ID = ID;
-
-                            //Passing of selected grade level
-                            ig.gradelevel = gradelevel;
-                            ig.section = section;
-                            //passing of student ID
-                            ig.SelectedID = SelectedID;
-                            ig.ShowDialog();
-                            txt_passCode.Clear();
-                            pnl_verification.Visible = false;
-                        }
-                    }
-                    break;
-
-                case 6:
-                    if (txt_passCode.Text != Passcode)
-                    {
-                        alert.Incorrect_Passcode();
-                    }
-
-                    else
-                    {
-                        if (SelectedID == null || SelectedID == 0 || gradelevel == null || section == null)
-                        {
-                            alert.Select_ID();
-                        }
-
-                        else
-                        {
-                            InputGrades ig = new InputGrades();
-                            //PASSING OF TEACHER'S ID
-                            ig.ID = ID;
-
-                            //Passing of selected grade level
-                            ig.gradelevel = gradelevel;
-                            ig.section = section;
-                            //passing of student ID
-                            ig.SelectedID = SelectedID;
-                            ig.ShowDialog();
-                            txt_passCode.Clear();
-                            pnl_verification.Visible = false;
-                        }
-                    }
-                    break;
-                default:
-                    //throw code here if needed
-                    break;
+                alert.InputPasscode();
             }
+            else
+            {
+                switch (gradelevel)
+                {
+                    case 1:
+                        if (txt_passCode.Text != Passcode)
+                        {
+                            alert.Incorrect_Passcode();
+                        }
+
+                        else
+                        {
+                            if (SelectedID == null || SelectedID == 0 || gradelevel == null || section == null)
+                            {
+                                alert.Select_ID();
+                            }
+
+                            else
+                            {
+                                InputGrades ig = new InputGrades();
+                                //PASSING OF TEACHER'S ID
+
+                                ig.ID = ID;
+
+                                //Passing of selected grade level
+                                ig.gradelevel = gradelevel;
+                                ig.section = section;
+                                //passing of student ID
+                                ig.SelectedID = SelectedID;
+                                ig.ShowDialog();
+                                txt_passCode.Clear();
+                                pnl_verification.Visible = false;
+
+                                FormControlsEnabled();
+
+                            }
+                        }
+                        break;
+
+                    case 2:
+                        if (txt_passCode.Text != Passcode)
+                        {
+                            alert.Incorrect_Passcode();
+                        }
+
+                        else
+                        {
+                            if (SelectedID == null || SelectedID == 0 || gradelevel == null || section == null)
+                            {
+                                alert.Select_ID();
+                            }
+
+                            else
+                            {
+                                InputGrades ig = new InputGrades();
+                                //PASSING OF TEACHER'S ID
+                                ig.ID = ID;
+
+                                //Passing of selected grade level
+                                ig.gradelevel = gradelevel;
+                                ig.section = section;
+                                //passing of student ID
+                                ig.SelectedID = SelectedID;
+                                ig.ShowDialog();
+                                txt_passCode.Clear();
+                                pnl_verification.Visible = false;
+                                FormControlsEnabled();
+                            }
+                        }
+                        break;
+
+                    case 3:
+                        if (txt_passCode.Text != Passcode)
+                        {
+                            alert.Incorrect_Passcode();
+                        }
+
+                        else
+                        {
+                            if (SelectedID == null || SelectedID == 0 || gradelevel == null || section == null)
+                            {
+                                alert.Select_ID();
+                            }
+
+                            else
+                            {
+                                InputGrades ig = new InputGrades();
+
+                                //PASSING OF TEACHER'S ID
+                                ig.ID = ID;
+
+                                //Passing of selected grade level
+                                ig.gradelevel = gradelevel;
+                                ig.section = section;
+                                //passing of student ID
+                                ig.SelectedID = SelectedID;
+
+                                ig.ShowDialog();
+                                txt_passCode.Clear();
+                                pnl_verification.Visible = false;
+                                FormControlsEnabled();
+                            }
+                        }
+                        break;
+
+                    case 4:
+                        if (txt_passCode.Text != Passcode)
+                        {
+                            alert.Incorrect_Passcode();
+                        }
+
+                        else
+                        {
+                            if (SelectedID == null || SelectedID == 0 || gradelevel == null || section == null)
+                            {
+                                alert.Select_ID();
+                            }
+
+                            else
+                            {
+                                InputGrades ig = new InputGrades();
+                                //PASSING OF TEACHER'S ID
+                                ig.ID = ID;
+
+                                //Passing of selected grade level
+                                ig.gradelevel = gradelevel;
+                                ig.section = section;
+                                //passing of student ID
+                                ig.SelectedID = SelectedID;
+                                ig.ShowDialog();
+                                txt_passCode.Clear();
+                                pnl_verification.Visible = false;
+                                FormControlsEnabled();
+                            }
+                        }
+                        break;
+
+                    case 5:
+                        if (txt_passCode.Text != Passcode)
+                        {
+                            alert.Incorrect_Passcode();
+                        }
+
+                        else
+                        {
+                            if (SelectedID == null || SelectedID == 0 || gradelevel == null || section == null)
+                            {
+                                alert.Select_ID();
+                            }
+
+                            else
+                            {
+                                InputGrades ig = new InputGrades();
+                                //PASSING OF TEACHER'S ID
+                                ig.ID = ID;
+
+                                //Passing of selected grade level
+                                ig.gradelevel = gradelevel;
+                                ig.section = section;
+                                //passing of student ID
+                                ig.SelectedID = SelectedID;
+                                ig.ShowDialog();
+                                txt_passCode.Clear();
+                                pnl_verification.Visible = false;
+                                FormControlsEnabled();
+                            }
+                        }
+                        break;
+
+                    case 6:
+                        if (txt_passCode.Text != Passcode)
+                        {
+                            alert.Incorrect_Passcode();
+                        }
+
+                        else
+                        {
+                            if (SelectedID == null || SelectedID == 0 || gradelevel == null || section == null)
+                            {
+                                alert.Select_ID();
+                            }
+
+                            else
+                            {
+                                InputGrades ig = new InputGrades();
+                                //PASSING OF TEACHER'S ID
+                                ig.ID = ID;
+
+                                //Passing of selected grade level
+                                ig.gradelevel = gradelevel;
+                                ig.section = section;
+                                //passing of student ID
+                                ig.SelectedID = SelectedID;
+                                ig.ShowDialog();
+                                txt_passCode.Clear();
+                                pnl_verification.Visible = false;
+                                FormControlsEnabled();
+                            }
+                        }
+                        break;
+                    default:
+                        //throw code here if needed
+                        break;
+                }
+            }
+       
             
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
+            txt_passCode.UseSystemPasswordChar = true;
 
-            //Notifying the user for final decision
-            var ResultDialog = MessageBox.Show($"Do you want to delete the selected ID \"{SelectedID}\" ?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-           
-            if (ResultDialog == DialogResult.Yes)
-            {
-               
-                //Stored Procedure Function
-                data.SP_tch_DeleteStudent(SelectedID);
-                ReloadData();
-
-            }
-           
-          
-          
-           
-        }
-
-        private void btn_EditGrades_Click(object sender, EventArgs e)
-        {
-            if(cmb_GradeLevels.Text == "Select -------" || string.IsNullOrEmpty(cmb_GradeLevels.Text) || SelectedID == null)
+            btn_enter.Visible = false;
+            btn_pnldelete.Visible = true;
+            if (cmb_GradeLevels.Text == "Select -------" || string.IsNullOrEmpty(cmb_GradeLevels.Text) || SelectedID == null)
             {
                 alert.Select_ID();
 
             }
             else
             {
+                //disabling background controls
+                btn_editGradeBack.Enabled = false;
+                cmb_GradeLevels.Enabled = false;
+                btn_EditGrades.Enabled = false;
+                btn_Delete.Enabled = false;
+                dgv_studentList.Enabled = false;
+
                 pnl_verification.Visible = true;
-                this.Focus();
+
+                txt_passCode.Focus();
+
+              
+            }
+
+        }
+
+        private void btn_EditGrades_Click(object sender, EventArgs e)
+
+        {
+            txt_passCode.UseSystemPasswordChar= true;
+        
+            btn_pnldelete.Visible = false;
+            btn_enter.Visible = true;
+            if (cmb_GradeLevels.Text == "Select -------" || string.IsNullOrEmpty(cmb_GradeLevels.Text) || SelectedID == null)
+            {
+                alert.Select_ID();
+
+            }
+            else
+            {
+                //disabling background controls
+             btn_editGradeBack.Enabled = false;
+             cmb_GradeLevels.Enabled = false;
+             btn_EditGrades.Enabled = false;
+             btn_Delete.Enabled = false;
+             dgv_studentList.Enabled = false;
+
+             pnl_verification.Visible = true;
+
+                txt_passCode.Focus();
             }
           
         }
 
         private void btn_cancel_Click(object sender, EventArgs e)
         {
+            //enabling background controls
+            btn_editGradeBack.Enabled = true;
+            cmb_GradeLevels.Enabled = true;
+            btn_EditGrades.Enabled = true;
+            btn_Delete.Enabled = true;
+            dgv_studentList.Enabled = true;
+
             pnl_verification.Visible=false;
             txt_passCode.Clear();
         }
@@ -399,10 +447,11 @@ namespace Int_GradeSystem.TeacherForm
         {
 
         }
-        void ReloadData()
+        void Dgv_ReloadData()
         {
             
             dgv_studentList.DataSource = data.SP_stud_ViewStudents(gradelevel);
+            lbl_StudID.Text= "__";
          
         }
 
@@ -418,6 +467,200 @@ namespace Int_GradeSystem.TeacherForm
 
         private void txt_passCode_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void btn_refresh_Click(object sender, EventArgs e)
+        {
+            Dgv_ReloadData();
+        }
+
+        private void btn_Show_Click(object sender, EventArgs e)
+        {
+            btn_Show.Visible = false;
+            btn_hide.Visible = true;
+
+            txt_passCode.UseSystemPasswordChar = false;
+        }
+
+        private void btn_hide_Click(object sender, EventArgs e)
+        {
+            btn_Show.Visible = true;
+            btn_hide.Visible = false;
+
+            txt_passCode.UseSystemPasswordChar = true;
+        }
+
+        void DeleteStudent()
+        {
+            //Notifying the user for final decision
+            var ResultDialog = MessageBox.Show($"Do you want to delete the selected ID \"{SelectedID}\" ?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (ResultDialog == DialogResult.Yes)
+            {
+
+                //Stored Procedure Function
+                data.SP_tch_DeleteStudent(SelectedID);
+                Dgv_ReloadData();
+                FormControlsEnabled();
+
+            }
+            else
+            {
+                FormControlsEnabled();
+            }
+            txt_passCode.Clear();
+            pnl_verification.Visible = false;
+        }
+        private void btn_pnldelete_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txt_passCode.Text))
+            {
+                alert.InputPasscode();
+            }
+            else
+            {
+                switch (gradelevel)
+                {
+                    case 1:
+                        if (txt_passCode.Text != Passcode)
+                        {
+                            alert.Incorrect_Passcode();
+                        }
+
+                        else
+                        {
+                            if (SelectedID == null || SelectedID == 0 || gradelevel == null || section == null)
+                            {
+                                alert.Select_ID();
+                            }
+
+                            else
+                            {
+                                DeleteStudent();
+
+                            }
+                        }
+                        break;
+
+                    case 2:
+                        if (txt_passCode.Text != Passcode)
+                        {
+                            alert.Incorrect_Passcode();
+                        }
+
+                        else
+                        {
+                            if (SelectedID == null || SelectedID == 0 || gradelevel == null || section == null)
+                            {
+                                alert.Select_ID();
+                            }
+
+                            else
+                            {
+                                DeleteStudent();
+                            }
+                        }
+                        break;
+
+                    case 3:
+                        if (txt_passCode.Text != Passcode)
+                        {
+                            alert.Incorrect_Passcode();
+                        }
+
+                        else
+                        {
+                            if (SelectedID == null || SelectedID == 0 || gradelevel == null || section == null)
+                            {
+                                alert.Select_ID();
+                            }
+
+                            else
+                            {
+                                DeleteStudent();
+                            }
+
+                        }
+                        break;
+
+                    case 4:
+                        if (txt_passCode.Text != Passcode)
+                        {
+                            alert.Incorrect_Passcode();
+                        }
+
+                        else
+                        {
+                            if (SelectedID == null || SelectedID == 0 || gradelevel == null || section == null)
+                            {
+                                alert.Select_ID();
+                            }
+
+                            else
+                            {
+                                DeleteStudent();
+                            }
+                        }
+                        break;
+
+                    case 5:
+                        if (txt_passCode.Text != Passcode)
+                        {
+                            alert.Incorrect_Passcode();
+                        }
+
+                        else
+                        {
+                            if (SelectedID == null || SelectedID == 0 || gradelevel == null || section == null)
+                            {
+                                alert.Select_ID();
+                            }
+
+                            else
+                            {
+                                DeleteStudent();
+
+
+                            }
+                        }
+                        break;
+
+                    case 6:
+                        if (txt_passCode.Text != Passcode)
+                        {
+                            alert.Incorrect_Passcode();
+                        }
+
+                        else
+                        {
+                            if (SelectedID == null || SelectedID == 0 || gradelevel == null || section == null)
+                            {
+                                alert.Select_ID();
+                            }
+
+                            else
+                            {
+                                //Notifying the user for final decision
+                                var ResultDialog = MessageBox.Show($"Do you want to delete the selected ID \"{SelectedID}\" ?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                                if (ResultDialog == DialogResult.Yes)
+                                {
+
+                                    //Stored Procedure Function
+                                    data.SP_tch_DeleteStudent(SelectedID);
+                                    Dgv_ReloadData();
+
+                                }
+                            }
+                        }
+                        break;
+                    default:
+                        //throw code here if needed
+                        break;
+                }
+            }
+          
 
         }
     }

@@ -248,20 +248,6 @@ namespace Int_GradeSystem
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_stud_InputGrades_ThirdGrading")]
-		public int SP_stud_InputGrades_ThirdGrading([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Mapeh", DbType="Float")] System.Nullable<double> mapeh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="English", DbType="Float")] System.Nullable<double> english, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Math", DbType="Float")] System.Nullable<double> math, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Filipino", DbType="Float")] System.Nullable<double> filipino, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Science", DbType="Float")] System.Nullable<double> science, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ThirdG_Avg", DbType="Float")] System.Nullable<double> thirdG_Avg, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Student_status", DbType="VarChar(30)")] string student_status, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="StudentId", DbType="Int")] System.Nullable<int> studentId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Teacher", DbType="NVarChar(50)")] string teacher)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), mapeh, english, math, filipino, science, thirdG_Avg, student_status, studentId, teacher);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_stud_InputGrades_FourthGrading")]
-		public int SP_stud_InputGrades_FourthGrading([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Mapeh", DbType="Float")] System.Nullable<double> mapeh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="English", DbType="Float")] System.Nullable<double> english, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Math", DbType="Float")] System.Nullable<double> math, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Filipino", DbType="Float")] System.Nullable<double> filipino, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Science", DbType="Float")] System.Nullable<double> science, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="FourthG_Avg", DbType="Float")] System.Nullable<double> fourthG_Avg, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Student_status", DbType="VarChar(50)")] string student_status, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="StudentId", DbType="Int")] System.Nullable<int> studentId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Teacher", DbType="NVarChar(50)")] string teacher)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), mapeh, english, math, filipino, science, fourthG_Avg, student_status, studentId, teacher);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_stud_InputGrades_SecondGrading")]
 		public int SP_stud_InputGrades_SecondGrading([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Mapeh", DbType="Float")] System.Nullable<double> mapeh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="English", DbType="Float")] System.Nullable<double> english, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Math", DbType="Float")] System.Nullable<double> math, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Filipino", DbType="Float")] System.Nullable<double> filipino, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Science", DbType="Float")] System.Nullable<double> science, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SecondG_Avg", DbType="Float")] System.Nullable<double> secondG_Avg, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Student_status", DbType="VarChar(50)")] string student_status, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="StudentId", DbType="Int")] System.Nullable<int> studentId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Teacher", DbType="NVarChar(50)")] string teacher)
 		{
@@ -281,6 +267,20 @@ namespace Int_GradeSystem
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), grade);
 			return ((ISingleResult<SP_stud_ViewStudentsResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_stud_InputGrades_ThirdGrading")]
+		public int SP_stud_InputGrades_ThirdGrading([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Mapeh", DbType="Float")] System.Nullable<double> mapeh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="English", DbType="Float")] System.Nullable<double> english, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Math", DbType="Float")] System.Nullable<double> math, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Filipino", DbType="Float")] System.Nullable<double> filipino, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Science", DbType="Float")] System.Nullable<double> science, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ThirdG_Avg", DbType="Float")] System.Nullable<double> thirdG_Avg, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Student_status", DbType="VarChar(30)")] string student_status, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="StudentId", DbType="Int")] System.Nullable<int> studentId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Teacher", DbType="NVarChar(50)")] string teacher)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), mapeh, english, math, filipino, science, thirdG_Avg, student_status, studentId, teacher);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_stud_InputGrades_FourthGrading")]
+		public int SP_stud_InputGrades_FourthGrading([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Mapeh", DbType="Float")] System.Nullable<double> mapeh, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="English", DbType="Float")] System.Nullable<double> english, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Math", DbType="Float")] System.Nullable<double> math, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Filipino", DbType="Float")] System.Nullable<double> filipino, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Science", DbType="Float")] System.Nullable<double> science, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="FourthG_Avg", DbType="Float")] System.Nullable<double> fourthG_Avg, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Student_status", DbType="VarChar(50)")] string student_status, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="StudentId", DbType="Int")] System.Nullable<int> studentId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Teacher", DbType="NVarChar(50)")] string teacher)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), mapeh, english, math, filipino, science, fourthG_Avg, student_status, studentId, teacher);
+			return ((int)(result.ReturnValue));
 		}
 	}
 	
@@ -568,6 +568,8 @@ namespace Int_GradeSystem
 		
 		private System.Nullable<int> _FK_teacherId;
 		
+		private string _Property;
+		
 		public tbl_TeacherInfo()
 		{
 		}
@@ -664,6 +666,22 @@ namespace Int_GradeSystem
 				if ((this._FK_teacherId != value))
 				{
 					this._FK_teacherId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="", Storage="_Property", CanBeNull=false)]
+		public string Property
+		{
+			get
+			{
+				return this._Property;
+			}
+			set
+			{
+				if ((this._Property != value))
+				{
+					this._Property = value;
 				}
 			}
 		}

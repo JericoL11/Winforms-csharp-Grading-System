@@ -130,11 +130,11 @@
   <data name="Teacher Form Page (FS)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\Teacher Form Page (FS).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Input Grades (FS)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Input Grades (FS).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="AdminFormPage(FS)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\AdminFormPage(FS).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Teachers Form (FS)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\Teachers Form (FS).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Student List (FS)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\Student List (FS).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,6 +151,9 @@
   <data name="Grade Level  Login (FS)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\Grade Level  Login (FS).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Teachers Form (FS)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Teachers Form (FS).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="AccntRecords(FS)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\AccntRecords(FS).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -159,6 +162,9 @@
   </data>
   <data name="Admin Login Form (FS)N" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\Admin Login Form (FS)N.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="show" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons\show.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Edit Profile (FS)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\Edit Profile (FS).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,7 +175,7 @@
   <data name="Change Password (FS)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\Change Password (FS).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Input Grades (FS)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\Input Grades (FS).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons\hide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

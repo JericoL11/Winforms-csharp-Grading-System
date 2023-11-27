@@ -43,16 +43,7 @@ namespace Int_GradeSystem.AdminForm
 
         }
 
-        // set the WS_EX_COMPOSITED flag, which provides similar double-buffering behavior:
-        protected override CreateParams CreateParams
-        {
-            get
-            {
-                CreateParams cp = base.CreateParams;
-                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
-                return cp;
-            }
-        }
+    
         private void EditProfile_Load(object sender, EventArgs e)
         {
             //hidden panel that are used for messagebox
@@ -241,6 +232,121 @@ namespace Int_GradeSystem.AdminForm
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txt_firstName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_lastName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_middleName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_teacherID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtp_bdate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_email_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gb_gender_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbtn_female_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbtn_male_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_Age_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_phoneNumber_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl_width_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnl_loading_Paint(object sender, PaintEventArgs e)
         {
 
         }

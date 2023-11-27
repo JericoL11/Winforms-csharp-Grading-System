@@ -245,6 +245,7 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="db_Backup\Backup_GradingSystem.bak" />
+    <None Include="db_Backup\Grading_System_1_1.bak" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -267,6 +268,8 @@
     <Content Include="img\Edit Grades %28FS%29.png" />
     <Content Include="img\Edit Profile %28FS%29.png" />
     <Content Include="img\Grade Level  Login %28FS%29.png" />
+    <Content Include="img\icons\hide.png" />
+    <Content Include="img\icons\show.png" />
     <Content Include="img\Input Grades %28FS%29.png" />
     <Content Include="img\loading.gif" />
     <Content Include="img\loading2.gif" />

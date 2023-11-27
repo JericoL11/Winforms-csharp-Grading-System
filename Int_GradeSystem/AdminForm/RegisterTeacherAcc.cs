@@ -44,7 +44,9 @@ namespace Int_GradeSystem.AdminForm
 
         private void RegisterTeacherAcc_Load(object sender, EventArgs e)
         {
-
+            //hiding password by default
+            txt_regPassword.UseSystemPasswordChar = true;
+            txt_regConfirmPass.UseSystemPasswordChar = true;
         }
 
         private void btn_regTeacherBack_Click(object sender, EventArgs e)
@@ -76,6 +78,30 @@ namespace Int_GradeSystem.AdminForm
                 ClearAll();
             }
 
+        }
+
+        private void btn_Show_Click(object sender, EventArgs e)
+        {
+            btn_Show.Visible = false;
+            btn_hide.Visible = true;
+
+            txt_regPassword.Focus();
+
+            txt_regPassword.UseSystemPasswordChar = false;
+            txt_regConfirmPass.UseSystemPasswordChar = false;
+
+
+        }
+
+        private void btn_hide_Click(object sender, EventArgs e)
+        {
+
+            btn_Show.Visible = true;
+            btn_hide.Visible = false;
+
+            txt_regPassword.Focus();
+            txt_regPassword.UseSystemPasswordChar = true;
+            txt_regConfirmPass.UseSystemPasswordChar = true;
         }
 
         #region == Funtions == 
@@ -141,5 +167,6 @@ namespace Int_GradeSystem.AdminForm
         {
 
         }
+
     }
 }

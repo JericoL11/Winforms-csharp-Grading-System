@@ -125,7 +125,7 @@ namespace Int_GradeSystem
 
         private void AdminLogin_Load(object sender, EventArgs e)
         {
-          
+          txt_AdminPassword.UseSystemPasswordChar = true;
         }
 
 
@@ -133,11 +133,11 @@ namespace Int_GradeSystem
         private void txt_AdminUsername_Leave_1(object sender, EventArgs e)
         {
             //textbox Funtion
-            if (txt_AdminUsername.Text == "")
+          /*  if (txt_AdminUsername.Text == "")
             {
                
                 txt_AdminUsername.Text = "Username";
-            }
+            }*/
        
 
         }
@@ -145,23 +145,23 @@ namespace Int_GradeSystem
         private void txt_AdminUsername_Enter(object sender, EventArgs e)
         {
           
-            //textbox Funtion
+          /*  //textbox Funtion
             if (txt_AdminUsername.Text == "Username")
             {
                
                 txt_AdminUsername.Text = "";
-            }
+            }*/
       
         }
 
         private void txt_AdminPassword_Leave(object sender, EventArgs e)
         {
-            //textbox Funtion
+        /*    //textbox Funtion
             if (txt_AdminPassword.Text == "")
             {
     
                 txt_AdminPassword.Text = "Password";
-            }
+            }*/
           
         }
 
@@ -169,12 +169,12 @@ namespace Int_GradeSystem
         {
             //textbox Funtion
          
-            if (txt_AdminPassword.Text == "Password")
+         /*   if (txt_AdminPassword.Text == "Password")
             {
 
             
                 txt_AdminPassword.Text = "";
-            }
+            }*/
       
 
         }
@@ -193,6 +193,28 @@ namespace Int_GradeSystem
         private void btn_exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txt_AdminPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Show_Click(object sender, EventArgs e)
+        {
+            btn_hide.Visible = true;
+            btn_Show.Visible = false;
+
+            txt_AdminPassword.UseSystemPasswordChar=false;
+        }
+
+        private void btn_hide_Click(object sender, EventArgs e)
+        {
+            btn_hide.Visible=false;
+            btn_Show.Visible=true;
+
+            txt_AdminPassword.UseSystemPasswordChar = true;
+
         }
     }
 }

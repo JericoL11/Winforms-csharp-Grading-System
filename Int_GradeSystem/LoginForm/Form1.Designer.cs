@@ -34,6 +34,10 @@
             this.llnk_AdminForm = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_exit = new System.Windows.Forms.Button();
+            this.btn_Show = new System.Windows.Forms.Button();
+            this.btn_hide = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txt_password
@@ -45,7 +49,7 @@
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(460, 39);
             this.txt_password.TabIndex = 2;
-            this.txt_password.Text = "Password";
+            this.txt_password.TextChanged += new System.EventHandler(this.txt_password_TextChanged);
             this.txt_password.Enter += new System.EventHandler(this.txt_password_Enter);
             this.txt_password.Leave += new System.EventHandler(this.txt_password_Leave);
             // 
@@ -53,12 +57,11 @@
             // 
             this.txt_username.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_username.ForeColor = System.Drawing.Color.Black;
-            this.txt_username.Location = new System.Drawing.Point(201, 344);
+            this.txt_username.Location = new System.Drawing.Point(201, 322);
             this.txt_username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_username.Name = "txt_username";
             this.txt_username.Size = new System.Drawing.Size(460, 39);
             this.txt_username.TabIndex = 1;
-            this.txt_username.Text = "Username";
             this.txt_username.TextChanged += new System.EventHandler(this.txt_username_TextChanged);
             this.txt_username.Enter += new System.EventHandler(this.txt_username_Enter);
             this.txt_username.Leave += new System.EventHandler(this.txt_username_Leave);
@@ -122,6 +125,54 @@
             this.btn_exit.UseVisualStyleBackColor = true;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
+            // btn_Show
+            // 
+            this.btn_Show.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Show.BackgroundImage = global::Int_GradeSystem.Properties.Resources.show;
+            this.btn_Show.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Show.Location = new System.Drawing.Point(621, 430);
+            this.btn_Show.Name = "btn_Show";
+            this.btn_Show.Size = new System.Drawing.Size(41, 39);
+            this.btn_Show.TabIndex = 6;
+            this.btn_Show.UseVisualStyleBackColor = false;
+            this.btn_Show.Click += new System.EventHandler(this.btn_Show_Click);
+            // 
+            // btn_hide
+            // 
+            this.btn_hide.BackColor = System.Drawing.Color.Transparent;
+            this.btn_hide.BackgroundImage = global::Int_GradeSystem.Properties.Resources.hide;
+            this.btn_hide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_hide.Location = new System.Drawing.Point(621, 430);
+            this.btn_hide.Name = "btn_hide";
+            this.btn_hide.Size = new System.Drawing.Size(41, 39);
+            this.btn_hide.TabIndex = 8;
+            this.btn_hide.UseVisualStyleBackColor = false;
+            this.btn_hide.Click += new System.EventHandler(this.btn_hide_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(197, 283);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 25);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "User ID";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(197, 393);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(109, 25);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Password";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -132,6 +183,10 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.ControlBox = false;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btn_Show);
+            this.Controls.Add(this.btn_hide);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.llnk_AdminForm);
@@ -160,6 +215,10 @@
         private System.Windows.Forms.LinkLabel llnk_AdminForm;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.Button btn_Show;
+        private System.Windows.Forms.Button btn_hide;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

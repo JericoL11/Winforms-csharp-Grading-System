@@ -36,6 +36,8 @@
             this.lbl_teacherID = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_exit = new System.Windows.Forms.Button();
+            this.btn_Show = new System.Windows.Forms.Button();
+            this.btn_hide = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmb_GradeLevels
@@ -53,7 +55,7 @@
             "4 - Hope",
             "5 - Fourier",
             "6 - Hawking"});
-            this.cmb_GradeLevels.Location = new System.Drawing.Point(755, 438);
+            this.cmb_GradeLevels.Location = new System.Drawing.Point(738, 437);
             this.cmb_GradeLevels.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_GradeLevels.Name = "cmb_GradeLevels";
             this.cmb_GradeLevels.Size = new System.Drawing.Size(135, 28);
@@ -80,12 +82,12 @@
             this.txt_password.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_password.ForeColor = System.Drawing.Color.Black;
-            this.txt_password.Location = new System.Drawing.Point(755, 644);
+            this.txt_password.Location = new System.Drawing.Point(753, 644);
             this.txt_password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_password.Name = "txt_password";
-            this.txt_password.Size = new System.Drawing.Size(135, 27);
+            this.txt_password.Size = new System.Drawing.Size(120, 30);
             this.txt_password.TabIndex = 67;
             // 
             // label1
@@ -168,6 +170,30 @@
             this.btn_exit.UseVisualStyleBackColor = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
+            // btn_Show
+            // 
+            this.btn_Show.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Show.BackgroundImage = global::Int_GradeSystem.Properties.Resources.show;
+            this.btn_Show.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Show.Location = new System.Drawing.Point(985, 644);
+            this.btn_Show.Name = "btn_Show";
+            this.btn_Show.Size = new System.Drawing.Size(35, 31);
+            this.btn_Show.TabIndex = 73;
+            this.btn_Show.UseVisualStyleBackColor = false;
+            this.btn_Show.Click += new System.EventHandler(this.btn_Show_Click);
+            // 
+            // btn_hide
+            // 
+            this.btn_hide.BackColor = System.Drawing.Color.Transparent;
+            this.btn_hide.BackgroundImage = global::Int_GradeSystem.Properties.Resources.hide;
+            this.btn_hide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_hide.Location = new System.Drawing.Point(985, 644);
+            this.btn_hide.Name = "btn_hide";
+            this.btn_hide.Size = new System.Drawing.Size(35, 31);
+            this.btn_hide.TabIndex = 74;
+            this.btn_hide.UseVisualStyleBackColor = false;
+            this.btn_hide.Click += new System.EventHandler(this.btn_hide_Click);
+            // 
             // GradeLevelLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -176,6 +202,8 @@
             this.BackgroundImage = global::Int_GradeSystem.Properties.Resources.Grade_Level__Login__FS_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.btn_Show);
+            this.Controls.Add(this.btn_hide);
             this.Controls.Add(this.lbl_teacherID);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.label2);
@@ -208,5 +236,7 @@
         private System.Windows.Forms.Label lbl_teacherID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.Button btn_Show;
+        private System.Windows.Forms.Button btn_hide;
     }
 }

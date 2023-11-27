@@ -56,27 +56,28 @@ namespace Int_GradeSystem.TeacherForm
 
             //fix screen flickering
             this.DoubleBuffered = true;
+       
 
-     
         }
         // set the WS_EX_COMPOSITED flag, which provides similar double-buffering behavior:
-        protected override CreateParams CreateParams
-        {
-            get
-            {
-                CreateParams cp = base.CreateParams;
-                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
-                return cp;
-            }
-        }
+
         private void InputGrades_Load(object sender, EventArgs e)
+
         {
+       
             //Hidden of panels
-            pnl_First.Visible = false;
+       /*     pnl_First.Visible = false;
             pnl_Second.Visible = false;
             pnl_Third.Visible = false;
             pnl_Fourth.Visible = false;
-            pnl_overall.Visible = false;
+            pnl_overall.Visible = false;*/
+
+            //hiding of panels by default   
+                        firstGradingControls_Visibility_FALSE();
+                        secondGradingControls_Visibility_FALSE();
+                        thirdGradingControls_Visibility_FALSE();
+                        fourthGradingControls_Visibility_FALSE();
+                        overAllControls_Visibility_FALSE();
 
 
 
@@ -127,7 +128,7 @@ namespace Int_GradeSystem.TeacherForm
             {
                 goto inputdata;
             }
-             
+
             if (database.Third_Grading == "Done")
             {
                 // if true , display the stored data
@@ -139,8 +140,8 @@ namespace Int_GradeSystem.TeacherForm
                 lbl_avgThird.Text = ThirdG_data.Period_Avg_ThirdG.ToString();
                 lbl_StatusThird.Text = ThirdG_data.Period_Status_ThirdG;
 
-       
-           
+
+
             }
 
             else
@@ -151,13 +152,13 @@ namespace Int_GradeSystem.TeacherForm
             if (database.Fourth_Grading == "Done")
             {
                 // if true , display the stored data
-                txt_ThirdMapeh.Text = FourthG_data.Mapeh_FourthG.ToString();
-                txt_ThirdEnglish.Text = FourthG_data.English_FourthG.ToString();
-                txt_ThirdMath.Text = FourthG_data.Math_FourthG.ToString();
-                txt_ThirdFilipino.Text = FourthG_data.Filipino_FourthG.ToString();
-                txt_ThirdScience.Text = FourthG_data.Science_FourthG.ToString();
-                lbl_avgThird.Text = FourthG_data.Period_Avg_FourthG.ToString();
-                lbl_StatusThird.Text = FourthG_data.Period_Status_FourthG;
+                txt_FourthMapeh.Text = FourthG_data.Mapeh_FourthG.ToString();
+                txt_FourthEnglish.Text = FourthG_data.English_FourthG.ToString();
+                txt_FourthMath.Text = FourthG_data.Math_FourthG.ToString();
+                txt_FourthFilipino.Text = FourthG_data.Filipino_FourthG.ToString();
+                txt_FourthScience.Text = FourthG_data.Science_FourthG.ToString();
+                lbl_avgFourth.Text = FourthG_data.Period_Avg_FourthG.ToString();
+                lbl_StatusFourth.Text = FourthG_data.Period_Status_FourthG;
 
                 OverALL_Calculation();
 
@@ -175,7 +176,7 @@ namespace Int_GradeSystem.TeacherForm
             switch (gradelevel)
             {
 
-               
+
 
                 //To display student iNFO
                 case 1: { Students_Added(); } break;
@@ -191,7 +192,7 @@ namespace Int_GradeSystem.TeacherForm
 
         private void btn_inputGradeBack_Click(object sender, EventArgs e)
         {
-        
+
             this.Close();
         }
 
@@ -214,7 +215,123 @@ namespace Int_GradeSystem.TeacherForm
             CheckTextBox_Fourth();
         }
 
-    
+        #region == panel sets ==
+
+        //FALSE
+            void firstGradingControls_Visibility_FALSE()
+        {
+            txt_FirstMapeh.Visible= false;
+            txt_FirstEnglish.Visible = false;
+            txt_FirstMath.Visible = false;
+            txt_FirstFilipino.Visible = false;
+            txt_FirstScience.Visible = false;
+            lbl_avgFirst.Visible = false;
+            lbl_StatusFirst.Visible = false;
+            btn_UpdateFirst.Visible=false;
+        }
+        void secondGradingControls_Visibility_FALSE()
+        {
+            txt_SecondMapeh.Visible = false;
+            txt_SecondEnglish.Visible = false;
+            txt_SecondMath.Visible = false;
+            txt_SecondFilipino.Visible = false;
+            txt_SecondScience.Visible = false;
+            lbl_avgSecond.Visible = false;
+            lbl_StatusSecond.Visible = false;
+            btn_UpdateSecond.Visible = false;
+        }
+        void thirdGradingControls_Visibility_FALSE()
+        {
+            txt_ThirdMapeh.Visible = false;
+            txt_ThirdEnglish.Visible = false;
+            txt_ThirdMath.Visible = false;
+            txt_ThirdFilipino.Visible = false;
+            txt_ThirdScience.Visible = false;
+            lbl_avgThird.Visible = false;
+            lbl_StatusThird.Visible = false;
+            btn_UpdateThird.Visible = false;
+        }
+        void fourthGradingControls_Visibility_FALSE()
+        {
+            txt_FourthMapeh.Visible = false;
+            txt_FourthEnglish.Visible = false;
+            txt_FourthMath.Visible = false;
+            txt_FourthFilipino.Visible = false;
+            txt_FourthScience.Visible = false;
+            lbl_avgFourth.Visible = false;
+            lbl_StatusFourth.Visible = false;
+            btn_UpdateFourth.Visible = false;
+        }
+
+        void overAllControls_Visibility_FALSE()
+        {
+            lbl_ovrAll_Mapeh.Visible = false;
+            lbl_ovrAll_English.Visible = false;
+            lbl_ovrAll_Math.Visible = false;
+            lbl_ovrAll_Filipino.Visible = false;
+            lbl_ovrAll_Science.Visible = false;
+            lbl_ovrAll_Average.Visible = false;
+            lbl_StatusOverall.Visible = false;
+            btn_Compute.Visible = false;
+        }
+        //TRUE
+        void firstGradingControls_Visibility_TRUE()
+        {
+            txt_FirstMapeh.Visible = true;
+            txt_FirstEnglish.Visible = true;
+            txt_FirstMath.Visible = true;
+            txt_FirstFilipino.Visible = true;
+            txt_FirstScience.Visible = true;
+            lbl_avgFirst.Visible = true;
+            lbl_StatusFirst.Visible = true;
+            btn_UpdateFirst.Visible = true;
+        }
+        void secondGradingControls_Visibility_TRUE()
+        {
+            txt_SecondMapeh.Visible = true;
+            txt_SecondEnglish.Visible = true;
+            txt_SecondMath.Visible = true;
+            txt_SecondFilipino.Visible = true;
+            txt_SecondScience.Visible = true;
+            lbl_avgSecond.Visible = true;
+            lbl_StatusSecond.Visible = true;
+            btn_UpdateSecond.Visible = true;
+        }
+        void thirdGradingControls_Visibility_TRUE()
+        {
+            txt_ThirdMapeh.Visible = true;
+            txt_ThirdEnglish.Visible = true;
+            txt_ThirdMath.Visible = true;
+            txt_ThirdFilipino.Visible = true;
+            txt_ThirdScience.Visible = true;
+            lbl_avgThird.Visible = true;
+            lbl_StatusThird.Visible = true;
+            btn_UpdateThird.Visible = true;
+        }
+        void fourthGradingControls_Visibility_TRUE()
+        {
+            txt_FourthMapeh.Visible = true;
+            txt_FourthEnglish.Visible = true;
+            txt_FourthMath.Visible = true;
+            txt_FourthFilipino.Visible = true;
+            txt_FourthScience.Visible = true;
+            lbl_avgFourth.Visible = true;
+            lbl_StatusFourth.Visible = true;
+            btn_UpdateFourth.Visible = true;
+        }
+        void overAllControls_Visibility_TRUE()
+        {
+            lbl_ovrAll_Mapeh.Visible = true;
+            lbl_ovrAll_English.Visible = true;
+            lbl_ovrAll_Math.Visible = true;
+            lbl_ovrAll_Filipino.Visible = true;
+            lbl_ovrAll_Science.Visible = true;
+            lbl_ovrAll_Average.Visible = true;
+            lbl_StatusOverall.Visible = true;
+            btn_Compute.Visible = true;
+        }
+        #endregion
+
         private void cmb_term_SelectedIndexChanged(object sender, EventArgs e)
         {
             //mataching of Selected st udent ID on its Period
@@ -230,31 +347,38 @@ namespace Int_GradeSystem.TeacherForm
 
             var FourthG_data = data.tbl_Student_FourthG_Subjects
                          .FirstOrDefault(p => p.FK_studentID == SelectedID);
-            
+
             switch (cmb_term.SelectedIndex)
             {
                 case 0:
                     {
                         //hiding of panels by default 
-                        pnl_First.Visible = false;
-                        pnl_Second.Visible = false;
-                        pnl_Third.Visible = false;
-                        pnl_Fourth.Visible = false;
-                        pnl_overall.Visible = false;
-                     
-                   
+                      
+                        firstGradingControls_Visibility_FALSE();
+                        secondGradingControls_Visibility_FALSE();
+                        thirdGradingControls_Visibility_FALSE();
+                        fourthGradingControls_Visibility_FALSE();
+                        overAllControls_Visibility_FALSE();
+                    
+
+
                     }
                     break;
 
                 case 1:
                     {
-                        pnl_Second.Visible = false;
-                        pnl_Third.Visible = false;
-                        pnl_Fourth.Visible = false;
-                        pnl_overall.Visible = false;
+                        /* pnl_Second.Visible = false;
+                         pnl_Third.Visible = false;
+                         pnl_Fourth.Visible = false;
+                         pnl_overall.Visible = false;*/
+
+                        secondGradingControls_Visibility_FALSE();
+                        thirdGradingControls_Visibility_FALSE();
+                        fourthGradingControls_Visibility_FALSE();
+                        overAllControls_Visibility_FALSE();
 
                         //checking the prelim avg if not null
-                        if(FirstG_data != null)
+                        if (FirstG_data != null)
                         {
                             // if true , display the stored data
                             txt_FirstMapeh.Text = FirstG_data.Mapeh_firstG.ToString();
@@ -264,15 +388,15 @@ namespace Int_GradeSystem.TeacherForm
                             txt_FirstScience.Text = FirstG_data.Science_firstG.ToString();
                             lbl_avgFirst.Text = FirstG_data.Period_Avg_firstG.ToString();
                             lbl_StatusFirst.Text = FirstG_data.Period_Status_firstG;
-                            
-                            
+
+
                         }
                         else
                         {
-                            pnl_First.Visible = true;
+                            firstGradingControls_Visibility_TRUE();
                             MessageBox.Show("No data inputted yet");
                         }
-                        pnl_First.Visible = true;
+                        firstGradingControls_Visibility_TRUE();
 
 
                     }
@@ -287,13 +411,19 @@ namespace Int_GradeSystem.TeacherForm
                         }
                         else
                         {
-                            pnl_Second.Visible = true;
+                            secondGradingControls_Visibility_TRUE();
+
+                            thirdGradingControls_Visibility_FALSE();
+                            fourthGradingControls_Visibility_FALSE();
+                            overAllControls_Visibility_FALSE();
+
+                          /*  pnl_Second.Visible = true;
                             pnl_Third.Visible = false;
                             pnl_Fourth.Visible = false;
-                            pnl_overall.Visible = false;
-                      
-                      
-                         
+                            pnl_overall.Visible = false;*/
+
+
+
 
                             if (SecondG_data != null)
                             {
@@ -305,9 +435,9 @@ namespace Int_GradeSystem.TeacherForm
                                 txt_SecondScience.Text = SecondG_data.Science_SecondG.ToString();
                                 lbl_avgSecond.Text = SecondG_data.Period_Avg_SecondG.ToString();
                                 lbl_StatusSecond.Text = SecondG_data.Period_Status_SecondG;
-                              
+
                             }
-                            pnl_First.Visible = true;
+                            secondGradingControls_Visibility_TRUE();
 
                         }
 
@@ -325,13 +455,16 @@ namespace Int_GradeSystem.TeacherForm
                         }
                         else
                         {
-                           
-                            pnl_overall.Visible = false;
-                            pnl_Fourth.Visible = false;
+                          
+                            fourthGradingControls_Visibility_FALSE();
+                            overAllControls_Visibility_FALSE();
+
+                           /* pnl_overall.Visible = false;
+                            pnl_Fourth.Visible = false;*/
 
                             if (ThirdG_data != null)
                             {
-                              
+
                                 // if true , display the stored data
                                 txt_ThirdMapeh.Text = ThirdG_data.Mapeh_ThirdG.ToString();
                                 txt_ThirdEnglish.Text = ThirdG_data.English_ThirdG.ToString();
@@ -340,14 +473,17 @@ namespace Int_GradeSystem.TeacherForm
                                 txt_ThirdScience.Text = ThirdG_data.Science_ThirdG.ToString();
                                 lbl_avgThird.Text = ThirdG_data.Period_Avg_ThirdG.ToString();
                                 lbl_StatusThird.Text = ThirdG_data.Period_Status_ThirdG;
-                              
-                         
+
+
 
                             }
-                            pnl_Second.Visible = true;
+                            firstGradingControls_Visibility_TRUE();
+                            secondGradingControls_Visibility_TRUE();                       
+                            thirdGradingControls_Visibility_TRUE();
+                          /*  pnl_Second.Visible = true;
                             pnl_First.Visible = true;
-                            pnl_Third.Visible = true;
-                           
+                            pnl_Third.Visible = true;*/
+
                         }
 
                     }
@@ -364,7 +500,8 @@ namespace Int_GradeSystem.TeacherForm
                         else
                         {
 
-                            pnl_overall.Visible = false;
+                            overAllControls_Visibility_FALSE();
+                            /*   pnl_overall.Visible = false;*/
 
                             if (FourthG_data != null)
                             {
@@ -379,13 +516,19 @@ namespace Int_GradeSystem.TeacherForm
                                 lbl_StatusThird.Text = FourthG_data.Period_Status_FourthG;
 
                                 OverALL_Calculation();
-                                pnl_overall.Visible = true;
+                                overAllControls_Visibility_TRUE();
+                             /*   pnl_overall.Visible = true;*/
 
                             }
-                            pnl_First.Visible = true;
+
+                            firstGradingControls_Visibility_TRUE();
+                            secondGradingControls_Visibility_TRUE();
+                            thirdGradingControls_Visibility_TRUE();
+                            fourthGradingControls_Visibility_TRUE();
+                         /*   pnl_First.Visible = true;
                             pnl_Second.Visible = true;
                             pnl_Third.Visible = true;
-                            pnl_Fourth.Visible = true;
+                            pnl_Fourth.Visible = true*/;
                         }
 
                     }
@@ -439,7 +582,7 @@ namespace Int_GradeSystem.TeacherForm
             }
             else
             {
-             SecondGrading_Calculation();
+                SecondGrading_Calculation();
             }
 
 
@@ -455,7 +598,7 @@ namespace Int_GradeSystem.TeacherForm
             else
             {
                 ThirdGrading_Calculation();
-                        
+
             }
         }
 
@@ -479,407 +622,438 @@ namespace Int_GradeSystem.TeacherForm
         #region == Subject Calculations == 
         void FirstGrading_Calculation()
         {
-
-
-            //variables for calculations
-            float[] Subjects = { Convert.ToSingle(txt_FirstMapeh.Text), Convert.ToSingle(txt_FirstEnglish.Text), Convert.ToSingle(txt_FirstMath.Text), Convert.ToSingle(txt_FirstFilipino.Text), Convert.ToSingle(txt_FirstScience.Text) };
-
-
-
-            //result (implicit casting). lambda method using its aggregation
-            average = Subjects.Average();
-
-
-            //assigning of status
-            switch (average)
+            //uses try catch for handling ERRORS if users will input special character
+            try
             {
-                case float n when n > 101:
-                    {
-                        //7 spaces
-                        status = "       Invalid";
+                //variables for calculations
+                float[] Subjects = { Convert.ToSingle(txt_FirstMapeh.Text), Convert.ToSingle(txt_FirstEnglish.Text), Convert.ToSingle(txt_FirstMath.Text), Convert.ToSingle(txt_FirstFilipino.Text), Convert.ToSingle(txt_FirstScience.Text) };
+
+
+
+                //result (implicit casting). lambda method using its aggregation
+                average = Subjects.Average();
+
+                //assigning of status
+                switch (average)
+                {
+                    case float n when n > 101:
+                        {
+                            //7 spaces
+                            status = "       Invalid";
+                            lbl_StatusFirst.Text = status;
+
+                        }
+                        break;
+                    case float n when n >= 96:
+                        {
+                            //for global property intended for database
+                            status = "Highest Honors";
+
+                            //assiging of the results to label status
+                            lbl_StatusFirst.Text = status;
+
+                        }
+                        break;
+                    case float n when n >= 93:
+                        {
+                            status = "High Honors";
+                            lbl_StatusFirst.Text = status;
+
+                        }
+                        break;
+                    case float n when n >= 89:
+                        {
+                            status = "With Honors";
+                            lbl_StatusFirst.Text = status;
+
+                        }
+                        break;
+                    case float n when n >= 75:
+                        {
+                            status = "      Passed";
+                            lbl_StatusFirst.Text = status;
+
+                        }
+                        break;
+                    case float n when n <= 75:
+                        {
+                            status = "       Failed";
+                            lbl_StatusFirst.Text = status;
+
+                        }
+                        break;
+
+                    default:
+                        status = "invalid";
                         lbl_StatusFirst.Text = status;
+                        break;
 
-                    }
-                    break;
-                case float n when n >= 96:
-                    {
-                        //for global property intended for database
-                        status = "Highest Honors";
+                }
 
-                        //assiging of the results to label status
-                        lbl_StatusFirst.Text = status;
 
-                    }
-                    break;
-                case float n when n >= 93:
-                    {
-                        status = "High Honors";
-                        lbl_StatusFirst.Text = status;
 
-                    }
-                    break;
-                case float n when n >= 89:
-                    {
-                        status = "With Honors";
-                        lbl_StatusFirst.Text = status;
+                //database injections
 
-                    }
-                    break;
-                case float n when n >= 75:
-                    {
-                        status = "      Passed";
-                        lbl_StatusFirst.Text = status;
+                if (status == "       Invalid")
+                {
+                    alert.Invalid_Grade();
+                }
+                else
+                {
 
-                    }
-                    break;
-                case float n when n <= 75:
-                    {
-                        status = "       Failed";
-                        lbl_StatusFirst.Text = status;
+                    //assiging of the results to label average
+                    lbl_avgFirst.Text = average.ToString();
 
-                    }
-                    break;
+                    var Student_database = data.tbl_Students
+                        .FirstOrDefault(st => st.studentId == SelectedID);
 
-                default:
-                    status = "invalid";
-                    lbl_StatusFirst.Text = status;
-                    break;
+
+                    var Teacher_database = data.tbl_TeacherAccs
+                        .FirstOrDefault(t => t.teacherId == int.Parse(ID));
+
+                    var Teacher_name = $"{Teacher_database.firstname} {Teacher_database.lastname}";
+
+
+                    //passing to database
+
+                    data.SP_stud_InputGrades_FirstGrading(Convert.ToSingle(txt_FirstMapeh.Text), Convert.ToSingle(txt_FirstEnglish.Text), Convert.ToSingle(txt_FirstMath.Text), Convert.ToSingle(txt_FirstFilipino.Text), Convert.ToSingle(txt_FirstScience.Text), average, status, SelectedID, Teacher_name);
+
+                    alert.Updated();
+                }
+
 
             }
-
-
-
-            //database injections
-
-            if (status == "       Invalid")
+            catch (Exception ex)
             {
-                alert.Invalid_Grade();
+                alert.SpecialCharacter_Error();
+
             }
-            else
-            {
-
-                //assiging of the results to label average
-                lbl_avgFirst.Text = average.ToString();
-
-                var Student_database = data.tbl_Students
-                    .FirstOrDefault(st => st.studentId == SelectedID);
-
-
-                var Teacher_database = data.tbl_TeacherAccs
-                    .FirstOrDefault(t => t.teacherId == int.Parse(ID));
-
-                var Teacher_name = $"{Teacher_database.firstname} {Teacher_database.lastname}";
-
-
-                //passing to database
-
-                data.SP_stud_InputGrades_FirstGrading(Convert.ToSingle(txt_FirstMapeh.Text), Convert.ToSingle(txt_FirstEnglish.Text), Convert.ToSingle(txt_FirstMath.Text), Convert.ToSingle(txt_FirstFilipino.Text), Convert.ToSingle(txt_FirstScience.Text), average, status, SelectedID, Teacher_name);
-
-                alert.Updated();
-            }
-
 
         }
         void SecondGrading_Calculation()
         {
-            //variables for calculations
-            float[] Subjects = { Convert.ToSingle(txt_SecondMapeh.Text), Convert.ToSingle(txt_SecondEnglish.Text), Convert.ToSingle(txt_SecondMath.Text), Convert.ToSingle(txt_SecondFilipino.Text), Convert.ToSingle(txt_SecondScience.Text) };
+            try
+            {
+                //variables for calculations
+                float[] Subjects = { Convert.ToSingle(txt_SecondMapeh.Text), Convert.ToSingle(txt_SecondEnglish.Text), Convert.ToSingle(txt_SecondMath.Text), Convert.ToSingle(txt_SecondFilipino.Text), Convert.ToSingle(txt_SecondScience.Text) };
 
 
 
-            //result (implicit casting). lambda method using its aggregation
-            average = Subjects.Average();
+                //result (implicit casting). lambda method using its aggregation
+                average = Subjects.Average();
 
+
+
+                //assigning of status
+                switch (average)
+                {
+                    case float n when n > 101:
+                        {
+                            //7 spaces
+                            status = "       Invalid";
+                            lbl_StatusSecond.Text = status;
+
+                        }
+                        break;
+                    case float n when n >= 96:
+                        {
+                            //for global property intended for database
+                            status = "Highest Honors";
+
+                            //assiging of the results to label status
+                            lbl_StatusSecond.Text = status;
+
+                        }
+                        break;
+                    case float n when n >= 93:
+                        {
+                            status = "High Honors";
+                            lbl_StatusSecond.Text = status;
+
+                        }
+                        break;
+                    case float n when n >= 89:
+                        {
+                            status = "With Honors";
+                            lbl_StatusSecond.Text = status;
+
+                        }
+                        break;
+                    case float n when n >= 75:
+                        {
+                            status = "      Passed";
+                            lbl_StatusSecond.Text = status;
+
+                        }
+                        break;
+                    case float n when n <= 75:
+                        {
+                            status = "       Failed";
+                            lbl_StatusSecond.Text = status;
+
+                        }
+                        break;
+
+                    default:
+                        status = "invalid";
+                        lbl_StatusSecond.Text = status;
+                        break;
+
+                }
+
+
+
+                //database injections
+
+                if (status == "       Invalid")
+                {
+                    alert.Invalid_Grade();
+                }
+                else
+                {
+                    //assiging of the results to label average
+                    lbl_avgSecond.Text = average.ToString();
+
+                    var Student_database = data.tbl_Students
+                        .FirstOrDefault(st => st.studentId == SelectedID);
+
+
+                    var Teacher_database = data.tbl_TeacherAccs
+                        .FirstOrDefault(t => t.teacherId == int.Parse(ID));
+
+                    var Teacher_name = $"{Teacher_database.firstname} {Teacher_database.lastname}";
+
+
+                    //passing to database
+                    data.SP_stud_InputGrades_SecondGrading(Convert.ToSingle(txt_SecondMapeh.Text), Convert.ToSingle(txt_SecondEnglish.Text), Convert.ToSingle(txt_SecondMath.Text), Convert.ToSingle(txt_SecondFilipino.Text), Convert.ToSingle(txt_SecondScience.Text), average, status, SelectedID, Teacher_name);
+
+                    alert.Updated();
+                }
+            }
+            catch
+            {
+                alert.SpecialCharacter_Error();
+            }
           
-
-            //assigning of status
-            switch (average)
-            {
-                case float n when n > 101:
-                    {
-                        //7 spaces
-                        status = "       Invalid";
-                        lbl_StatusSecond.Text = status;
-
-                    }
-                    break;
-                case float n when n >= 96:
-                    {
-                        //for global property intended for database
-                        status = "Highest Honors";
-
-                        //assiging of the results to label status
-                        lbl_StatusSecond.Text = status;
-
-                    }
-                    break;
-                case float n when n >= 93:
-                    {
-                        status = "High Honors";
-                        lbl_StatusSecond.Text = status;
-
-                    }
-                    break;
-                case float n when n >= 89:
-                    {
-                        status = "With Honors";
-                        lbl_StatusSecond.Text = status;
-
-                    }
-                    break;
-                case float n when n >= 75:
-                    {
-                        status = "      Passed";
-                        lbl_StatusSecond.Text = status;
-
-                    }
-                    break;
-                case float n when n <= 75:
-                    {
-                        status = "       Failed";
-                        lbl_StatusSecond.Text = status;
-
-                    }
-                    break;
-
-                default:
-                    status = "invalid";
-                    lbl_StatusSecond.Text = status;
-                    break;
-
-            }
-
-
-
-            //database injections
-
-            if (status == "       Invalid")
-            {
-                alert.Invalid_Grade();
-            }
-            else
-            {
-                //assiging of the results to label average
-                lbl_avgSecond.Text = average.ToString();
-
-                var Student_database = data.tbl_Students
-                    .FirstOrDefault(st => st.studentId == SelectedID);
-
-
-                var Teacher_database = data.tbl_TeacherAccs
-                    .FirstOrDefault(t => t.teacherId == int.Parse(ID));
-
-                var Teacher_name = $"{Teacher_database.firstname} {Teacher_database.lastname}";
-
-
-                //passing to database
-                data.SP_stud_InputGrades_SecondGrading(Convert.ToSingle(txt_SecondMapeh.Text), Convert.ToSingle(txt_SecondEnglish.Text), Convert.ToSingle(txt_SecondMath.Text), Convert.ToSingle(txt_SecondFilipino.Text), Convert.ToSingle(txt_SecondScience.Text), average, status, SelectedID, Teacher_name);
-
-                alert.Updated();
-            }
         }
         void ThirdGrading_Calculation()
         {
-            //variables for calculations
-            float[] Subjects = { Convert.ToSingle(txt_ThirdMapeh.Text), Convert.ToSingle(txt_ThirdEnglish.Text), Convert.ToSingle(txt_ThirdMath.Text), Convert.ToSingle(txt_ThirdFilipino.Text), Convert.ToSingle(txt_ThirdScience.Text) };
-
-
-
-            //result (implicit casting). lambda method using its aggregation
-            average = Subjects.Average();
-
-
-
-            //assigning of status
-            switch (average)
+            try
             {
-                case float n when n > 101:
-                    {
-                        //7 spaces
-                        status = "       Invalid";
+                //variables for calculations
+                float[] Subjects = { Convert.ToSingle(txt_ThirdMapeh.Text), Convert.ToSingle(txt_ThirdEnglish.Text), Convert.ToSingle(txt_ThirdMath.Text), Convert.ToSingle(txt_ThirdFilipino.Text), Convert.ToSingle(txt_ThirdScience.Text) };
+
+
+
+                //result (implicit casting). lambda method using its aggregation
+                average = Subjects.Average();
+
+
+
+                //assigning of status
+                switch (average)
+                {
+                    case float n when n > 101:
+                        {
+                            //7 spaces
+                            status = "       Invalid";
+                            lbl_StatusThird.Text = status;
+
+                        }
+                        break;
+                    case float n when n >= 96:
+                        {
+                            //for global property intended for database
+                            status = "Highest Honors";
+
+                            //assiging of the results to label status
+                            lbl_StatusThird.Text = status;
+
+                        }
+                        break;
+                    case float n when n >= 93:
+                        {
+                            status = "High Honors";
+                            lbl_StatusThird.Text = status;
+
+                        }
+                        break;
+                    case float n when n >= 89:
+                        {
+                            status = "With Honors";
+                            lbl_StatusThird.Text = status;
+
+                        }
+                        break;
+                    case float n when n >= 75:
+                        {
+                            status = "      Passed";
+                            lbl_StatusThird.Text = status;
+
+                        }
+                        break;
+                    case float n when n <= 75:
+                        {
+                            status = "       Failed";
+                            lbl_StatusThird.Text = status;
+
+                        }
+                        break;
+
+                    default:
+                        status = "invalid";
                         lbl_StatusThird.Text = status;
+                        break;
 
-                    }
-                    break;
-                case float n when n >= 96:
-                    {
-                        //for global property intended for database
-                        status = "Highest Honors";
+                }
 
-                        //assiging of the results to label status
-                        lbl_StatusThird.Text = status;
 
-                    }
-                    break;
-                case float n when n >= 93:
-                    {
-                        status = "High Honors";
-                        lbl_StatusThird.Text = status;
 
-                    }
-                    break;
-                case float n when n >= 89:
-                    {
-                        status = "With Honors";
-                        lbl_StatusThird.Text = status;
+                //database injections
 
-                    }
-                    break;
-                case float n when n >= 75:
-                    {
-                        status = "      Passed";
-                        lbl_StatusThird.Text = status;
+                if (status == "       Invalid")
+                {
+                    alert.Invalid_Grade();
+                }
+                else
+                {
 
-                    }
-                    break;
-                case float n when n <= 75:
-                    {
-                        status = "       Failed";
-                        lbl_StatusThird.Text = status;
+                    //assiging of the results to label average
+                    lbl_avgThird.Text = average.ToString();
 
-                    }
-                    break;
+                    var Student_database = data.tbl_Students
+                        .FirstOrDefault(st => st.studentId == SelectedID);
 
-                default:
-                    status = "invalid";
-                    lbl_StatusThird.Text = status;
-                    break;
 
+                    var Teacher_database = data.tbl_TeacherAccs
+                        .FirstOrDefault(t => t.teacherId == int.Parse(ID));
+
+                    var Teacher_name = $"{Teacher_database.firstname} {Teacher_database.lastname}";
+
+
+                    //passing to database
+                    data.SP_stud_InputGrades_ThirdGrading(Convert.ToSingle(txt_ThirdMapeh.Text), Convert.ToSingle(txt_ThirdEnglish.Text), Convert.ToSingle(txt_ThirdMath.Text), Convert.ToSingle(txt_ThirdFilipino.Text), Convert.ToSingle(txt_ThirdScience.Text), average, status, SelectedID, Teacher_name);
+
+                    alert.Updated();
+
+                }
             }
 
-
-
-            //database injections
-
-            if (status == "       Invalid")
+            catch
             {
-                alert.Invalid_Grade();
-            }
-            else
-            {
-
-                //assiging of the results to label average
-                lbl_avgThird.Text = average.ToString();
-
-                var Student_database = data.tbl_Students
-                    .FirstOrDefault(st => st.studentId == SelectedID);
-
-
-                var Teacher_database = data.tbl_TeacherAccs
-                    .FirstOrDefault(t => t.teacherId == int.Parse(ID));
-
-                var Teacher_name = $"{Teacher_database.firstname} {Teacher_database.lastname}";
-
-
-                //passing to database
-                data.SP_stud_InputGrades_ThirdGrading(Convert.ToSingle(txt_ThirdMapeh.Text), Convert.ToSingle(txt_ThirdEnglish.Text), Convert.ToSingle(txt_ThirdMath.Text), Convert.ToSingle(txt_ThirdFilipino.Text), Convert.ToSingle(txt_ThirdScience.Text), average, status, SelectedID, Teacher_name);
-
-                alert.Updated();
- 
+                alert.SpecialCharacter_Error();
             }
         }
         void FourthGrading_Calculation()
         {
-            //variables for calculations
-            float[] Subjects = { Convert.ToSingle(txt_FourthMapeh.Text), Convert.ToSingle(txt_FourthEnglish.Text), Convert.ToSingle(txt_FourthMath.Text), Convert.ToSingle(txt_FourthFilipino.Text), Convert.ToSingle(txt_FourthScience.Text) };
-
-
-
-            //result (implicit casting). lambda method using its aggregation
-            average = Subjects.Average();
-
-         
-
-            //assigning of status
-            switch (average)
+            try
             {
-                case float n when n > 101:
-                    {
-                        //7 spaces
-                        status = "       Invalid";
+                //variables for calculations
+                float[] Subjects = { Convert.ToSingle(txt_FourthMapeh.Text), Convert.ToSingle(txt_FourthEnglish.Text), Convert.ToSingle(txt_FourthMath.Text), Convert.ToSingle(txt_FourthFilipino.Text), Convert.ToSingle(txt_FourthScience.Text) };
+
+
+
+                //result (implicit casting). lambda method using its aggregation
+                average = Subjects.Average();
+
+
+
+                //assigning of status
+                switch (average)
+                {
+                    case float n when n > 101:
+                        {
+                            //7 spaces
+                            status = "       Invalid";
+                            lbl_StatusFourth.Text = status;
+
+                        }
+                        break;
+                    case float n when n >= 96:
+                        {
+                            //for global property intended for database
+                            status = "Highest Honors";
+
+                            //assiging of the results to label status
+                            lbl_StatusFourth.Text = status;
+
+                        }
+                        break;
+                    case float n when n >= 93:
+                        {
+                            status = "High Honors";
+                            lbl_StatusFourth.Text = status;
+
+                        }
+                        break;
+                    case float n when n >= 89:
+                        {
+                            status = "With Honors";
+                            lbl_StatusFourth.Text = status;
+
+                        }
+                        break;
+                    case float n when n >= 75:
+                        {
+                            status = "      Passed";
+                            lbl_StatusFourth.Text = status;
+
+                        }
+                        break;
+                    case float n when n <= 75:
+                        {
+                            status = "       Failed";
+                            lbl_StatusFourth.Text = status;
+
+                        }
+                        break;
+
+                    default:
+                        status = "invalid";
                         lbl_StatusFourth.Text = status;
+                        break;
 
-                    }
-                    break;
-                case float n when n >= 96:
-                    {
-                        //for global property intended for database
-                        status = "Highest Honors";
+                }
 
-                        //assiging of the results to label status
-                        lbl_StatusFourth.Text = status;
 
-                    }
-                    break;
-                case float n when n >= 93:
-                    {
-                        status = "High Honors";
-                        lbl_StatusFourth.Text = status;
 
-                    }
-                    break;
-                case float n when n >= 89:
-                    {
-                        status = "With Honors";
-                        lbl_StatusFourth.Text = status;
+                //database injections
 
-                    }
-                    break;
-                case float n when n >= 75:
-                    {
-                        status = "      Passed";
-                        lbl_StatusFourth.Text = status;
+                if (status == "       Invalid")
+                {
+                    alert.Invalid_Grade();
+                }
+                else
+                {
 
-                    }
-                    break;
-                case float n when n <= 75:
-                    {
-                        status = "       Failed";
-                        lbl_StatusFourth.Text = status;
+                    //assiging of the results to label average
+                    lbl_avgFourth.Text = average.ToString();
 
-                    }
-                    break;
+                    var Student_database = data.tbl_Students
+                        .FirstOrDefault(st => st.studentId == SelectedID);
 
-                default:
-                    status = "invalid";
-                    lbl_StatusFourth.Text = status;
-                    break;
 
+                    var Teacher_database = data.tbl_TeacherAccs
+                        .FirstOrDefault(t => t.teacherId == int.Parse(ID));
+
+                    var Teacher_name = $"{Teacher_database.firstname} {Teacher_database.lastname}";
+
+
+                    //passing to database
+                    data.SP_stud_InputGrades_FourthGrading(Convert.ToSingle(txt_FourthMapeh.Text), Convert.ToSingle(txt_FourthEnglish.Text), Convert.ToSingle(txt_FourthMath.Text), Convert.ToSingle(txt_FourthFilipino.Text), Convert.ToSingle(txt_FourthScience.Text), average, status, SelectedID, Teacher_name);
+
+                    alert.Updated();
+                    /*  pnl_overall.Visible = true;*/
+                    overAllControls_Visibility_TRUE();
+                    OverALL_Calculation();
+
+
+
+                }
             }
-
-           
-
-            //database injections
-
-            if (status == "       Invalid")
+            catch
             {
-                alert.Invalid_Grade();
-            }
-            else
-            {
-
-                //assiging of the results to label average
-                lbl_avgFourth.Text = average.ToString();
-
-                var Student_database = data.tbl_Students
-                    .FirstOrDefault(st => st.studentId == SelectedID);
-
-
-                var Teacher_database = data.tbl_TeacherAccs
-                    .FirstOrDefault(t => t.teacherId == int.Parse(ID));
-
-                var Teacher_name = $"{Teacher_database.firstname} {Teacher_database.lastname}";
-
-
-                //passing to database
-                data.SP_stud_InputGrades_FourthGrading(Convert.ToSingle(txt_FourthMapeh.Text), Convert.ToSingle(txt_FourthEnglish.Text), Convert.ToSingle(txt_FourthMath.Text), Convert.ToSingle(txt_FourthFilipino.Text), Convert.ToSingle(txt_FourthScience.Text), average, status, SelectedID, Teacher_name);
-
-                alert.Updated();
-                pnl_overall.Visible = true; 
-                OverALL_Calculation();
-
-
-
+                alert.SpecialCharacter_Error();
             }
         }
 
@@ -902,7 +1076,7 @@ namespace Int_GradeSystem.TeacherForm
 
 
             // get the data from database explicit datatyp casting
-            float[] Mapeh = { (float)First_data.Mapeh_firstG, (float)Second_data.Mapeh_SecondG, (float)Third_data.Mapeh_ThirdG, (float)Fourth_data.Mapeh_FourthG};
+            float[] Mapeh = { (float)First_data.Mapeh_firstG, (float)Second_data.Mapeh_SecondG, (float)Third_data.Mapeh_ThirdG, (float)Fourth_data.Mapeh_FourthG };
 
             float[] English = { (float)First_data.English_firstG, (float)Second_data.English_SecondG, (float)Third_data.English_ThirdG, (float)Fourth_data.English_FourthG };
 
@@ -963,7 +1137,7 @@ namespace Int_GradeSystem.TeacherForm
                     {
                         status = "High Honors";
                         lbl_StatusOverall.Text = status;
-                      
+
                     }
                     break;
                 case float n when n >= 89:
@@ -997,15 +1171,15 @@ namespace Int_GradeSystem.TeacherForm
 
             // float array per term
 
-            float[] Overall_avg_Array = {Convert.ToSingle(First_data.Period_Avg_firstG), Convert.ToSingle(Second_data.Period_Avg_SecondG), Convert.ToSingle(Third_data.Period_Avg_ThirdG), Convert.ToSingle(Fourth_data.Period_Avg_FourthG)};
+            float[] Overall_avg_Array = { Convert.ToSingle(First_data.Period_Avg_firstG), Convert.ToSingle(Second_data.Period_Avg_SecondG), Convert.ToSingle(Third_data.Period_Avg_ThirdG), Convert.ToSingle(Fourth_data.Period_Avg_FourthG) };
 
 
             //getting the average
-            
+
 
             var Overall_avg_Period = Overall_avg_Array.Average();
-            data.SP_stud_Grading_Avg(SelectedID, First_data.Period_Avg_firstG, Second_data.Period_Avg_SecondG, Third_data.Period_Avg_ThirdG,Fourth_data.Period_Avg_FourthG,  gradelevel, Overall_avg_Period);
-         
+            data.SP_stud_Grading_Avg(SelectedID, First_data.Period_Avg_firstG, Second_data.Period_Avg_SecondG, Third_data.Period_Avg_ThirdG, Fourth_data.Period_Avg_FourthG, gradelevel, Overall_avg_Period);
+
 
 
         }
@@ -1022,11 +1196,21 @@ namespace Int_GradeSystem.TeacherForm
             {
                 alert.ReadytoView();
                 OverALL_Calculation();
-                pnl_overall.Visible = true;
+                /* pnl_overall.Visible = true;*/
+                overAllControls_Visibility_TRUE();
             }
 
         }
-      
+
+        private void btn_inputGradeBack_Click_1(object sender, EventArgs e)
+        {
+
+            this.Close();
+            
+        }
+
+
+        #region == empty controls ==
         private void lbl_StatusFinal_Click(object sender, EventArgs e)
         {
 
@@ -1074,13 +1258,10 @@ namespace Int_GradeSystem.TeacherForm
 
         private void pnl_First_Paint(object sender, PaintEventArgs e)
         {
-
+    
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
@@ -1089,12 +1270,14 @@ namespace Int_GradeSystem.TeacherForm
 
         private void pnl_Second_Paint(object sender, PaintEventArgs e)
         {
-                
+            //fix screen flickering
+            this.DoubleBuffered = true;
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
-
+            //fix screen flickering
+            this.DoubleBuffered = true;
         }
 
         private void lbl_studID_Click(object sender, EventArgs e)
@@ -1131,6 +1314,66 @@ namespace Int_GradeSystem.TeacherForm
         {
 
         }
+
+        private void lbl_avgFirst_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_FirstMapeh_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_FirstEnglish_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_FirstMath_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_FirstFilipino_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_FirstScience_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_SecondScience_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label26_Click(object sender, EventArgs e)
+        {
+
+        }
+
+     
     }
-}
-   
+    #endregion
+ }
+
+
+

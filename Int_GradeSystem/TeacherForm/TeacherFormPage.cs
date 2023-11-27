@@ -28,16 +28,7 @@ namespace Int_GradeSystem.TeacherForm
 
         }
         // set the WS_EX_COMPOSITED flag, which provides similar double-buffering behavior:
-        protected override CreateParams CreateParams
-        {
-            get
-            {
-                CreateParams cp = base.CreateParams;
-                cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
-                return cp;
-            }
-        }
-
+    
         private void label1_Click(object sender, EventArgs e)
         {
 

@@ -143,6 +143,16 @@ namespace Int_GradeSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hide {
+            get {
+                object obj = ResourceManager.GetObject("hide", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Input_Grades__FS_ {
             get {
                 object obj = ResourceManager.GetObject("Input Grades (FS)", resourceCulture);
@@ -166,6 +176,16 @@ namespace Int_GradeSystem.Properties {
         internal static System.Drawing.Bitmap RegisterTeacherAcc_FS_ {
             get {
                 object obj = ResourceManager.GetObject("RegisterTeacherAcc(FS)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap show {
+            get {
+                object obj = ResourceManager.GetObject("show", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
