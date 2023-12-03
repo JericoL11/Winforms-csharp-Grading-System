@@ -51,9 +51,10 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(690, 640);
+            this.label5.Location = new System.Drawing.Point(518, 520);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(217, 27);
+            this.label5.Size = new System.Drawing.Size(182, 22);
             this.label5.TabIndex = 15;
             this.label5.Text = "Confirm Password";
             // 
@@ -63,28 +64,29 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(692, 586);
+            this.label4.Location = new System.Drawing.Point(519, 476);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 27);
+            this.label4.Size = new System.Drawing.Size(103, 22);
             this.label4.TabIndex = 14;
             this.label4.Text = "Password";
             // 
             // txt_regConfirmPass
             // 
             this.txt_regConfirmPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_regConfirmPass.Location = new System.Drawing.Point(999, 646);
-            this.txt_regConfirmPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_regConfirmPass.Location = new System.Drawing.Point(749, 525);
+            this.txt_regConfirmPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_regConfirmPass.Name = "txt_regConfirmPass";
-            this.txt_regConfirmPass.Size = new System.Drawing.Size(223, 27);
+            this.txt_regConfirmPass.Size = new System.Drawing.Size(168, 23);
             this.txt_regConfirmPass.TabIndex = 13;
             // 
             // txt_regPassword
             // 
             this.txt_regPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_regPassword.Location = new System.Drawing.Point(999, 592);
-            this.txt_regPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_regPassword.Location = new System.Drawing.Point(749, 481);
+            this.txt_regPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_regPassword.Name = "txt_regPassword";
-            this.txt_regPassword.Size = new System.Drawing.Size(223, 27);
+            this.txt_regPassword.Size = new System.Drawing.Size(168, 23);
             this.txt_regPassword.TabIndex = 12;
             // 
             // label1
@@ -93,9 +95,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(692, 433);
+            this.label1.Location = new System.Drawing.Point(519, 352);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 27);
+            this.label1.Size = new System.Drawing.Size(103, 22);
             this.label1.TabIndex = 16;
             this.label1.Text = "Firstname";
             // 
@@ -105,9 +108,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(692, 483);
+            this.label2.Location = new System.Drawing.Point(519, 392);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 27);
+            this.label2.Size = new System.Drawing.Size(101, 22);
             this.label2.TabIndex = 17;
             this.label2.Text = "Lastname";
             // 
@@ -117,9 +121,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(692, 534);
+            this.label3.Location = new System.Drawing.Point(519, 434);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 27);
+            this.label3.Size = new System.Drawing.Size(61, 22);
             this.label3.TabIndex = 18;
             this.label3.Text = "Email";
             // 
@@ -129,9 +134,10 @@
             this.lbl_fname.BackColor = System.Drawing.Color.Transparent;
             this.lbl_fname.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_fname.ForeColor = System.Drawing.Color.White;
-            this.lbl_fname.Location = new System.Drawing.Point(995, 439);
+            this.lbl_fname.Location = new System.Drawing.Point(746, 357);
+            this.lbl_fname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_fname.Name = "lbl_fname";
-            this.lbl_fname.Size = new System.Drawing.Size(70, 21);
+            this.lbl_fname.Size = new System.Drawing.Size(56, 18);
             this.lbl_fname.TabIndex = 19;
             this.lbl_fname.Text = "______";
             // 
@@ -141,9 +147,10 @@
             this.lbl_lname.BackColor = System.Drawing.Color.Transparent;
             this.lbl_lname.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_lname.ForeColor = System.Drawing.Color.White;
-            this.lbl_lname.Location = new System.Drawing.Point(995, 489);
+            this.lbl_lname.Location = new System.Drawing.Point(746, 397);
+            this.lbl_lname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_lname.Name = "lbl_lname";
-            this.lbl_lname.Size = new System.Drawing.Size(70, 21);
+            this.lbl_lname.Size = new System.Drawing.Size(56, 18);
             this.lbl_lname.TabIndex = 20;
             this.lbl_lname.Text = "______";
             // 
@@ -153,9 +160,10 @@
             this.lbl_email.BackColor = System.Drawing.Color.Transparent;
             this.lbl_email.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_email.ForeColor = System.Drawing.Color.White;
-            this.lbl_email.Location = new System.Drawing.Point(995, 540);
+            this.lbl_email.Location = new System.Drawing.Point(746, 439);
+            this.lbl_email.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_email.Name = "lbl_email";
-            this.lbl_email.Size = new System.Drawing.Size(70, 21);
+            this.lbl_email.Size = new System.Drawing.Size(56, 18);
             this.lbl_email.TabIndex = 21;
             this.lbl_email.Text = "______";
             // 
@@ -165,9 +173,10 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(671, 246);
+            this.label9.Location = new System.Drawing.Point(503, 200);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(554, 51);
+            this.label9.Size = new System.Drawing.Size(440, 41);
             this.label9.TabIndex = 22;
             this.label9.Text = "UPDATE USER ACCOUNT";
             // 
@@ -176,10 +185,10 @@
             this.btn_save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_save.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_save.Location = new System.Drawing.Point(1137, 757);
-            this.btn_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_save.Location = new System.Drawing.Point(853, 615);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(109, 61);
+            this.btn_save.Size = new System.Drawing.Size(82, 50);
             this.btn_save.TabIndex = 23;
             this.btn_save.Text = "Save";
             this.btn_save.UseVisualStyleBackColor = false;
@@ -190,10 +199,10 @@
             this.btn_cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_cancel.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancel.Location = new System.Drawing.Point(680, 757);
-            this.btn_cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_cancel.Location = new System.Drawing.Point(510, 615);
+            this.btn_cancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(109, 61);
+            this.btn_cancel.Size = new System.Drawing.Size(82, 50);
             this.btn_cancel.TabIndex = 24;
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = false;
@@ -205,9 +214,10 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(692, 385);
+            this.label6.Location = new System.Drawing.Point(519, 313);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(129, 27);
+            this.label6.Size = new System.Drawing.Size(110, 22);
             this.label6.TabIndex = 25;
             this.label6.Text = "Teacher ID";
             // 
@@ -217,21 +227,22 @@
             this.lbl_ID.BackColor = System.Drawing.Color.Transparent;
             this.lbl_ID.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ID.ForeColor = System.Drawing.Color.White;
-            this.lbl_ID.Location = new System.Drawing.Point(995, 395);
+            this.lbl_ID.Location = new System.Drawing.Point(746, 321);
+            this.lbl_ID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_ID.Name = "lbl_ID";
-            this.lbl_ID.Size = new System.Drawing.Size(70, 21);
+            this.lbl_ID.Size = new System.Drawing.Size(56, 18);
             this.lbl_ID.TabIndex = 26;
             this.lbl_ID.Text = "______";
             this.lbl_ID.Click += new System.EventHandler(this.lbl_ID_Click);
             // 
             // UpdatePassoword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
             this.BackgroundImage = global::Int_GradeSystem.Properties.Resources.UpdatePassword_FS_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.ClientSize = new System.Drawing.Size(1440, 878);
             this.Controls.Add(this.lbl_ID);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btn_cancel);
@@ -249,11 +260,10 @@
             this.Controls.Add(this.txt_regPassword);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UpdatePassoword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UPDATE USER PASSWORD";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.UpdatePassoword_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

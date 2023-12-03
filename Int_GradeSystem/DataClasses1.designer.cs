@@ -87,14 +87,6 @@ namespace Int_GradeSystem
 			}
 		}
 		
-		public System.Data.Linq.Table<tbl_TeacherInfo> tbl_TeacherInfos
-		{
-			get
-			{
-				return this.GetTable<tbl_TeacherInfo>();
-			}
-		}
-		
 		public System.Data.Linq.Table<tbl_Grading_Period> tbl_Grading_Periods
 		{
 			get
@@ -140,6 +132,14 @@ namespace Int_GradeSystem
 			get
 			{
 				return this.GetTable<tbl_Student_ThirdG_Subject>();
+			}
+		}
+		
+		public System.Data.Linq.Table<tbl_TeacherInfo> tbl_TeacherInfos
+		{
+			get
+			{
+				return this.GetTable<tbl_TeacherInfo>();
 			}
 		}
 		
@@ -548,141 +548,6 @@ namespace Int_GradeSystem
 			if ((this.PropertyChanged != null))
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tbl_TeacherInfo")]
-	public partial class tbl_TeacherInfo
-	{
-		
-		private string _middleName;
-		
-		private string _gender;
-		
-		private System.Nullable<System.DateTime> _birthDate;
-		
-		private System.Nullable<int> _age;
-		
-		private string _phoneNumber;
-		
-		private System.Nullable<int> _FK_teacherId;
-		
-		private string _Property;
-		
-		public tbl_TeacherInfo()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_middleName", DbType="NVarChar(50)")]
-		public string middleName
-		{
-			get
-			{
-				return this._middleName;
-			}
-			set
-			{
-				if ((this._middleName != value))
-				{
-					this._middleName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_gender", DbType="NVarChar(30)")]
-		public string gender
-		{
-			get
-			{
-				return this._gender;
-			}
-			set
-			{
-				if ((this._gender != value))
-				{
-					this._gender = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_birthDate", DbType="Date")]
-		public System.Nullable<System.DateTime> birthDate
-		{
-			get
-			{
-				return this._birthDate;
-			}
-			set
-			{
-				if ((this._birthDate != value))
-				{
-					this._birthDate = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_age", DbType="Int")]
-		public System.Nullable<int> age
-		{
-			get
-			{
-				return this._age;
-			}
-			set
-			{
-				if ((this._age != value))
-				{
-					this._age = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_phoneNumber", DbType="NVarChar(50)")]
-		public string phoneNumber
-		{
-			get
-			{
-				return this._phoneNumber;
-			}
-			set
-			{
-				if ((this._phoneNumber != value))
-				{
-					this._phoneNumber = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FK_teacherId", DbType="Int")]
-		public System.Nullable<int> FK_teacherId
-		{
-			get
-			{
-				return this._FK_teacherId;
-			}
-			set
-			{
-				if ((this._FK_teacherId != value))
-				{
-					this._FK_teacherId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="", Storage="_Property", CanBeNull=false)]
-		public string Property
-		{
-			get
-			{
-				return this._Property;
-			}
-			set
-			{
-				if ((this._Property != value))
-				{
-					this._Property = value;
-				}
 			}
 		}
 	}
@@ -2043,6 +1908,123 @@ namespace Int_GradeSystem
 				if ((this._updatedBy != value))
 				{
 					this._updatedBy = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tbl_TeacherInfo")]
+	public partial class tbl_TeacherInfo
+	{
+		
+		private string _middleName;
+		
+		private string _gender;
+		
+		private System.Nullable<System.DateTime> _birthDate;
+		
+		private System.Nullable<int> _age;
+		
+		private string _phoneNumber;
+		
+		private System.Nullable<int> _FK_teacherId;
+		
+		public tbl_TeacherInfo()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_middleName", DbType="NVarChar(50)")]
+		public string middleName
+		{
+			get
+			{
+				return this._middleName;
+			}
+			set
+			{
+				if ((this._middleName != value))
+				{
+					this._middleName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_gender", DbType="NVarChar(30)")]
+		public string gender
+		{
+			get
+			{
+				return this._gender;
+			}
+			set
+			{
+				if ((this._gender != value))
+				{
+					this._gender = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_birthDate", DbType="Date")]
+		public System.Nullable<System.DateTime> birthDate
+		{
+			get
+			{
+				return this._birthDate;
+			}
+			set
+			{
+				if ((this._birthDate != value))
+				{
+					this._birthDate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_age", DbType="Int")]
+		public System.Nullable<int> age
+		{
+			get
+			{
+				return this._age;
+			}
+			set
+			{
+				if ((this._age != value))
+				{
+					this._age = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_phoneNumber", DbType="NVarChar(50)")]
+		public string phoneNumber
+		{
+			get
+			{
+				return this._phoneNumber;
+			}
+			set
+			{
+				if ((this._phoneNumber != value))
+				{
+					this._phoneNumber = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FK_teacherId", DbType="Int")]
+		public System.Nullable<int> FK_teacherId
+		{
+			get
+			{
+				return this._FK_teacherId;
+			}
+			set
+			{
+				if ((this._FK_teacherId != value))
+				{
+					this._FK_teacherId = value;
 				}
 			}
 		}

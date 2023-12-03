@@ -47,10 +47,10 @@
             this.btn_Ranking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_Ranking.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Ranking.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Ranking.Location = new System.Drawing.Point(668, 620);
-            this.btn_Ranking.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Ranking.Location = new System.Drawing.Point(501, 504);
+            this.btn_Ranking.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Ranking.Name = "btn_Ranking";
-            this.btn_Ranking.Size = new System.Drawing.Size(209, 90);
+            this.btn_Ranking.Size = new System.Drawing.Size(157, 73);
             this.btn_Ranking.TabIndex = 5;
             this.btn_Ranking.Text = "View Ranking";
             this.btn_Ranking.UseVisualStyleBackColor = false;
@@ -64,10 +64,10 @@
             this.btn_editProfile.BackColor = System.Drawing.Color.LightGray;
             this.btn_editProfile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_editProfile.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_editProfile.Location = new System.Drawing.Point(600, 775);
-            this.btn_editProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_editProfile.Location = new System.Drawing.Point(450, 630);
+            this.btn_editProfile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_editProfile.Name = "btn_editProfile";
-            this.btn_editProfile.Size = new System.Drawing.Size(185, 59);
+            this.btn_editProfile.Size = new System.Drawing.Size(139, 48);
             this.btn_editProfile.TabIndex = 4;
             this.btn_editProfile.Text = "Edit Profile";
             this.btn_editProfile.UseVisualStyleBackColor = false;
@@ -82,9 +82,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(685, 316);
+            this.label1.Location = new System.Drawing.Point(514, 257);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(545, 46);
+            this.label1.Size = new System.Drawing.Size(437, 37);
             this.label1.TabIndex = 3;
             this.label1.Text = "T E A C H E R     P O R T A L";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -97,10 +98,10 @@
             this.btn_editGrades.BackColor = System.Drawing.Color.Snow;
             this.btn_editGrades.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_editGrades.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_editGrades.Location = new System.Drawing.Point(1021, 419);
-            this.btn_editGrades.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_editGrades.Location = new System.Drawing.Point(766, 340);
+            this.btn_editGrades.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_editGrades.Name = "btn_editGrades";
-            this.btn_editGrades.Size = new System.Drawing.Size(209, 90);
+            this.btn_editGrades.Size = new System.Drawing.Size(157, 73);
             this.btn_editGrades.TabIndex = 1;
             this.btn_editGrades.Text = "Edit Grades";
             this.btn_editGrades.UseVisualStyleBackColor = false;
@@ -114,10 +115,10 @@
             this.btn_AdStudents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btn_AdStudents.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_AdStudents.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_AdStudents.Location = new System.Drawing.Point(668, 419);
-            this.btn_AdStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_AdStudents.Location = new System.Drawing.Point(501, 340);
+            this.btn_AdStudents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_AdStudents.Name = "btn_AdStudents";
-            this.btn_AdStudents.Size = new System.Drawing.Size(209, 90);
+            this.btn_AdStudents.Size = new System.Drawing.Size(157, 73);
             this.btn_AdStudents.TabIndex = 0;
             this.btn_AdStudents.Text = "Add Students";
             this.btn_AdStudents.UseVisualStyleBackColor = false;
@@ -131,10 +132,10 @@
             this.btn_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_logout.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_logout.Location = new System.Drawing.Point(1106, 775);
-            this.btn_logout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_logout.Location = new System.Drawing.Point(830, 630);
+            this.btn_logout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(185, 59);
+            this.btn_logout.Size = new System.Drawing.Size(139, 48);
             this.btn_logout.TabIndex = 6;
             this.btn_logout.Text = "Log-out";
             this.btn_logout.UseVisualStyleBackColor = false;
@@ -149,9 +150,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(42, 91);
+            this.label2.Location = new System.Drawing.Point(32, 74);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 34);
+            this.label2.Size = new System.Drawing.Size(135, 28);
             this.label2.TabIndex = 7;
             this.label2.Text = "Good day, ";
             // 
@@ -164,9 +166,10 @@
             this.lbl_fullName.BackColor = System.Drawing.Color.Transparent;
             this.lbl_fullName.Font = new System.Drawing.Font("Arial", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_fullName.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_fullName.Location = new System.Drawing.Point(215, 91);
+            this.lbl_fullName.Location = new System.Drawing.Point(161, 74);
+            this.lbl_fullName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_fullName.Name = "lbl_fullName";
-            this.lbl_fullName.Size = new System.Drawing.Size(151, 34);
+            this.lbl_fullName.Size = new System.Drawing.Size(116, 28);
             this.lbl_fullName.TabIndex = 8;
             this.lbl_fullName.Text = "________";
             // 
@@ -178,10 +181,10 @@
             this.btn_ViewStudents.BackColor = System.Drawing.Color.Snow;
             this.btn_ViewStudents.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_ViewStudents.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ViewStudents.Location = new System.Drawing.Point(1021, 620);
-            this.btn_ViewStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_ViewStudents.Location = new System.Drawing.Point(766, 504);
+            this.btn_ViewStudents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_ViewStudents.Name = "btn_ViewStudents";
-            this.btn_ViewStudents.Size = new System.Drawing.Size(209, 90);
+            this.btn_ViewStudents.Size = new System.Drawing.Size(157, 73);
             this.btn_ViewStudents.TabIndex = 9;
             this.btn_ViewStudents.Text = "View Students";
             this.btn_ViewStudents.UseVisualStyleBackColor = false;
@@ -189,13 +192,13 @@
             // 
             // TeacherFormPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.SaddleBrown;
             this.BackgroundImage = global::Int_GradeSystem.Properties.Resources.Teacher_Form_Page__FS_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.ClientSize = new System.Drawing.Size(1440, 878);
             this.ControlBox = false;
             this.Controls.Add(this.btn_ViewStudents);
             this.Controls.Add(this.lbl_fullName);
@@ -208,13 +211,12 @@
             this.Controls.Add(this.btn_editGrades);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TeacherFormPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TeacherFormPage";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TeacherFormPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

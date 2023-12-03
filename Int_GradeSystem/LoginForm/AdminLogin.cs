@@ -1,4 +1,5 @@
 ﻿using Int_GradeSystem.AdminForm;
+using Int_GradeSystem.LoginForm;
 using Int_GradeSystem.TeacherForm;
 using System;
 using System.Collections.Generic;
@@ -99,15 +100,14 @@ namespace Int_GradeSystem
                     //true
                     if (this.Opacity <= 0)
                     {
-                        AdminFormPage ad = new AdminFormPage();
-                        ad.Show();
+                        Admin_Loading loading = new Admin_Loading();
+                        loading.Show();
                         timer.Stop();
                         this.Hide();
                     }
                 };
                 timer.Start();
-              
-              
+
             }
             else
             {

@@ -18,7 +18,7 @@ namespace Int_GradeSystem.AdminForm
         /*======== OBJECTS & PROPERTIES =========*/
 
         //database instantiation
-        DataClasses1DataContext data = new DataClasses1DataContext();
+     DataClasses1DataContext data = new DataClasses1DataContext();
 
         MessageAlert alert = new MessageAlert();
 

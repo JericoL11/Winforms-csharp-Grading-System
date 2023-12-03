@@ -36,9 +36,32 @@ namespace Int_GradeSystem.TeacherForm
 
         private void btn_logout_Click(object sender, EventArgs e)
         {
-          Form1 f1 = new Form1();
-           this.Close();
-            f1.Show();
+            //assigning the opacity
+            this.Opacity = 10;
+
+            //declaring timer object
+            Timer timer = new Timer();
+
+            //assigning interval
+            timer.Interval = 15;
+
+            //concatenation
+            timer.Tick += (senders, es) =>
+            {
+                this.Opacity -= 0.1;
+
+                //true
+                if (this.Opacity <= 0)
+                {
+                    Form1 f1 = new Form1();
+                    f1.Show();
+                    timer.Stop();
+                    this.Hide();
+                }
+            };
+            timer.Start();
+
+          
         }
 
         private void TeacherFormPage_Load(object sender, EventArgs e)

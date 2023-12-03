@@ -44,10 +44,10 @@
             // 
             this.txt_password.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_password.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.txt_password.Location = new System.Drawing.Point(201, 430);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_password.Location = new System.Drawing.Point(151, 349);
+            this.txt_password.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_password.Name = "txt_password";
-            this.txt_password.Size = new System.Drawing.Size(460, 39);
+            this.txt_password.Size = new System.Drawing.Size(346, 32);
             this.txt_password.TabIndex = 2;
             this.txt_password.TextChanged += new System.EventHandler(this.txt_password_TextChanged);
             this.txt_password.Enter += new System.EventHandler(this.txt_password_Enter);
@@ -57,10 +57,10 @@
             // 
             this.txt_username.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_username.ForeColor = System.Drawing.Color.Black;
-            this.txt_username.Location = new System.Drawing.Point(201, 322);
-            this.txt_username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_username.Location = new System.Drawing.Point(151, 262);
+            this.txt_username.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_username.Name = "txt_username";
-            this.txt_username.Size = new System.Drawing.Size(460, 39);
+            this.txt_username.Size = new System.Drawing.Size(346, 32);
             this.txt_username.TabIndex = 1;
             this.txt_username.TextChanged += new System.EventHandler(this.txt_username_TextChanged);
             this.txt_username.Enter += new System.EventHandler(this.txt_username_Enter);
@@ -72,10 +72,10 @@
             this.btn_login.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_login.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_login.Image = global::Int_GradeSystem.Properties.Resources.Untitled_design;
-            this.btn_login.Location = new System.Drawing.Point(353, 527);
-            this.btn_login.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_login.Location = new System.Drawing.Point(265, 428);
+            this.btn_login.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(159, 49);
+            this.btn_login.Size = new System.Drawing.Size(119, 40);
             this.btn_login.TabIndex = 3;
             this.btn_login.Text = "&L O G I N";
             this.btn_login.UseVisualStyleBackColor = true;
@@ -88,9 +88,10 @@
             this.llnk_AdminForm.BackColor = System.Drawing.Color.Transparent;
             this.llnk_AdminForm.Font = new System.Drawing.Font("Arial Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llnk_AdminForm.LinkColor = System.Drawing.Color.MidnightBlue;
-            this.llnk_AdminForm.Location = new System.Drawing.Point(490, 922);
+            this.llnk_AdminForm.Location = new System.Drawing.Point(368, 749);
+            this.llnk_AdminForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.llnk_AdminForm.Name = "llnk_AdminForm";
-            this.llnk_AdminForm.Size = new System.Drawing.Size(224, 32);
+            this.llnk_AdminForm.Size = new System.Drawing.Size(186, 27);
             this.llnk_AdminForm.TabIndex = 0;
             this.llnk_AdminForm.TabStop = true;
             this.llnk_AdminForm.Text = "Sign in as Admin";
@@ -103,9 +104,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(238, 185);
+            this.label1.Location = new System.Drawing.Point(178, 150);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(396, 45);
+            this.label1.Size = new System.Drawing.Size(311, 36);
             this.label1.TabIndex = 2;
             this.label1.Text = "TEACHER\'S LOGIN";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -116,10 +118,10 @@
             this.btn_exit.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_exit.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_exit.Image = global::Int_GradeSystem.Properties.Resources.Untitled_design;
-            this.btn_exit.Location = new System.Drawing.Point(353, 607);
-            this.btn_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_exit.Location = new System.Drawing.Point(265, 493);
+            this.btn_exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(159, 49);
+            this.btn_exit.Size = new System.Drawing.Size(119, 40);
             this.btn_exit.TabIndex = 4;
             this.btn_exit.Text = "E X I T";
             this.btn_exit.UseVisualStyleBackColor = true;
@@ -130,9 +132,10 @@
             this.btn_Show.BackColor = System.Drawing.Color.Transparent;
             this.btn_Show.BackgroundImage = global::Int_GradeSystem.Properties.Resources.show;
             this.btn_Show.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Show.Location = new System.Drawing.Point(621, 430);
+            this.btn_Show.Location = new System.Drawing.Point(466, 349);
+            this.btn_Show.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Show.Name = "btn_Show";
-            this.btn_Show.Size = new System.Drawing.Size(41, 39);
+            this.btn_Show.Size = new System.Drawing.Size(31, 32);
             this.btn_Show.TabIndex = 6;
             this.btn_Show.UseVisualStyleBackColor = false;
             this.btn_Show.Click += new System.EventHandler(this.btn_Show_Click);
@@ -142,9 +145,10 @@
             this.btn_hide.BackColor = System.Drawing.Color.Transparent;
             this.btn_hide.BackgroundImage = global::Int_GradeSystem.Properties.Resources.hide;
             this.btn_hide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_hide.Location = new System.Drawing.Point(621, 430);
+            this.btn_hide.Location = new System.Drawing.Point(466, 349);
+            this.btn_hide.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_hide.Name = "btn_hide";
-            this.btn_hide.Size = new System.Drawing.Size(41, 39);
+            this.btn_hide.Size = new System.Drawing.Size(31, 32);
             this.btn_hide.TabIndex = 8;
             this.btn_hide.UseVisualStyleBackColor = false;
             this.btn_hide.Click += new System.EventHandler(this.btn_hide_Click);
@@ -155,9 +159,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(197, 283);
+            this.label2.Location = new System.Drawing.Point(148, 230);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 25);
+            this.label2.Size = new System.Drawing.Size(74, 22);
             this.label2.TabIndex = 9;
             this.label2.Text = "User ID";
             // 
@@ -167,21 +172,22 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(197, 393);
+            this.label3.Location = new System.Drawing.Point(148, 319);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 25);
+            this.label3.Size = new System.Drawing.Size(90, 22);
             this.label3.TabIndex = 10;
             this.label3.Text = "Password";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.BackgroundImage = global::Int_GradeSystem.Properties.Resources.Teachers_Form__FS_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.ClientSize = new System.Drawing.Size(1440, 878);
             this.ControlBox = false;
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -195,13 +201,12 @@
             this.Controls.Add(this.txt_password);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

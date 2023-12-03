@@ -26,6 +26,7 @@ Create Table tbl_TeacherInfo(
 	FK_teacherId int FOREIGN KEY REFERENCES tbl_TeacherAcc(teacherId)
 );
 
+Drop Table tbl_TeacherInfos
 
 --STUDENT TABLE
 

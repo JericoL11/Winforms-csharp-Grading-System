@@ -66,9 +66,10 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(527, 540);
+            this.label7.Location = new System.Drawing.Point(395, 439);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 24);
+            this.label7.Size = new System.Drawing.Size(74, 20);
             this.label7.TabIndex = 38;
             this.label7.Text = "Phone No.";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -79,9 +80,10 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1255, 401);
+            this.label6.Location = new System.Drawing.Point(941, 326);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 24);
+            this.label6.Size = new System.Drawing.Size(69, 20);
             this.label6.TabIndex = 37;
             this.label6.Text = "Lastname";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -92,9 +94,10 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(883, 403);
+            this.label5.Location = new System.Drawing.Point(662, 327);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(195, 24);
+            this.label5.Size = new System.Drawing.Size(155, 20);
             this.label5.TabIndex = 36;
             this.label5.Text = "Middle Name (Optional)";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -105,9 +108,10 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(527, 405);
+            this.label4.Location = new System.Drawing.Point(395, 329);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 24);
+            this.label4.Size = new System.Drawing.Size(71, 20);
             this.label4.TabIndex = 35;
             this.label4.Text = "Firstname";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -118,9 +122,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(800, 235);
+            this.label3.Location = new System.Drawing.Point(600, 191);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(468, 49);
+            this.label3.Size = new System.Drawing.Size(380, 40);
             this.label3.TabIndex = 34;
             this.label3.Text = "Basic Information Form";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -131,9 +136,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(524, 669);
+            this.label2.Location = new System.Drawing.Point(393, 544);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 24);
+            this.label2.Size = new System.Drawing.Size(54, 20);
             this.label2.TabIndex = 33;
             this.label2.Text = "Gender";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -144,9 +150,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(883, 540);
+            this.label1.Location = new System.Drawing.Point(662, 439);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 24);
+            this.label1.Size = new System.Drawing.Size(161, 20);
             this.label1.TabIndex = 32;
             this.label1.Text = "Birthdate : (dd/mm/yyyy)";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -155,10 +162,10 @@
             // 
             this.txt_email.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_email.Location = new System.Drawing.Point(883, 713);
-            this.txt_email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_email.Location = new System.Drawing.Point(662, 579);
+            this.txt_email.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(233, 28);
+            this.txt_email.Size = new System.Drawing.Size(176, 24);
             this.txt_email.TabIndex = 30;
             this.txt_email.TextChanged += new System.EventHandler(this.txt_email_TextChanged);
             // 
@@ -168,11 +175,11 @@
             this.gb_gender.BackColor = System.Drawing.Color.Transparent;
             this.gb_gender.Controls.Add(this.rbtn_female);
             this.gb_gender.Controls.Add(this.rbtn_male);
-            this.gb_gender.Location = new System.Drawing.Point(525, 708);
-            this.gb_gender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gb_gender.Location = new System.Drawing.Point(394, 575);
+            this.gb_gender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gb_gender.Name = "gb_gender";
-            this.gb_gender.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gb_gender.Size = new System.Drawing.Size(194, 39);
+            this.gb_gender.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gb_gender.Size = new System.Drawing.Size(146, 32);
             this.gb_gender.TabIndex = 29;
             this.gb_gender.TabStop = false;
             this.gb_gender.Enter += new System.EventHandler(this.gb_gender_Enter);
@@ -181,10 +188,10 @@
             // 
             this.rbtn_female.AutoSize = true;
             this.rbtn_female.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtn_female.Location = new System.Drawing.Point(96, 9);
-            this.rbtn_female.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbtn_female.Location = new System.Drawing.Point(72, 7);
+            this.rbtn_female.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbtn_female.Name = "rbtn_female";
-            this.rbtn_female.Size = new System.Drawing.Size(85, 24);
+            this.rbtn_female.Size = new System.Drawing.Size(72, 21);
             this.rbtn_female.TabIndex = 1;
             this.rbtn_female.TabStop = true;
             this.rbtn_female.Text = "Female";
@@ -196,10 +203,10 @@
             // 
             this.rbtn_male.AutoSize = true;
             this.rbtn_male.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtn_male.Location = new System.Drawing.Point(17, 11);
-            this.rbtn_male.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbtn_male.Location = new System.Drawing.Point(13, 9);
+            this.rbtn_male.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbtn_male.Name = "rbtn_male";
-            this.rbtn_male.Size = new System.Drawing.Size(66, 24);
+            this.rbtn_male.Size = new System.Drawing.Size(56, 21);
             this.rbtn_male.TabIndex = 0;
             this.rbtn_male.TabStop = true;
             this.rbtn_male.Text = "Male";
@@ -212,10 +219,10 @@
             this.txt_lastName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_lastName.Enabled = false;
             this.txt_lastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_lastName.Location = new System.Drawing.Point(1255, 440);
-            this.txt_lastName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_lastName.Location = new System.Drawing.Point(941, 358);
+            this.txt_lastName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_lastName.Name = "txt_lastName";
-            this.txt_lastName.Size = new System.Drawing.Size(207, 28);
+            this.txt_lastName.Size = new System.Drawing.Size(156, 24);
             this.txt_lastName.TabIndex = 24;
             this.txt_lastName.TextChanged += new System.EventHandler(this.txt_lastName_TextChanged);
             // 
@@ -223,10 +230,10 @@
             // 
             this.txt_middleName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_middleName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_middleName.Location = new System.Drawing.Point(883, 443);
-            this.txt_middleName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_middleName.Location = new System.Drawing.Point(662, 360);
+            this.txt_middleName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_middleName.Name = "txt_middleName";
-            this.txt_middleName.Size = new System.Drawing.Size(233, 28);
+            this.txt_middleName.Size = new System.Drawing.Size(176, 24);
             this.txt_middleName.TabIndex = 23;
             this.txt_middleName.TextChanged += new System.EventHandler(this.txt_middleName_TextChanged);
             this.txt_middleName.Enter += new System.EventHandler(this.txt_middleName_Enter);
@@ -237,10 +244,10 @@
             this.txt_firstName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_firstName.Enabled = false;
             this.txt_firstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_firstName.Location = new System.Drawing.Point(528, 445);
-            this.txt_firstName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_firstName.Location = new System.Drawing.Point(396, 362);
+            this.txt_firstName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_firstName.Name = "txt_firstName";
-            this.txt_firstName.Size = new System.Drawing.Size(216, 28);
+            this.txt_firstName.Size = new System.Drawing.Size(163, 24);
             this.txt_firstName.TabIndex = 22;
             this.txt_firstName.TextChanged += new System.EventHandler(this.txt_firstName_TextChanged);
             // 
@@ -250,10 +257,10 @@
             this.btn_editProfileBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_editProfileBack.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_editProfileBack.ForeColor = System.Drawing.Color.Black;
-            this.btn_editProfileBack.Location = new System.Drawing.Point(66, 51);
-            this.btn_editProfileBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_editProfileBack.Location = new System.Drawing.Point(50, 41);
+            this.btn_editProfileBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_editProfileBack.Name = "btn_editProfileBack";
-            this.btn_editProfileBack.Size = new System.Drawing.Size(120, 57);
+            this.btn_editProfileBack.Size = new System.Drawing.Size(90, 46);
             this.btn_editProfileBack.TabIndex = 45;
             this.btn_editProfileBack.Text = "Back";
             this.btn_editProfileBack.UseVisualStyleBackColor = false;
@@ -265,9 +272,10 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(466, 311);
+            this.label11.Location = new System.Drawing.Point(350, 253);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(103, 24);
+            this.label11.Size = new System.Drawing.Size(83, 20);
             this.label11.TabIndex = 47;
             this.label11.Text = "Teacher ID :";
             this.label11.Click += new System.EventHandler(this.label11_Click);
@@ -278,9 +286,10 @@
             this.lbl_teacherID.AutoSize = true;
             this.lbl_teacherID.BackColor = System.Drawing.Color.Transparent;
             this.lbl_teacherID.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_teacherID.Location = new System.Drawing.Point(568, 309);
+            this.lbl_teacherID.Location = new System.Drawing.Point(426, 251);
+            this.lbl_teacherID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_teacherID.Name = "lbl_teacherID";
-            this.lbl_teacherID.Size = new System.Drawing.Size(54, 25);
+            this.lbl_teacherID.Size = new System.Drawing.Size(45, 20);
             this.lbl_teacherID.TabIndex = 48;
             this.lbl_teacherID.Text = "______";
             this.lbl_teacherID.Click += new System.EventHandler(this.lbl_teacherID_Click);
@@ -292,10 +301,10 @@
             this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_save.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_save.Location = new System.Drawing.Point(1446, 957);
-            this.btn_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_save.Location = new System.Drawing.Point(1084, 778);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(160, 56);
+            this.btn_save.Size = new System.Drawing.Size(120, 46);
             this.btn_save.TabIndex = 49;
             this.btn_save.Text = "SAVE";
             this.btn_save.UseVisualStyleBackColor = false;
@@ -311,9 +320,10 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(883, 669);
+            this.label8.Location = new System.Drawing.Point(662, 544);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(125, 24);
+            this.label8.Size = new System.Drawing.Size(100, 20);
             this.label8.TabIndex = 39;
             this.label8.Text = "Email Address";
             this.label8.Click += new System.EventHandler(this.label8_Click);
@@ -324,9 +334,10 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(1255, 540);
+            this.label12.Location = new System.Drawing.Point(941, 439);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(51, 24);
+            this.label12.Size = new System.Drawing.Size(41, 20);
             this.label12.TabIndex = 50;
             this.label12.Text = "Age: ";
             this.label12.Click += new System.EventHandler(this.label12_Click);
@@ -338,9 +349,10 @@
             this.lbl_Age.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Age.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Age.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbl_Age.Location = new System.Drawing.Point(1320, 582);
+            this.lbl_Age.Location = new System.Drawing.Point(990, 473);
+            this.lbl_Age.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Age.Name = "lbl_Age";
-            this.lbl_Age.Size = new System.Drawing.Size(21, 24);
+            this.lbl_Age.Size = new System.Drawing.Size(18, 19);
             this.lbl_Age.TabIndex = 51;
             this.lbl_Age.Text = "_";
             this.lbl_Age.Click += new System.EventHandler(this.lbl_Age_Click);
@@ -350,12 +362,12 @@
             this.dtp_bdate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtp_bdate.CalendarFont = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_bdate.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_bdate.Location = new System.Drawing.Point(883, 578);
-            this.dtp_bdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtp_bdate.Location = new System.Drawing.Point(662, 470);
+            this.dtp_bdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtp_bdate.MaxDate = new System.DateTime(2023, 12, 31, 0, 0, 0, 0);
             this.dtp_bdate.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
             this.dtp_bdate.Name = "dtp_bdate";
-            this.dtp_bdate.Size = new System.Drawing.Size(289, 28);
+            this.dtp_bdate.Size = new System.Drawing.Size(218, 24);
             this.dtp_bdate.TabIndex = 52;
             this.dtp_bdate.ValueChanged += new System.EventHandler(this.dtp_bdate_ValueChanged);
             this.dtp_bdate.Leave += new System.EventHandler(this.dtp_bdate_Leave);
@@ -364,11 +376,11 @@
             // 
             this.txt_phoneNumber.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_phoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_phoneNumber.Location = new System.Drawing.Point(528, 578);
-            this.txt_phoneNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_phoneNumber.Location = new System.Drawing.Point(396, 470);
+            this.txt_phoneNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_phoneNumber.MaxLength = 11;
             this.txt_phoneNumber.Name = "txt_phoneNumber";
-            this.txt_phoneNumber.Size = new System.Drawing.Size(216, 28);
+            this.txt_phoneNumber.Size = new System.Drawing.Size(163, 24);
             this.txt_phoneNumber.TabIndex = 53;
             this.txt_phoneNumber.TextChanged += new System.EventHandler(this.txt_phoneNumber_TextChanged);
             this.txt_phoneNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_phoneNumber_KeyPress);
@@ -381,20 +393,20 @@
             // pnl_width
             // 
             this.pnl_width.BackColor = System.Drawing.Color.White;
-            this.pnl_width.Location = new System.Drawing.Point(66, 1014);
-            this.pnl_width.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnl_width.Location = new System.Drawing.Point(50, 824);
+            this.pnl_width.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_width.Name = "pnl_width";
-            this.pnl_width.Size = new System.Drawing.Size(400, 33);
+            this.pnl_width.Size = new System.Drawing.Size(300, 27);
             this.pnl_width.TabIndex = 54;
             this.pnl_width.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_width_Paint);
             // 
             // pnl_loading
             // 
             this.pnl_loading.BackColor = System.Drawing.Color.Lime;
-            this.pnl_loading.Location = new System.Drawing.Point(66, 980);
-            this.pnl_loading.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnl_loading.Location = new System.Drawing.Point(50, 796);
+            this.pnl_loading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_loading.Name = "pnl_loading";
-            this.pnl_loading.Size = new System.Drawing.Size(226, 33);
+            this.pnl_loading.Size = new System.Drawing.Size(170, 27);
             this.pnl_loading.TabIndex = 56;
             this.pnl_loading.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_loading_Paint);
             // 
@@ -405,10 +417,10 @@
             this.btn_changePass.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_changePass.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_changePass.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_changePass.Location = new System.Drawing.Point(1255, 708);
-            this.btn_changePass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_changePass.Location = new System.Drawing.Point(941, 575);
+            this.btn_changePass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_changePass.Name = "btn_changePass";
-            this.btn_changePass.Size = new System.Drawing.Size(147, 30);
+            this.btn_changePass.Size = new System.Drawing.Size(110, 24);
             this.btn_changePass.TabIndex = 57;
             this.btn_changePass.Text = "Change Password";
             this.btn_changePass.UseVisualStyleBackColor = false;
@@ -416,12 +428,12 @@
             // 
             // EditProfile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SaddleBrown;
             this.BackgroundImage = global::Int_GradeSystem.Properties.Resources.Edit_Profile__FS_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.ClientSize = new System.Drawing.Size(1440, 878);
             this.ControlBox = false;
             this.Controls.Add(this.btn_changePass);
             this.Controls.Add(this.label3);
@@ -450,13 +462,12 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "EditProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditProfile";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.EditProfile_Load);
             this.gb_gender.ResumeLayout(false);
             this.gb_gender.PerformLayout();

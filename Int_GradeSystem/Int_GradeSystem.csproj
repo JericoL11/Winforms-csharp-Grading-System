@@ -70,6 +70,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
+    <Compile Include="LoginForm\Admin_Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm\Admin_Loading.Designer.cs">
+      <DependentUpon>Admin_Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm\IntroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm\IntroForm.Designer.cs">
+      <DependentUpon>IntroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm\Teacher_Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm\Teacher_Loading.Designer.cs">
+      <DependentUpon>Teacher_Loading.cs</DependentUpon>
+    </Compile>
     <Compile Include="MessageAlert.cs" />
     <Compile Include="TeacherForm\AddStudent.cs">
       <SubType>Form</SubType>
@@ -181,6 +199,15 @@
     <EmbeddedResource Include="AdminForm\UpdatePassoword.resx">
       <DependentUpon>UpdatePassoword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm\Admin_Loading.resx">
+      <DependentUpon>Admin_Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm\IntroForm.resx">
+      <DependentUpon>IntroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm\Teacher_Loading.resx">
+      <DependentUpon>Teacher_Loading.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeacherForm\AddStudent.resx">
       <DependentUpon>AddStudent.cs</DependentUpon>
     </EmbeddedResource>
@@ -273,6 +300,11 @@
     <Content Include="img\Input Grades %28FS%29.png" />
     <Content Include="img\loading.gif" />
     <Content Include="img\loading2.gif" />
+    <Content Include="img\loading\Admin Loading %28FS%29.png" />
+    <Content Include="img\loading\intro-gif.gif" />
+    <Content Include="img\loading\loading-animation.gif" />
+    <Content Include="img\loading\Teachers Loading %28FS%29.png" />
+    <Content Include="img\loading\teacher_loading_img.gif" />
     <Content Include="img\Ranking %28FS%29.png" />
     <Content Include="img\RegisterTeacherAcc%28FS%29.png" />
     <Content Include="img\Student List %28FS%29.png" />

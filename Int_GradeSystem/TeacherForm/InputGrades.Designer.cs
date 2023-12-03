@@ -104,7 +104,7 @@
             this.label1.Location = new System.Drawing.Point(382, 78);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 29);
+            this.label1.Size = new System.Drawing.Size(62, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name: ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -117,7 +117,7 @@
             this.label2.Location = new System.Drawing.Point(669, 78);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 29);
+            this.label2.Size = new System.Drawing.Size(61, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Grade:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -130,7 +130,7 @@
             this.txt_grade.Location = new System.Drawing.Point(741, 78);
             this.txt_grade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txt_grade.Name = "txt_grade";
-            this.txt_grade.Size = new System.Drawing.Size(145, 29);
+            this.txt_grade.Size = new System.Drawing.Size(118, 23);
             this.txt_grade.TabIndex = 3;
             this.txt_grade.Text = "____________";
             this.txt_grade.Click += new System.EventHandler(this.txt_grade_Click);
@@ -143,7 +143,7 @@
             this.txt_fullName.Location = new System.Drawing.Point(456, 76);
             this.txt_fullName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txt_fullName.Name = "txt_fullName";
-            this.txt_fullName.Size = new System.Drawing.Size(145, 29);
+            this.txt_fullName.Size = new System.Drawing.Size(118, 23);
             this.txt_fullName.TabIndex = 2;
             this.txt_fullName.Text = "____________";
             this.txt_fullName.Click += new System.EventHandler(this.txt_fullName_Click);
@@ -156,7 +156,7 @@
             this.txt_section.Location = new System.Drawing.Point(1091, 127);
             this.txt_section.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txt_section.Name = "txt_section";
-            this.txt_section.Size = new System.Drawing.Size(145, 29);
+            this.txt_section.Size = new System.Drawing.Size(118, 23);
             this.txt_section.TabIndex = 7;
             this.txt_section.Text = "____________";
             this.txt_section.Click += new System.EventHandler(this.txt_section_Click);
@@ -169,7 +169,7 @@
             this.lbl_gender.Location = new System.Drawing.Point(1091, 78);
             this.lbl_gender.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_gender.Name = "lbl_gender";
-            this.lbl_gender.Size = new System.Drawing.Size(145, 29);
+            this.lbl_gender.Size = new System.Drawing.Size(118, 23);
             this.lbl_gender.TabIndex = 6;
             this.lbl_gender.Text = "____________";
             this.lbl_gender.Click += new System.EventHandler(this.lbl_gender_Click);
@@ -182,7 +182,7 @@
             this.label7.Location = new System.Drawing.Point(1002, 127);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 29);
+            this.label7.Size = new System.Drawing.Size(76, 23);
             this.label7.TabIndex = 5;
             this.label7.Text = "Section: ";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -195,7 +195,7 @@
             this.label8.Location = new System.Drawing.Point(1002, 78);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 29);
+            this.label8.Size = new System.Drawing.Size(66, 23);
             this.label8.TabIndex = 4;
             this.label8.Text = "Gender";
             this.label8.Click += new System.EventHandler(this.label8_Click);
@@ -209,7 +209,7 @@
             this.lbl_firstGrading.Location = new System.Drawing.Point(617, 391);
             this.lbl_firstGrading.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_firstGrading.Name = "lbl_firstGrading";
-            this.lbl_firstGrading.Size = new System.Drawing.Size(130, 27);
+            this.lbl_firstGrading.Size = new System.Drawing.Size(109, 23);
             this.lbl_firstGrading.TabIndex = 8;
             this.lbl_firstGrading.Text = "First Grading";
             // 
@@ -222,7 +222,7 @@
             this.label11.Location = new System.Drawing.Point(988, 391);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(138, 27);
+            this.label11.Size = new System.Drawing.Size(115, 23);
             this.label11.TabIndex = 10;
             this.label11.Text = "Third Grading";
             this.label11.Click += new System.EventHandler(this.label11_Click);
@@ -236,7 +236,7 @@
             this.label12.Location = new System.Drawing.Point(407, 705);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(126, 28);
+            this.label12.Size = new System.Drawing.Size(105, 23);
             this.label12.TabIndex = 11;
             this.label12.Text = "AVERAGE";
             // 
@@ -249,7 +249,7 @@
             this.label13.Location = new System.Drawing.Point(419, 389);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(114, 29);
+            this.label13.Size = new System.Drawing.Size(91, 22);
             this.label13.TabIndex = 12;
             this.label13.Text = "COURSE";
             // 
@@ -262,7 +262,7 @@
             this.txt_FirstMapeh.Margin = new System.Windows.Forms.Padding(2);
             this.txt_FirstMapeh.MaxLength = 5;
             this.txt_FirstMapeh.Name = "txt_FirstMapeh";
-            this.txt_FirstMapeh.Size = new System.Drawing.Size(54, 22);
+            this.txt_FirstMapeh.Size = new System.Drawing.Size(54, 19);
             this.txt_FirstMapeh.TabIndex = 1;
             this.txt_FirstMapeh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_FirstMapeh.Visible = false;
@@ -277,7 +277,7 @@
             this.txt_SecondMapeh.Margin = new System.Windows.Forms.Padding(2);
             this.txt_SecondMapeh.MaxLength = 5;
             this.txt_SecondMapeh.Name = "txt_SecondMapeh";
-            this.txt_SecondMapeh.Size = new System.Drawing.Size(54, 22);
+            this.txt_SecondMapeh.Size = new System.Drawing.Size(54, 19);
             this.txt_SecondMapeh.TabIndex = 7;
             this.txt_SecondMapeh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_SecondMapeh.Visible = false;
@@ -291,7 +291,7 @@
             this.txt_ThirdMapeh.Margin = new System.Windows.Forms.Padding(2);
             this.txt_ThirdMapeh.MaxLength = 5;
             this.txt_ThirdMapeh.Name = "txt_ThirdMapeh";
-            this.txt_ThirdMapeh.Size = new System.Drawing.Size(54, 22);
+            this.txt_ThirdMapeh.Size = new System.Drawing.Size(54, 19);
             this.txt_ThirdMapeh.TabIndex = 13;
             this.txt_ThirdMapeh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_ThirdMapeh.Visible = false;
@@ -305,7 +305,7 @@
             this.txt_ThirdEnglish.Margin = new System.Windows.Forms.Padding(2);
             this.txt_ThirdEnglish.MaxLength = 5;
             this.txt_ThirdEnglish.Name = "txt_ThirdEnglish";
-            this.txt_ThirdEnglish.Size = new System.Drawing.Size(54, 22);
+            this.txt_ThirdEnglish.Size = new System.Drawing.Size(54, 19);
             this.txt_ThirdEnglish.TabIndex = 14;
             this.txt_ThirdEnglish.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_ThirdEnglish.Visible = false;
@@ -319,7 +319,7 @@
             this.txt_SecondEnglish.Margin = new System.Windows.Forms.Padding(2);
             this.txt_SecondEnglish.MaxLength = 5;
             this.txt_SecondEnglish.Name = "txt_SecondEnglish";
-            this.txt_SecondEnglish.Size = new System.Drawing.Size(54, 22);
+            this.txt_SecondEnglish.Size = new System.Drawing.Size(54, 19);
             this.txt_SecondEnglish.TabIndex = 8;
             this.txt_SecondEnglish.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_SecondEnglish.Visible = false;
@@ -333,7 +333,7 @@
             this.txt_FirstEnglish.Margin = new System.Windows.Forms.Padding(2);
             this.txt_FirstEnglish.MaxLength = 5;
             this.txt_FirstEnglish.Name = "txt_FirstEnglish";
-            this.txt_FirstEnglish.Size = new System.Drawing.Size(54, 22);
+            this.txt_FirstEnglish.Size = new System.Drawing.Size(54, 19);
             this.txt_FirstEnglish.TabIndex = 2;
             this.txt_FirstEnglish.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_FirstEnglish.Visible = false;
@@ -348,7 +348,7 @@
             this.txt_ThirdMath.Margin = new System.Windows.Forms.Padding(2);
             this.txt_ThirdMath.MaxLength = 5;
             this.txt_ThirdMath.Name = "txt_ThirdMath";
-            this.txt_ThirdMath.Size = new System.Drawing.Size(54, 22);
+            this.txt_ThirdMath.Size = new System.Drawing.Size(54, 19);
             this.txt_ThirdMath.TabIndex = 15;
             this.txt_ThirdMath.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_ThirdMath.Visible = false;
@@ -362,7 +362,7 @@
             this.txt_SecondMath.Margin = new System.Windows.Forms.Padding(2);
             this.txt_SecondMath.MaxLength = 5;
             this.txt_SecondMath.Name = "txt_SecondMath";
-            this.txt_SecondMath.Size = new System.Drawing.Size(54, 22);
+            this.txt_SecondMath.Size = new System.Drawing.Size(54, 19);
             this.txt_SecondMath.TabIndex = 9;
             this.txt_SecondMath.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_SecondMath.Visible = false;
@@ -377,7 +377,7 @@
             this.txt_FirstMath.Margin = new System.Windows.Forms.Padding(2);
             this.txt_FirstMath.MaxLength = 5;
             this.txt_FirstMath.Name = "txt_FirstMath";
-            this.txt_FirstMath.Size = new System.Drawing.Size(54, 22);
+            this.txt_FirstMath.Size = new System.Drawing.Size(54, 19);
             this.txt_FirstMath.TabIndex = 3;
             this.txt_FirstMath.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_FirstMath.Visible = false;
@@ -392,7 +392,7 @@
             this.txt_ThirdScience.Margin = new System.Windows.Forms.Padding(2);
             this.txt_ThirdScience.MaxLength = 5;
             this.txt_ThirdScience.Name = "txt_ThirdScience";
-            this.txt_ThirdScience.Size = new System.Drawing.Size(54, 22);
+            this.txt_ThirdScience.Size = new System.Drawing.Size(54, 19);
             this.txt_ThirdScience.TabIndex = 17;
             this.txt_ThirdScience.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_ThirdScience.Visible = false;
@@ -406,7 +406,7 @@
             this.txt_FirstScience.Margin = new System.Windows.Forms.Padding(2);
             this.txt_FirstScience.MaxLength = 5;
             this.txt_FirstScience.Name = "txt_FirstScience";
-            this.txt_FirstScience.Size = new System.Drawing.Size(54, 22);
+            this.txt_FirstScience.Size = new System.Drawing.Size(54, 19);
             this.txt_FirstScience.TabIndex = 5;
             this.txt_FirstScience.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_FirstScience.Visible = false;
@@ -421,7 +421,7 @@
             this.txt_ThirdFilipino.Margin = new System.Windows.Forms.Padding(2);
             this.txt_ThirdFilipino.MaxLength = 5;
             this.txt_ThirdFilipino.Name = "txt_ThirdFilipino";
-            this.txt_ThirdFilipino.Size = new System.Drawing.Size(54, 22);
+            this.txt_ThirdFilipino.Size = new System.Drawing.Size(54, 19);
             this.txt_ThirdFilipino.TabIndex = 16;
             this.txt_ThirdFilipino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_ThirdFilipino.Visible = false;
@@ -435,7 +435,7 @@
             this.txt_SecondFilipino.Margin = new System.Windows.Forms.Padding(2);
             this.txt_SecondFilipino.MaxLength = 5;
             this.txt_SecondFilipino.Name = "txt_SecondFilipino";
-            this.txt_SecondFilipino.Size = new System.Drawing.Size(54, 22);
+            this.txt_SecondFilipino.Size = new System.Drawing.Size(54, 19);
             this.txt_SecondFilipino.TabIndex = 10;
             this.txt_SecondFilipino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_SecondFilipino.Visible = false;
@@ -449,7 +449,7 @@
             this.txt_FirstFilipino.Margin = new System.Windows.Forms.Padding(2);
             this.txt_FirstFilipino.MaxLength = 5;
             this.txt_FirstFilipino.Name = "txt_FirstFilipino";
-            this.txt_FirstFilipino.Size = new System.Drawing.Size(54, 22);
+            this.txt_FirstFilipino.Size = new System.Drawing.Size(54, 19);
             this.txt_FirstFilipino.TabIndex = 4;
             this.txt_FirstFilipino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_FirstFilipino.Visible = false;
@@ -464,7 +464,7 @@
             this.lbl_StatusFirst.Location = new System.Drawing.Point(602, 774);
             this.lbl_StatusFirst.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_StatusFirst.Name = "lbl_StatusFirst";
-            this.lbl_StatusFirst.Size = new System.Drawing.Size(18, 26);
+            this.lbl_StatusFirst.Size = new System.Drawing.Size(15, 22);
             this.lbl_StatusFirst.TabIndex = 29;
             this.lbl_StatusFirst.Text = ".";
             this.lbl_StatusFirst.Visible = false;
@@ -479,7 +479,7 @@
             this.label19.Location = new System.Drawing.Point(441, 463);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(83, 29);
+            this.label19.Size = new System.Drawing.Size(65, 23);
             this.label19.TabIndex = 33;
             this.label19.Text = "MAPEH";
             this.label19.Click += new System.EventHandler(this.label19_Click);
@@ -494,7 +494,7 @@
             this.label20.Location = new System.Drawing.Point(427, 507);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(99, 29);
+            this.label20.Size = new System.Drawing.Size(78, 23);
             this.label20.TabIndex = 34;
             this.label20.Text = "ENGLISH";
             // 
@@ -508,7 +508,7 @@
             this.label21.Location = new System.Drawing.Point(449, 554);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(69, 29);
+            this.label21.Size = new System.Drawing.Size(55, 23);
             this.label21.TabIndex = 35;
             this.label21.Text = "MATH";
             // 
@@ -522,7 +522,7 @@
             this.label22.Location = new System.Drawing.Point(431, 602);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(94, 29);
+            this.label22.Size = new System.Drawing.Size(75, 23);
             this.label22.TabIndex = 36;
             this.label22.Text = "FILIPINO";
             // 
@@ -535,7 +535,7 @@
             this.lbl_avgSecond.Location = new System.Drawing.Point(845, 707);
             this.lbl_avgSecond.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_avgSecond.Name = "lbl_avgSecond";
-            this.lbl_avgSecond.Size = new System.Drawing.Size(46, 29);
+            this.lbl_avgSecond.Size = new System.Drawing.Size(37, 23);
             this.lbl_avgSecond.TabIndex = 40;
             this.lbl_avgSecond.Text = "000";
             this.lbl_avgSecond.Visible = false;
@@ -549,7 +549,7 @@
             this.lbl_avgFirst.Location = new System.Drawing.Point(655, 707);
             this.lbl_avgFirst.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_avgFirst.Name = "lbl_avgFirst";
-            this.lbl_avgFirst.Size = new System.Drawing.Size(46, 29);
+            this.lbl_avgFirst.Size = new System.Drawing.Size(37, 23);
             this.lbl_avgFirst.TabIndex = 44;
             this.lbl_avgFirst.Text = "000";
             this.lbl_avgFirst.Visible = false;
@@ -563,7 +563,7 @@
             this.lbl_studID.Location = new System.Drawing.Point(715, 127);
             this.lbl_studID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_studID.Name = "lbl_studID";
-            this.lbl_studID.Size = new System.Drawing.Size(145, 29);
+            this.lbl_studID.Size = new System.Drawing.Size(118, 23);
             this.lbl_studID.TabIndex = 52;
             this.lbl_studID.Text = "____________";
             this.lbl_studID.Click += new System.EventHandler(this.lbl_studID_Click);
@@ -576,7 +576,7 @@
             this.label5.Location = new System.Drawing.Point(669, 127);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 29);
+            this.label5.Size = new System.Drawing.Size(30, 23);
             this.label5.TabIndex = 53;
             this.label5.Text = "ID:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -590,7 +590,7 @@
             this.label9.Location = new System.Drawing.Point(792, 391);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(160, 27);
+            this.label9.Size = new System.Drawing.Size(133, 23);
             this.label9.TabIndex = 54;
             this.label9.Text = "Second Grading";
             this.label9.Click += new System.EventHandler(this.label9_Click);
@@ -619,7 +619,7 @@
             this.lbl_StatusSecond.Location = new System.Drawing.Point(792, 774);
             this.lbl_StatusSecond.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_StatusSecond.Name = "lbl_StatusSecond";
-            this.lbl_StatusSecond.Size = new System.Drawing.Size(18, 26);
+            this.lbl_StatusSecond.Size = new System.Drawing.Size(15, 22);
             this.lbl_StatusSecond.TabIndex = 45;
             this.lbl_StatusSecond.Text = ".";
             this.lbl_StatusSecond.Visible = false;
@@ -648,7 +648,7 @@
             this.txt_SecondScience.Margin = new System.Windows.Forms.Padding(2);
             this.txt_SecondScience.MaxLength = 5;
             this.txt_SecondScience.Name = "txt_SecondScience";
-            this.txt_SecondScience.Size = new System.Drawing.Size(54, 22);
+            this.txt_SecondScience.Size = new System.Drawing.Size(54, 19);
             this.txt_SecondScience.TabIndex = 11;
             this.txt_SecondScience.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_SecondScience.Visible = false;
@@ -663,7 +663,7 @@
             this.lbl_StatusThird.Location = new System.Drawing.Point(976, 772);
             this.lbl_StatusThird.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_StatusThird.Name = "lbl_StatusThird";
-            this.lbl_StatusThird.Size = new System.Drawing.Size(18, 26);
+            this.lbl_StatusThird.Size = new System.Drawing.Size(15, 22);
             this.lbl_StatusThird.TabIndex = 46;
             this.lbl_StatusThird.Text = ".";
             this.lbl_StatusThird.Visible = false;
@@ -693,7 +693,7 @@
             this.lbl_avgThird.Location = new System.Drawing.Point(1032, 707);
             this.lbl_avgThird.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_avgThird.Name = "lbl_avgThird";
-            this.lbl_avgThird.Size = new System.Drawing.Size(46, 29);
+            this.lbl_avgThird.Size = new System.Drawing.Size(37, 23);
             this.lbl_avgThird.TabIndex = 47;
             this.lbl_avgThird.Text = "000";
             this.lbl_avgThird.Visible = false;
@@ -707,7 +707,7 @@
             this.label17.Location = new System.Drawing.Point(427, 769);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(91, 29);
+            this.label17.Size = new System.Drawing.Size(72, 23);
             this.label17.TabIndex = 58;
             this.label17.Text = "STATUS";
             // 
@@ -720,7 +720,7 @@
             this.lbl_ovrAll_Mapeh.Location = new System.Drawing.Point(1406, 472);
             this.lbl_ovrAll_Mapeh.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_ovrAll_Mapeh.Name = "lbl_ovrAll_Mapeh";
-            this.lbl_ovrAll_Mapeh.Size = new System.Drawing.Size(52, 29);
+            this.lbl_ovrAll_Mapeh.Size = new System.Drawing.Size(43, 22);
             this.lbl_ovrAll_Mapeh.TabIndex = 46;
             this.lbl_ovrAll_Mapeh.Text = "000";
             this.lbl_ovrAll_Mapeh.Visible = false;
@@ -734,7 +734,7 @@
             this.lbl_StatusOverall.Location = new System.Drawing.Point(1361, 774);
             this.lbl_StatusOverall.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_StatusOverall.Name = "lbl_StatusOverall";
-            this.lbl_StatusOverall.Size = new System.Drawing.Size(18, 26);
+            this.lbl_StatusOverall.Size = new System.Drawing.Size(15, 22);
             this.lbl_StatusOverall.TabIndex = 52;
             this.lbl_StatusOverall.Text = ".";
             this.lbl_StatusOverall.Visible = false;
@@ -763,7 +763,7 @@
             this.label26.Location = new System.Drawing.Point(1376, 391);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(127, 29);
+            this.label26.Size = new System.Drawing.Size(101, 22);
             this.label26.TabIndex = 59;
             this.label26.Text = "OVERALL";
             this.label26.Click += new System.EventHandler(this.label26_Click);
@@ -777,7 +777,7 @@
             this.lbl_ovrAll_Average.Location = new System.Drawing.Point(1406, 707);
             this.lbl_ovrAll_Average.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_ovrAll_Average.Name = "lbl_ovrAll_Average";
-            this.lbl_ovrAll_Average.Size = new System.Drawing.Size(52, 29);
+            this.lbl_ovrAll_Average.Size = new System.Drawing.Size(43, 22);
             this.lbl_ovrAll_Average.TabIndex = 51;
             this.lbl_ovrAll_Average.Text = "000";
             this.lbl_ovrAll_Average.Visible = false;
@@ -791,7 +791,7 @@
             this.lbl_ovrAll_Science.Location = new System.Drawing.Point(1406, 662);
             this.lbl_ovrAll_Science.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_ovrAll_Science.Name = "lbl_ovrAll_Science";
-            this.lbl_ovrAll_Science.Size = new System.Drawing.Size(52, 29);
+            this.lbl_ovrAll_Science.Size = new System.Drawing.Size(43, 22);
             this.lbl_ovrAll_Science.TabIndex = 50;
             this.lbl_ovrAll_Science.Text = "000";
             this.lbl_ovrAll_Science.Visible = false;
@@ -805,7 +805,7 @@
             this.lbl_ovrAll_Filipino.Location = new System.Drawing.Point(1406, 614);
             this.lbl_ovrAll_Filipino.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_ovrAll_Filipino.Name = "lbl_ovrAll_Filipino";
-            this.lbl_ovrAll_Filipino.Size = new System.Drawing.Size(52, 29);
+            this.lbl_ovrAll_Filipino.Size = new System.Drawing.Size(43, 22);
             this.lbl_ovrAll_Filipino.TabIndex = 49;
             this.lbl_ovrAll_Filipino.Text = "000";
             this.lbl_ovrAll_Filipino.Visible = false;
@@ -819,7 +819,7 @@
             this.lbl_ovrAll_Math.Location = new System.Drawing.Point(1406, 565);
             this.lbl_ovrAll_Math.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_ovrAll_Math.Name = "lbl_ovrAll_Math";
-            this.lbl_ovrAll_Math.Size = new System.Drawing.Size(52, 29);
+            this.lbl_ovrAll_Math.Size = new System.Drawing.Size(43, 22);
             this.lbl_ovrAll_Math.TabIndex = 48;
             this.lbl_ovrAll_Math.Text = "000";
             this.lbl_ovrAll_Math.Visible = false;
@@ -833,7 +833,7 @@
             this.lbl_ovrAll_English.Location = new System.Drawing.Point(1406, 517);
             this.lbl_ovrAll_English.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_ovrAll_English.Name = "lbl_ovrAll_English";
-            this.lbl_ovrAll_English.Size = new System.Drawing.Size(52, 29);
+            this.lbl_ovrAll_English.Size = new System.Drawing.Size(43, 22);
             this.lbl_ovrAll_English.TabIndex = 47;
             this.lbl_ovrAll_English.Text = "000";
             this.lbl_ovrAll_English.Visible = false;
@@ -851,7 +851,7 @@
             this.cmb_term.Location = new System.Drawing.Point(387, 125);
             this.cmb_term.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_term.Name = "cmb_term";
-            this.cmb_term.Size = new System.Drawing.Size(234, 28);
+            this.cmb_term.Size = new System.Drawing.Size(234, 25);
             this.cmb_term.TabIndex = 0;
             this.cmb_term.Text = "Select Term ---";
             this.cmb_term.SelectedIndexChanged += new System.EventHandler(this.cmb_term_SelectedIndexChanged);
@@ -866,7 +866,7 @@
             this.label23.Location = new System.Drawing.Point(427, 655);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(99, 29);
+            this.label23.Size = new System.Drawing.Size(77, 23);
             this.label23.TabIndex = 62;
             this.label23.Text = "SCIENCE";
             // 
@@ -879,7 +879,7 @@
             this.lbl_StatusFourth.Location = new System.Drawing.Point(1165, 774);
             this.lbl_StatusFourth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_StatusFourth.Name = "lbl_StatusFourth";
-            this.lbl_StatusFourth.Size = new System.Drawing.Size(18, 26);
+            this.lbl_StatusFourth.Size = new System.Drawing.Size(15, 22);
             this.lbl_StatusFourth.TabIndex = 46;
             this.lbl_StatusFourth.Text = ".";
             this.lbl_StatusFourth.Visible = false;
@@ -908,7 +908,7 @@
             this.lbl_avgFourth.Location = new System.Drawing.Point(1218, 707);
             this.lbl_avgFourth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_avgFourth.Name = "lbl_avgFourth";
-            this.lbl_avgFourth.Size = new System.Drawing.Size(46, 29);
+            this.lbl_avgFourth.Size = new System.Drawing.Size(37, 23);
             this.lbl_avgFourth.TabIndex = 47;
             this.lbl_avgFourth.Text = "000";
             this.lbl_avgFourth.Visible = false;
@@ -922,7 +922,7 @@
             this.txt_FourthMapeh.Margin = new System.Windows.Forms.Padding(2);
             this.txt_FourthMapeh.MaxLength = 5;
             this.txt_FourthMapeh.Name = "txt_FourthMapeh";
-            this.txt_FourthMapeh.Size = new System.Drawing.Size(54, 22);
+            this.txt_FourthMapeh.Size = new System.Drawing.Size(54, 19);
             this.txt_FourthMapeh.TabIndex = 19;
             this.txt_FourthMapeh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_FourthMapeh.Visible = false;
@@ -936,7 +936,7 @@
             this.txt_FourthEnglish.Margin = new System.Windows.Forms.Padding(2);
             this.txt_FourthEnglish.MaxLength = 5;
             this.txt_FourthEnglish.Name = "txt_FourthEnglish";
-            this.txt_FourthEnglish.Size = new System.Drawing.Size(54, 22);
+            this.txt_FourthEnglish.Size = new System.Drawing.Size(54, 19);
             this.txt_FourthEnglish.TabIndex = 20;
             this.txt_FourthEnglish.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_FourthEnglish.Visible = false;
@@ -950,7 +950,7 @@
             this.txt_FourthMath.Margin = new System.Windows.Forms.Padding(2);
             this.txt_FourthMath.MaxLength = 5;
             this.txt_FourthMath.Name = "txt_FourthMath";
-            this.txt_FourthMath.Size = new System.Drawing.Size(54, 22);
+            this.txt_FourthMath.Size = new System.Drawing.Size(54, 19);
             this.txt_FourthMath.TabIndex = 21;
             this.txt_FourthMath.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_FourthMath.Visible = false;
@@ -964,7 +964,7 @@
             this.txt_FourthFilipino.Margin = new System.Windows.Forms.Padding(2);
             this.txt_FourthFilipino.MaxLength = 5;
             this.txt_FourthFilipino.Name = "txt_FourthFilipino";
-            this.txt_FourthFilipino.Size = new System.Drawing.Size(54, 22);
+            this.txt_FourthFilipino.Size = new System.Drawing.Size(54, 19);
             this.txt_FourthFilipino.TabIndex = 22;
             this.txt_FourthFilipino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_FourthFilipino.Visible = false;
@@ -978,7 +978,7 @@
             this.txt_FourthScience.Margin = new System.Windows.Forms.Padding(2);
             this.txt_FourthScience.MaxLength = 5;
             this.txt_FourthScience.Name = "txt_FourthScience";
-            this.txt_FourthScience.Size = new System.Drawing.Size(54, 22);
+            this.txt_FourthScience.Size = new System.Drawing.Size(54, 19);
             this.txt_FourthScience.TabIndex = 23;
             this.txt_FourthScience.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_FourthScience.Visible = false;
@@ -992,7 +992,7 @@
             this.label6.Location = new System.Drawing.Point(1165, 391);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(151, 27);
+            this.label6.Size = new System.Drawing.Size(126, 23);
             this.label6.TabIndex = 10;
             this.label6.Text = "Fourth Grading";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -1025,7 +1025,7 @@
             // 
             // InputGrades
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SaddleBrown;
             this.BackgroundImage = global::Int_GradeSystem.Properties.Resources.Input_Grades__FS_;
@@ -1106,9 +1106,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "InputGrades";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InputGrades";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.InputGrades_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

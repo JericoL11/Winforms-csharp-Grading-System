@@ -50,9 +50,10 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(648, 599);
+            this.label5.Location = new System.Drawing.Point(486, 487);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(213, 26);
+            this.label5.Size = new System.Drawing.Size(183, 23);
             this.label5.TabIndex = 19;
             this.label5.Text = "Confirm Password";
             // 
@@ -62,28 +63,29 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(648, 543);
+            this.label4.Location = new System.Drawing.Point(486, 441);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(174, 26);
+            this.label4.Size = new System.Drawing.Size(146, 23);
             this.label4.TabIndex = 18;
             this.label4.Text = "New Password";
             // 
             // txt_confirmPass
             // 
             this.txt_confirmPass.Font = new System.Drawing.Font("Arial", 12F);
-            this.txt_confirmPass.Location = new System.Drawing.Point(945, 599);
-            this.txt_confirmPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_confirmPass.Location = new System.Drawing.Point(709, 487);
+            this.txt_confirmPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_confirmPass.Name = "txt_confirmPass";
-            this.txt_confirmPass.Size = new System.Drawing.Size(326, 30);
+            this.txt_confirmPass.Size = new System.Drawing.Size(246, 26);
             this.txt_confirmPass.TabIndex = 2;
             // 
             // txt_newPass
             // 
             this.txt_newPass.Font = new System.Drawing.Font("Arial", 12F);
-            this.txt_newPass.Location = new System.Drawing.Point(945, 545);
-            this.txt_newPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_newPass.Location = new System.Drawing.Point(709, 443);
+            this.txt_newPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_newPass.Name = "txt_newPass";
-            this.txt_newPass.Size = new System.Drawing.Size(326, 30);
+            this.txt_newPass.Size = new System.Drawing.Size(246, 26);
             this.txt_newPass.TabIndex = 1;
             this.txt_newPass.TextChanged += new System.EventHandler(this.txt_newPass_TextChanged);
             // 
@@ -93,19 +95,20 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(648, 487);
+            this.label2.Location = new System.Drawing.Point(486, 396);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 26);
+            this.label2.Size = new System.Drawing.Size(140, 23);
             this.label2.TabIndex = 22;
             this.label2.Text = "Old Password";
             // 
             // txt_oldPass
             // 
             this.txt_oldPass.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_oldPass.Location = new System.Drawing.Point(945, 488);
-            this.txt_oldPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_oldPass.Location = new System.Drawing.Point(709, 396);
+            this.txt_oldPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_oldPass.Name = "txt_oldPass";
-            this.txt_oldPass.Size = new System.Drawing.Size(326, 30);
+            this.txt_oldPass.Size = new System.Drawing.Size(246, 26);
             this.txt_oldPass.TabIndex = 0;
             this.txt_oldPass.TextChanged += new System.EventHandler(this.txt_oldPass_TextChanged);
             // 
@@ -115,9 +118,10 @@
             this.lbl_ID.BackColor = System.Drawing.Color.Transparent;
             this.lbl_ID.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold);
             this.lbl_ID.ForeColor = System.Drawing.Color.White;
-            this.lbl_ID.Location = new System.Drawing.Point(699, 350);
+            this.lbl_ID.Location = new System.Drawing.Point(524, 284);
+            this.lbl_ID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_ID.Name = "lbl_ID";
-            this.lbl_ID.Size = new System.Drawing.Size(72, 27);
+            this.lbl_ID.Size = new System.Drawing.Size(64, 23);
             this.lbl_ID.TabIndex = 28;
             this.lbl_ID.Text = "______";
             this.lbl_ID.Click += new System.EventHandler(this.lbl_ID_Click);
@@ -128,9 +132,10 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(566, 352);
+            this.label6.Location = new System.Drawing.Point(424, 286);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 27);
+            this.label6.Size = new System.Drawing.Size(91, 23);
             this.label6.TabIndex = 27;
             this.label6.Text = "Teacher ID";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -138,10 +143,10 @@
             // bnt_Cancel
             // 
             this.bnt_Cancel.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnt_Cancel.Location = new System.Drawing.Point(639, 695);
-            this.bnt_Cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bnt_Cancel.Location = new System.Drawing.Point(479, 565);
+            this.bnt_Cancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bnt_Cancel.Name = "bnt_Cancel";
-            this.bnt_Cancel.Size = new System.Drawing.Size(103, 45);
+            this.bnt_Cancel.Size = new System.Drawing.Size(77, 37);
             this.bnt_Cancel.TabIndex = 5;
             this.bnt_Cancel.Text = "Cancel";
             this.bnt_Cancel.UseVisualStyleBackColor = true;
@@ -150,10 +155,10 @@
             // btn_save
             // 
             this.btn_save.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_save.Location = new System.Drawing.Point(1168, 695);
-            this.btn_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_save.Location = new System.Drawing.Point(876, 565);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(103, 45);
+            this.btn_save.Size = new System.Drawing.Size(77, 37);
             this.btn_save.TabIndex = 4;
             this.btn_save.Text = "Save";
             this.btn_save.UseVisualStyleBackColor = true;
@@ -164,9 +169,10 @@
             this.btn_Show.BackColor = System.Drawing.Color.Transparent;
             this.btn_Show.BackgroundImage = global::Int_GradeSystem.Properties.Resources.show;
             this.btn_Show.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Show.Location = new System.Drawing.Point(1240, 487);
+            this.btn_Show.Location = new System.Drawing.Point(930, 396);
+            this.btn_Show.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Show.Name = "btn_Show";
-            this.btn_Show.Size = new System.Drawing.Size(37, 32);
+            this.btn_Show.Size = new System.Drawing.Size(28, 26);
             this.btn_Show.TabIndex = 29;
             this.btn_Show.UseVisualStyleBackColor = false;
             this.btn_Show.Click += new System.EventHandler(this.btn_Show_Click);
@@ -176,9 +182,10 @@
             this.btn_hide.BackColor = System.Drawing.Color.Transparent;
             this.btn_hide.BackgroundImage = global::Int_GradeSystem.Properties.Resources.hide;
             this.btn_hide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_hide.Location = new System.Drawing.Point(1240, 487);
+            this.btn_hide.Location = new System.Drawing.Point(930, 396);
+            this.btn_hide.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_hide.Name = "btn_hide";
-            this.btn_hide.Size = new System.Drawing.Size(37, 32);
+            this.btn_hide.Size = new System.Drawing.Size(28, 26);
             this.btn_hide.TabIndex = 30;
             this.btn_hide.UseVisualStyleBackColor = false;
             this.btn_hide.Click += new System.EventHandler(this.btn_hide_Click);
@@ -188,9 +195,10 @@
             this.btn_show_new.BackColor = System.Drawing.Color.Transparent;
             this.btn_show_new.BackgroundImage = global::Int_GradeSystem.Properties.Resources.show;
             this.btn_show_new.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_show_new.Location = new System.Drawing.Point(1240, 544);
+            this.btn_show_new.Location = new System.Drawing.Point(930, 442);
+            this.btn_show_new.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_show_new.Name = "btn_show_new";
-            this.btn_show_new.Size = new System.Drawing.Size(37, 32);
+            this.btn_show_new.Size = new System.Drawing.Size(28, 26);
             this.btn_show_new.TabIndex = 31;
             this.btn_show_new.UseVisualStyleBackColor = false;
             this.btn_show_new.Click += new System.EventHandler(this.btn_show_new_Click);
@@ -200,21 +208,22 @@
             this.btn_hide_new.BackColor = System.Drawing.Color.Transparent;
             this.btn_hide_new.BackgroundImage = global::Int_GradeSystem.Properties.Resources.hide;
             this.btn_hide_new.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_hide_new.Location = new System.Drawing.Point(1240, 544);
+            this.btn_hide_new.Location = new System.Drawing.Point(930, 442);
+            this.btn_hide_new.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_hide_new.Name = "btn_hide_new";
-            this.btn_hide_new.Size = new System.Drawing.Size(37, 32);
+            this.btn_hide_new.Size = new System.Drawing.Size(28, 26);
             this.btn_hide_new.TabIndex = 32;
             this.btn_hide_new.UseVisualStyleBackColor = false;
             this.btn_hide_new.Click += new System.EventHandler(this.btn_hide_new_Click);
             // 
             // ChangePassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Brown;
             this.BackgroundImage = global::Int_GradeSystem.Properties.Resources.Change_Password__FS_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.ClientSize = new System.Drawing.Size(1440, 878);
             this.Controls.Add(this.btn_show_new);
             this.Controls.Add(this.btn_hide_new);
             this.Controls.Add(this.btn_Show);
@@ -231,11 +240,10 @@
             this.Controls.Add(this.txt_newPass);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ChangePassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ChangePassword";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ChangePassword_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

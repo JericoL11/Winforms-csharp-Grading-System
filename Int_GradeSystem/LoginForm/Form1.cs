@@ -1,4 +1,5 @@
-﻿using Int_GradeSystem.TeacherForm;
+﻿using Int_GradeSystem.LoginForm;
+using Int_GradeSystem.TeacherForm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -57,8 +58,8 @@ namespace Int_GradeSystem
             
             if(Teacher_Login != null)
             {
-
                 alert.login_Success();
+
 
                 this.Opacity = 10;
                 Timer timer = new Timer();
@@ -68,18 +69,19 @@ namespace Int_GradeSystem
                     this.Opacity -= 0.1;
                     if (this.Opacity <= 0)
                     {
-                        TeacherFormPage tf = new TeacherFormPage();
-                        tf.ID = txt_username.Text;
-                        tf.Show();
+
+                        Teacher_Loading loading = new Teacher_Loading();
+                        loading.ID = txt_username.Text;
+                        loading.Show();    
                         timer.Stop();
-                  
+
 
                         this.Hide();
                     }
                 };
                 timer.Start();
-            
-               
+              
+        
             }
             else if(txt_username.Text == "Username" ||  txt_password.Text == "Password")
             {

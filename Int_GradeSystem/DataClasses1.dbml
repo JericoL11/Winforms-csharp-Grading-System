@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Grading_System" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=BLAKE\SQLEXPRESS;Initial Catalog=Grading_System;Integrated Security=True" SettingsObjectName="Int_GradeSystem.Properties.Settings" SettingsPropertyName="Grading_SystemConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAB2-PC37\LAB2PC35;Initial Catalog=Grading_System;Integrated Security=True" SettingsObjectName="Int_GradeSystem.Properties.Settings" SettingsPropertyName="Grading_SystemConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.tbl_Admin" Member="tbl_Admins">
     <Type Name="tbl_Admin">
       <Column Name="adminId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -15,18 +15,6 @@
       <Column Name="email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="teacher_password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="tbl_TeacherAcc_tbl_TeacherInfo" Member="tbl_TeacherInfos" ThisKey="teacherId" OtherKey="FK_teacherId" Type="tbl_TeacherInfo" />
-    </Type>
-  </Table>
-  <Table Name="dbo.tbl_TeacherInfo" Member="tbl_TeacherInfos">
-    <Type Name="tbl_TeacherInfo">
-      <Column Name="middleName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="gender" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
-      <Column Name="birthDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="phoneNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="FK_teacherId" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="" Member="Property" Type="System.String" CanBeNull="false" />
-      <Association Name="tbl_TeacherAcc_tbl_TeacherInfo" Member="tbl_TeacherAcc" ThisKey="FK_teacherId" OtherKey="teacherId" Type="tbl_TeacherAcc" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.tbl_Grading_Period" Member="tbl_Grading_Periods">
@@ -126,6 +114,17 @@
       <Column Name="GradeStatus" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
       <Column Name="updatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="tbl_Student_tbl_Student_ThirdG_Subject" Member="tbl_Student" ThisKey="FK_studentID" OtherKey="studentId" Type="tbl_Student" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_TeacherInfo" Member="tbl_TeacherInfos">
+    <Type Name="tbl_TeacherInfo">
+      <Column Name="middleName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="birthDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="phoneNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FK_teacherId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tbl_TeacherAcc_tbl_TeacherInfo" Member="tbl_TeacherAcc" ThisKey="FK_teacherId" OtherKey="teacherId" Type="tbl_TeacherAcc" IsForeignKey="true" />
     </Type>
   </Table>
   <Function Name="dbo.SP_View_TeacherAcc" Method="SP_View_TeacherAcc">

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_editGradeBack = new System.Windows.Forms.Button();
@@ -47,8 +47,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_passCode = new System.Windows.Forms.TextBox();
             this.btn_cancel = new System.Windows.Forms.Button();
-            this.btn_refresh = new System.Windows.Forms.Button();
             this.btn_pnldelete = new System.Windows.Forms.Button();
+            this.btn_refresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_studentList)).BeginInit();
             this.pnl_verification.SuspendLayout();
             this.SuspendLayout();
@@ -61,9 +61,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(540, 199);
+            this.label1.Location = new System.Drawing.Point(405, 162);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 27);
+            this.label1.Size = new System.Drawing.Size(151, 23);
             this.label1.TabIndex = 2;
             this.label1.Text = "Select Grade Level";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -76,9 +77,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(720, 123);
+            this.label2.Location = new System.Drawing.Point(478, 93);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(619, 35);
+            this.label2.Size = new System.Drawing.Size(511, 29);
             this.label2.TabIndex = 3;
             this.label2.Text = "S T U D E N T      G R A D E S     U P D A T E";
             // 
@@ -86,10 +88,10 @@
             // 
             this.btn_editGradeBack.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_editGradeBack.ForeColor = System.Drawing.Color.Black;
-            this.btn_editGradeBack.Location = new System.Drawing.Point(27, 34);
-            this.btn_editGradeBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_editGradeBack.Location = new System.Drawing.Point(20, 28);
+            this.btn_editGradeBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_editGradeBack.Name = "btn_editGradeBack";
-            this.btn_editGradeBack.Size = new System.Drawing.Size(153, 61);
+            this.btn_editGradeBack.Size = new System.Drawing.Size(115, 50);
             this.btn_editGradeBack.TabIndex = 3;
             this.btn_editGradeBack.Text = "Back";
             this.btn_editGradeBack.UseVisualStyleBackColor = true;
@@ -102,10 +104,10 @@
             this.btn_EditGrades.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_EditGrades.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_EditGrades.ForeColor = System.Drawing.Color.Black;
-            this.btn_EditGrades.Location = new System.Drawing.Point(1223, 978);
-            this.btn_EditGrades.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_EditGrades.Location = new System.Drawing.Point(917, 795);
+            this.btn_EditGrades.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_EditGrades.Name = "btn_EditGrades";
-            this.btn_EditGrades.Size = new System.Drawing.Size(157, 53);
+            this.btn_EditGrades.Size = new System.Drawing.Size(118, 43);
             this.btn_EditGrades.TabIndex = 1;
             this.btn_EditGrades.Text = "Edit";
             this.btn_EditGrades.UseVisualStyleBackColor = false;
@@ -121,35 +123,35 @@
             this.dgv_studentList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_studentList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
             this.dgv_studentList.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dgv_studentList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dgv_studentList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_studentList.ColumnHeadersHeight = 29;
             this.dgv_studentList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_studentList.DefaultCellStyle = dataGridViewCellStyle23;
-            this.dgv_studentList.Location = new System.Drawing.Point(275, 342);
-            this.dgv_studentList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_studentList.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dgv_studentList.Location = new System.Drawing.Point(206, 278);
+            this.dgv_studentList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_studentList.MultiSelect = false;
             this.dgv_studentList.Name = "dgv_studentList";
             this.dgv_studentList.ReadOnly = true;
             this.dgv_studentList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_studentList.RowsDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_studentList.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_studentList.RowTemplate.Height = 24;
             this.dgv_studentList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_studentList.Size = new System.Drawing.Size(1371, 536);
+            this.dgv_studentList.Size = new System.Drawing.Size(1028, 436);
             this.dgv_studentList.TabIndex = 10;
             this.dgv_studentList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_studentList_CellClick);
             this.dgv_studentList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_studentList_CellContentClick);
@@ -168,10 +170,10 @@
             "4 - Hope",
             "5 - Fourier",
             "6 - Hawking"});
-            this.cmb_GradeLevels.Location = new System.Drawing.Point(761, 199);
-            this.cmb_GradeLevels.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmb_GradeLevels.Location = new System.Drawing.Point(571, 162);
+            this.cmb_GradeLevels.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmb_GradeLevels.Name = "cmb_GradeLevels";
-            this.cmb_GradeLevels.Size = new System.Drawing.Size(243, 24);
+            this.cmb_GradeLevels.Size = new System.Drawing.Size(183, 21);
             this.cmb_GradeLevels.TabIndex = 0;
             this.cmb_GradeLevels.Text = "Select -------";
             this.cmb_GradeLevels.SelectedIndexChanged += new System.EventHandler(this.cmb_GradeLevels_SelectedIndexChanged);
@@ -183,10 +185,10 @@
             this.btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Delete.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Delete.ForeColor = System.Drawing.Color.Black;
-            this.btn_Delete.Location = new System.Drawing.Point(1463, 978);
-            this.btn_Delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Delete.Location = new System.Drawing.Point(1097, 795);
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Delete.Name = "btn_Delete";
-            this.btn_Delete.Size = new System.Drawing.Size(157, 53);
+            this.btn_Delete.Size = new System.Drawing.Size(118, 43);
             this.btn_Delete.TabIndex = 2;
             this.btn_Delete.Text = "Delete";
             this.btn_Delete.UseVisualStyleBackColor = false;
@@ -200,9 +202,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(1202, 199);
+            this.label4.Location = new System.Drawing.Point(902, 162);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 27);
+            this.label4.Size = new System.Drawing.Size(97, 23);
             this.label4.TabIndex = 75;
             this.label4.Text = "Student ID: ";
             // 
@@ -214,9 +217,10 @@
             this.lbl_StudID.BackColor = System.Drawing.Color.Transparent;
             this.lbl_StudID.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_StudID.ForeColor = System.Drawing.Color.White;
-            this.lbl_StudID.Location = new System.Drawing.Point(1330, 196);
+            this.lbl_StudID.Location = new System.Drawing.Point(998, 159);
+            this.lbl_StudID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_StudID.Name = "lbl_StudID";
-            this.lbl_StudID.Size = new System.Drawing.Size(38, 26);
+            this.lbl_StudID.Size = new System.Drawing.Size(32, 22);
             this.lbl_StudID.TabIndex = 76;
             this.lbl_StudID.Text = "__";
             // 
@@ -233,10 +237,10 @@
             this.pnl_verification.Controls.Add(this.txt_passCode);
             this.pnl_verification.Controls.Add(this.btn_cancel);
             this.pnl_verification.Controls.Add(this.btn_pnldelete);
-            this.pnl_verification.Location = new System.Drawing.Point(761, 539);
-            this.pnl_verification.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnl_verification.Location = new System.Drawing.Point(571, 438);
+            this.pnl_verification.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_verification.Name = "pnl_verification";
-            this.pnl_verification.Size = new System.Drawing.Size(437, 165);
+            this.pnl_verification.Size = new System.Drawing.Size(328, 134);
             this.pnl_verification.TabIndex = 77;
             this.pnl_verification.Visible = false;
             this.pnl_verification.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_verification_Paint);
@@ -246,9 +250,10 @@
             this.btn_Show.BackColor = System.Drawing.Color.Transparent;
             this.btn_Show.BackgroundImage = global::Int_GradeSystem.Properties.Resources.show;
             this.btn_Show.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Show.Location = new System.Drawing.Point(381, 35);
+            this.btn_Show.Location = new System.Drawing.Point(286, 28);
+            this.btn_Show.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Show.Name = "btn_Show";
-            this.btn_Show.Size = new System.Drawing.Size(35, 31);
+            this.btn_Show.Size = new System.Drawing.Size(26, 25);
             this.btn_Show.TabIndex = 1;
             this.btn_Show.UseVisualStyleBackColor = false;
             this.btn_Show.Click += new System.EventHandler(this.btn_Show_Click);
@@ -258,9 +263,10 @@
             this.btn_hide.BackColor = System.Drawing.Color.Transparent;
             this.btn_hide.BackgroundImage = global::Int_GradeSystem.Properties.Resources.hide;
             this.btn_hide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_hide.Location = new System.Drawing.Point(381, 35);
+            this.btn_hide.Location = new System.Drawing.Point(286, 28);
+            this.btn_hide.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_hide.Name = "btn_hide";
-            this.btn_hide.Size = new System.Drawing.Size(35, 31);
+            this.btn_hide.Size = new System.Drawing.Size(26, 25);
             this.btn_hide.TabIndex = 80;
             this.btn_hide.UseVisualStyleBackColor = false;
             this.btn_hide.Click += new System.EventHandler(this.btn_hide_Click);
@@ -269,10 +275,10 @@
             // 
             this.btn_enter.BackColor = System.Drawing.Color.White;
             this.btn_enter.ForeColor = System.Drawing.Color.Black;
-            this.btn_enter.Location = new System.Drawing.Point(173, 99);
-            this.btn_enter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_enter.Location = new System.Drawing.Point(130, 80);
+            this.btn_enter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_enter.Name = "btn_enter";
-            this.btn_enter.Size = new System.Drawing.Size(97, 37);
+            this.btn_enter.Size = new System.Drawing.Size(73, 30);
             this.btn_enter.TabIndex = 1;
             this.btn_enter.Text = "Enter";
             this.btn_enter.UseVisualStyleBackColor = false;
@@ -284,19 +290,20 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(21, 33);
+            this.label3.Location = new System.Drawing.Point(16, 27);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 25);
+            this.label3.Size = new System.Drawing.Size(87, 20);
             this.label3.TabIndex = 81;
             this.label3.Text = "Passcode";
             // 
             // txt_passCode
             // 
             this.txt_passCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_passCode.Location = new System.Drawing.Point(161, 35);
-            this.txt_passCode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_passCode.Location = new System.Drawing.Point(121, 28);
+            this.txt_passCode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_passCode.Name = "txt_passCode";
-            this.txt_passCode.Size = new System.Drawing.Size(214, 30);
+            this.txt_passCode.Size = new System.Drawing.Size(162, 26);
             this.txt_passCode.TabIndex = 0;
             this.txt_passCode.TextChanged += new System.EventHandler(this.txt_passCode_TextChanged);
             // 
@@ -304,14 +311,27 @@
             // 
             this.btn_cancel.BackColor = System.Drawing.Color.White;
             this.btn_cancel.ForeColor = System.Drawing.Color.Black;
-            this.btn_cancel.Location = new System.Drawing.Point(278, 99);
-            this.btn_cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_cancel.Location = new System.Drawing.Point(208, 80);
+            this.btn_cancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(97, 37);
+            this.btn_cancel.Size = new System.Drawing.Size(73, 30);
             this.btn_cancel.TabIndex = 2;
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = false;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
+            // 
+            // btn_pnldelete
+            // 
+            this.btn_pnldelete.BackColor = System.Drawing.Color.White;
+            this.btn_pnldelete.ForeColor = System.Drawing.Color.Black;
+            this.btn_pnldelete.Location = new System.Drawing.Point(130, 80);
+            this.btn_pnldelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_pnldelete.Name = "btn_pnldelete";
+            this.btn_pnldelete.Size = new System.Drawing.Size(73, 30);
+            this.btn_pnldelete.TabIndex = 1;
+            this.btn_pnldelete.Text = "Delete";
+            this.btn_pnldelete.UseVisualStyleBackColor = false;
+            this.btn_pnldelete.Click += new System.EventHandler(this.btn_pnldelete_Click);
             // 
             // btn_refresh
             // 
@@ -320,36 +340,23 @@
             this.btn_refresh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_refresh.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_refresh.ForeColor = System.Drawing.Color.Black;
-            this.btn_refresh.Location = new System.Drawing.Point(254, 978);
-            this.btn_refresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_refresh.Location = new System.Drawing.Point(190, 795);
+            this.btn_refresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_refresh.Name = "btn_refresh";
-            this.btn_refresh.Size = new System.Drawing.Size(157, 53);
+            this.btn_refresh.Size = new System.Drawing.Size(118, 43);
             this.btn_refresh.TabIndex = 78;
             this.btn_refresh.Text = "Refresh";
             this.btn_refresh.UseVisualStyleBackColor = false;
             this.btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click);
             // 
-            // btn_pnldelete
-            // 
-            this.btn_pnldelete.BackColor = System.Drawing.Color.White;
-            this.btn_pnldelete.ForeColor = System.Drawing.Color.Black;
-            this.btn_pnldelete.Location = new System.Drawing.Point(173, 99);
-            this.btn_pnldelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_pnldelete.Name = "btn_pnldelete";
-            this.btn_pnldelete.Size = new System.Drawing.Size(97, 37);
-            this.btn_pnldelete.TabIndex = 1;
-            this.btn_pnldelete.Text = "Delete";
-            this.btn_pnldelete.UseVisualStyleBackColor = false;
-            this.btn_pnldelete.Click += new System.EventHandler(this.btn_pnldelete_Click);
-            // 
             // EditGrades
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SaddleBrown;
             this.BackgroundImage = global::Int_GradeSystem.Properties.Resources.Edit_Grades__FS_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.ClientSize = new System.Drawing.Size(1440, 878);
             this.Controls.Add(this.btn_refresh);
             this.Controls.Add(this.pnl_verification);
             this.Controls.Add(this.lbl_StudID);
@@ -364,11 +371,10 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EditGrades";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditGrades";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.EditGrades_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_studentList)).EndInit();
             this.pnl_verification.ResumeLayout(false);

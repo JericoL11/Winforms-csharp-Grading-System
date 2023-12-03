@@ -1,4 +1,5 @@
-﻿using Int_GradeSystem.TeacherForm;
+﻿using Int_GradeSystem.LoginForm;
+using Int_GradeSystem.TeacherForm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace Int_GradeSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new IntroForm());
             //Application.Run(new EditGrades());
         }
     }
